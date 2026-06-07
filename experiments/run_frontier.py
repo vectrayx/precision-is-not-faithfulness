@@ -43,8 +43,11 @@ def make_client():
     )
 
 
+SYS = os.environ.get("SYSTEM_PROMPT_OVERRIDE") or SYSTEM_PROMPT
+
+
 def run_one(client, deployment, inst, lang):
-    msgs = [{"role": "system", "content": SYSTEM_PROMPT},
+    msgs = [{"role": "system", "content": SYS},
             {"role": "user", "content": _user_prompt(inst, lang)}]
     try:
         text = chat(client, deployment, msgs)
@@ -80,17 +83,19 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--instances", default=str(DEFAULT_INSTANCES))
     ap.add_argument("--merge", action="store_true",
-                    help="merge into existing frontier.json instead of overwriting "
+                    help="merge into existing output instead of overwriting "
                          "(for adding a model served from a different resource)")
+    ap.add_argument("--out", default=str(OUT), help="output json path")
     args = ap.parse_args()
 
+    out_path = Path(args.out)
     models = dict(m.split("=", 1) for m in args.models)
     instances = load_instances(Path(args.instances))
     client = make_client()
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    if args.merge and OUT.exists():
-        out = json.loads(OUT.read_text())
+    if args.merge and out_path.exists():
+        out = json.loads(out_path.read_text())
         out["models"] = sorted(set(out.get("models", [])) | set(models))
         # drop any prior summaries for the models we are about to (re)run
         out["summaries"] = [s for s in out["summaries"] if s["model"] not in models]
@@ -107,7 +112,7 @@ def main() -> None:
             print(f"{label:14s} {lang}  faith={s['macro_faithfulness']:.3f} "
                   f"halluc={s['macro_hallucination']:.3f} claims={s['total_claims']} "
                   f"errors={s['errors']}", flush=True)
-            OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False))  # checkpoint
+            out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False))  # checkpoint
 
     # markdown table
     lines = [f"# Frontier results (N={len(instances)} instances)\n",

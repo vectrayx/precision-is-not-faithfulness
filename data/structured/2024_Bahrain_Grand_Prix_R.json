@@ -1567,7 +1567,8 @@
       "pursuer_pace_s": 97.605,
       "defender_pace_s": 97.748,
       "pace_delta_s": 0.143,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -1578,7 +1579,8 @@
       "pursuer_pace_s": 97.394,
       "defender_pace_s": 97.669,
       "pace_delta_s": 0.275,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -1589,7 +1591,8 @@
       "pursuer_pace_s": 97.507,
       "defender_pace_s": 97.669,
       "pace_delta_s": 0.162,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "PER",
@@ -1600,7 +1603,8 @@
       "pursuer_pace_s": 96.104,
       "defender_pace_s": 96.211,
       "pace_delta_s": 0.107,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "ALB",
@@ -1611,7 +1615,8 @@
       "pursuer_pace_s": 97.669,
       "defender_pace_s": 97.818,
       "pace_delta_s": 0.148,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "ALO",
@@ -1622,7 +1627,8 @@
       "pursuer_pace_s": 96.633,
       "defender_pace_s": 97.179,
       "pace_delta_s": 0.546,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "TSU",
@@ -1633,7 +1639,104 @@
       "pursuer_pace_s": 96.817,
       "defender_pace_s": 97.507,
       "pace_delta_s": 0.69,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "LEC",
+      "pursuer": "PER",
+      "start_lap": 3,
+      "end_lap": 6,
+      "n_laps": 4,
+      "pursuer_pace_s": 96.211,
+      "defender_pace_s": 96.756,
+      "pace_delta_s": 0.545,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "RUS",
+      "pursuer": "PER",
+      "start_lap": 7,
+      "end_lap": 10,
+      "n_laps": 4,
+      "pursuer_pace_s": 96.211,
+      "defender_pace_s": 96.44,
+      "pace_delta_s": 0.229,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "LEC",
+      "pursuer": "SAI",
+      "start_lap": 7,
+      "end_lap": 10,
+      "n_laps": 4,
+      "pursuer_pace_s": 96.104,
+      "defender_pace_s": 96.756,
+      "pace_delta_s": 0.652,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "RIC",
+      "start_lap": 17,
+      "end_lap": 20,
+      "n_laps": 4,
+      "pursuer_pace_s": 97.725,
+      "defender_pace_s": 97.843,
+      "pace_delta_s": 0.118,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ZHO",
+      "pursuer": "STR",
+      "start_lap": 29,
+      "end_lap": 32,
+      "n_laps": 4,
+      "pursuer_pace_s": 96.817,
+      "defender_pace_s": 97.394,
+      "pace_delta_s": 0.577,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "BOT",
+      "pursuer": "STR",
+      "start_lap": 2,
+      "end_lap": 4,
+      "n_laps": 3,
+      "pursuer_pace_s": 96.817,
+      "defender_pace_s": 97.748,
+      "pace_delta_s": 0.93,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALO",
+      "pursuer": "PIA",
+      "start_lap": 3,
+      "end_lap": 4,
+      "n_laps": 2,
+      "pursuer_pace_s": 96.644,
+      "defender_pace_s": 97.179,
+      "pace_delta_s": 0.535,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALO",
+      "pursuer": "RUS",
+      "start_lap": 32,
+      "end_lap": 33,
+      "n_laps": 2,
+      "pursuer_pace_s": 96.44,
+      "defender_pace_s": 97.179,
+      "pace_delta_s": 0.739,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

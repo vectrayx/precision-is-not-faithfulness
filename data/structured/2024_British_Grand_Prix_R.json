@@ -1253,7 +1253,8 @@
       "pursuer_pace_s": 93.014,
       "defender_pace_s": 93.031,
       "pace_delta_s": 0.017,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "VER",
@@ -1264,7 +1265,8 @@
       "pursuer_pace_s": 91.83,
       "defender_pace_s": 91.933,
       "pace_delta_s": 0.103,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "STR",
@@ -1275,7 +1277,8 @@
       "pursuer_pace_s": 92.701,
       "defender_pace_s": 92.716,
       "pace_delta_s": 0.015,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "LEC",
@@ -1286,7 +1289,8 @@
       "pursuer_pace_s": 92.672,
       "defender_pace_s": 92.701,
       "pace_delta_s": 0.029,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "ZHO",
@@ -1297,7 +1301,8 @@
       "pursuer_pace_s": 93.346,
       "defender_pace_s": 95.012,
       "pace_delta_s": 1.666,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "OCO",
@@ -1308,7 +1313,8 @@
       "pursuer_pace_s": 93.204,
       "defender_pace_s": 94.491,
       "pace_delta_s": 1.287,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "PIA",
@@ -1319,7 +1325,8 @@
       "pursuer_pace_s": 91.675,
       "defender_pace_s": 91.896,
       "pace_delta_s": 0.221,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -1330,7 +1337,20 @@
       "pursuer_pace_s": 93.04,
       "defender_pace_s": 93.204,
       "pace_delta_s": 0.164,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
+    },
+    {
+      "defender": "VER",
+      "pursuer": "PIA",
+      "start_lap": 15,
+      "end_lap": 16,
+      "n_laps": 2,
+      "pursuer_pace_s": 91.896,
+      "defender_pace_s": 91.933,
+      "pace_delta_s": 0.037,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

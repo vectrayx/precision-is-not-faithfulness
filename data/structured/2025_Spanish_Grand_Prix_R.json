@@ -1501,7 +1501,8 @@
       "pursuer_pace_s": 81.47,
       "defender_pace_s": 81.543,
       "pace_delta_s": 0.073,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "HAM",
@@ -1512,7 +1513,8 @@
       "pursuer_pace_s": 80.061,
       "defender_pace_s": 80.545,
       "pace_delta_s": 0.484,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -1523,7 +1525,8 @@
       "pursuer_pace_s": 81.028,
       "defender_pace_s": 81.672,
       "pace_delta_s": 0.645,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "BEA",
@@ -1534,7 +1537,8 @@
       "pursuer_pace_s": 81.608,
       "defender_pace_s": 81.831,
       "pace_delta_s": 0.223,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "ALO",
@@ -1545,7 +1549,8 @@
       "pursuer_pace_s": 81.543,
       "defender_pace_s": 81.602,
       "pace_delta_s": 0.059,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "OCO",
@@ -1556,7 +1561,8 @@
       "pursuer_pace_s": 81.524,
       "defender_pace_s": 81.608,
       "pace_delta_s": 0.084,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "BEA",
@@ -1567,7 +1573,104 @@
       "pursuer_pace_s": 81.237,
       "defender_pace_s": 81.831,
       "pace_delta_s": 0.594,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "ALB",
+      "pursuer": "BEA",
+      "start_lap": 2,
+      "end_lap": 5,
+      "n_laps": 4,
+      "pursuer_pace_s": 81.831,
+      "defender_pace_s": 81.962,
+      "pace_delta_s": 0.13,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "TSU",
+      "start_lap": 34,
+      "end_lap": 37,
+      "n_laps": 4,
+      "pursuer_pace_s": 81.237,
+      "defender_pace_s": 81.608,
+      "pace_delta_s": 0.371,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "BEA",
+      "pursuer": "LAW",
+      "start_lap": 48,
+      "end_lap": 51,
+      "n_laps": 4,
+      "pursuer_pace_s": 81.47,
+      "defender_pace_s": 81.831,
+      "pace_delta_s": 0.361,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "BOR",
+      "start_lap": 57,
+      "end_lap": 60,
+      "n_laps": 4,
+      "pursuer_pace_s": 81.543,
+      "defender_pace_s": 81.608,
+      "pace_delta_s": 0.065,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALB",
+      "pursuer": "LAW",
+      "start_lap": 22,
+      "end_lap": 24,
+      "n_laps": 3,
+      "pursuer_pace_s": 81.47,
+      "defender_pace_s": 81.962,
+      "pace_delta_s": 0.492,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "ANT",
+      "start_lap": 22,
+      "end_lap": 23,
+      "n_laps": 2,
+      "pursuer_pace_s": 80.909,
+      "defender_pace_s": 81.672,
+      "pace_delta_s": 0.763,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "HUL",
+      "pursuer": "HAD",
+      "start_lap": 22,
+      "end_lap": 23,
+      "n_laps": 2,
+      "pursuer_pace_s": 81.028,
+      "defender_pace_s": 81.531,
+      "pace_delta_s": 0.504,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "HUL",
+      "start_lap": 26,
+      "end_lap": 27,
+      "n_laps": 2,
+      "pursuer_pace_s": 81.531,
+      "defender_pace_s": 81.672,
+      "pace_delta_s": 0.141,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

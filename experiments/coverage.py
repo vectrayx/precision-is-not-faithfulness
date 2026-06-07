@@ -23,63 +23,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.eval.claims import regex_extract, PIT_LAP, COMPOUND_CHANGE, N_STOPS, \
-    FINAL_POSITION, BATTLE, BATTLE_OUTCOME, GAIN
+from src.eval.claims import regex_extract
 from src.eval.verify import verify_claim, SUPPORTED
+from src.eval.coverage import key_facts, coverage as _coverage  # handles all 5 task types
 
 RESULTS = ROOT / "experiments" / "results"
-FRONTIER = RESULTS / "frontier.json"
+FRONTIER = RESULTS / os.environ.get("GEN_FILE", "frontier.json")
 INSTANCES = {json.loads(l)["id"]: json.loads(l)
              for l in (ROOT / "data/structured/instances.jsonl").read_text().splitlines()
              if l.strip()}
-
-
-def key_facts(inst: dict) -> list[tuple]:
-    """The salient, checkable facts a good explanation of THIS decision should cover."""
-    gt = inst["ground_truth"]
-    t = inst["decision_type"]
-    facts: list[tuple] = []
-    if t == "stint_strategy":
-        d = gt["driver"]
-        facts.append(("n_stops", d))
-        if gt.get("final_position") is not None:
-            facts.append(("final_position", d))
-        for p in gt.get("pit_stops", []):
-            facts.append(("pit_lap", d, p["lap"]))
-            facts.append(("compound_change", d))
-    elif t in ("undercut", "overcut"):
-        a, b = gt["attacker"], gt["defender"]
-        facts.append(("battle",))
-        facts.append(("battle_outcome",))
-        facts.append(("gain",))
-        if gt.get("attacker_pit_lap") is not None:
-            facts.append(("pit_lap", a, gt["attacker_pit_lap"]))
-        if gt.get("defender_pit_lap") is not None:
-            facts.append(("pit_lap", b, gt["defender_pit_lap"]))
-    return facts
-
-
-def covered(fact: tuple, supported: list) -> bool:
-    kind = fact[0]
-    for c in supported:
-        if c.type != _CLAIM_OF.get(kind, kind):
-            continue
-        if kind == "n_stops" and c.fields.get("driver") == fact[1]:
-            return True
-        if kind == "final_position" and c.fields.get("driver") == fact[1]:
-            return True
-        if kind == "compound_change" and c.fields.get("driver") == fact[1]:
-            return True
-        if kind == "pit_lap" and c.fields.get("driver") == fact[1] and c.fields.get("lap") == fact[2]:
-            return True
-        if kind in ("battle", "battle_outcome", "gain"):
-            return True
-    return False
-
-
-_CLAIM_OF = {"n_stops": N_STOPS, "final_position": FINAL_POSITION,
-             "compound_change": COMPOUND_CHANGE, "pit_lap": PIT_LAP,
-             "battle": BATTLE, "battle_outcome": BATTLE_OUTCOME, "gain": GAIN}
 
 
 def get_extractor():
@@ -93,21 +45,18 @@ def score_one(text: str, inst: dict, extractor) -> dict:
     facts = key_facts(inst)
     if not text:
         return {"precision": 0.0, "recall": 0.0, "n_extracted": 0, "n_facts": len(facts)}
-    gt = inst["ground_truth"]
     claims = extractor(text)
-    sup = []
+    rows = []
     for c in claims:
-        label, _ = verify_claim(c, gt)
-        if label == SUPPORTED:
-            sup.append(c)
+        label, _ = verify_claim(c, inst["ground_truth"])
+        rows.append({"type": c.type, "fields": c.fields, "label": label})
     n_ext = len(claims)
-    n_sup = len(sup)
+    n_sup = sum(r["label"] == SUPPORTED for r in rows)
     precision = n_sup / n_ext if n_ext else 0.0
-    n_cov = sum(covered(f, sup) for f in facts)
-    recall = n_cov / len(facts) if facts else 0.0
-    return {"precision": precision, "recall": recall,
+    cov = _coverage(rows, inst)
+    return {"precision": precision, "recall": cov["recall"],
             "n_extracted": n_ext, "n_supported": n_sup,
-            "n_covered": n_cov, "n_facts": len(facts)}
+            "n_covered": cov["covered"], "n_facts": cov["total"]}
 
 
 def macro(vals):
@@ -120,7 +69,7 @@ def f1(p, r):
 
 def main():
     extractor = get_extractor()
-    suffix = "_llm" if os.environ.get("EXTRACTOR") == "llm" else ""
+    suffix = os.environ.get("SUFFIX") or ("_llm" if os.environ.get("EXTRACTOR") == "llm" else "")
     only_langs = os.environ.get("LANGS", "en,es,pt").split(",")
     data = json.loads(FRONTIER.read_text())
     models = sorted(data["models"])

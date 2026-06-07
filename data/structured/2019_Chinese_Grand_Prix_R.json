@@ -1046,7 +1046,8 @@
       "pursuer_pace_s": 99.797,
       "defender_pace_s": 100.026,
       "pace_delta_s": 0.229,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "LEC",
@@ -1057,7 +1058,8 @@
       "pursuer_pace_s": 97.447,
       "defender_pace_s": 97.757,
       "pace_delta_s": 0.309,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -1068,7 +1070,8 @@
       "pursuer_pace_s": 99.686,
       "defender_pace_s": 100.11,
       "pace_delta_s": 0.424,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "HUL",
@@ -1079,7 +1082,8 @@
       "pursuer_pace_s": 100.016,
       "defender_pace_s": 100.624,
       "pace_delta_s": 0.608,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "KVY",
@@ -1090,7 +1094,56 @@
       "pursuer_pace_s": 99.961,
       "defender_pace_s": 100.171,
       "pace_delta_s": 0.21,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
+    },
+    {
+      "defender": "KVY",
+      "pursuer": "MAG",
+      "start_lap": 22,
+      "end_lap": 24,
+      "n_laps": 3,
+      "pursuer_pace_s": 100.11,
+      "defender_pace_s": 100.171,
+      "pace_delta_s": 0.061,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "KVY",
+      "pursuer": "ALB",
+      "start_lap": 5,
+      "end_lap": 6,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.76,
+      "defender_pace_s": 100.171,
+      "pace_delta_s": 0.41,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GIO",
+      "pursuer": "ALB",
+      "start_lap": 24,
+      "end_lap": 25,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.76,
+      "defender_pace_s": 100.019,
+      "pace_delta_s": 0.259,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "MAG",
+      "pursuer": "ALB",
+      "start_lap": 28,
+      "end_lap": 29,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.76,
+      "defender_pace_s": 100.11,
+      "pace_delta_s": 0.35,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

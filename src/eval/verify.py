@@ -137,7 +137,7 @@ def verify_claim(c: Claim, gt: dict) -> tuple[str, str]:
 
     if c.type == DEFENSE:
         defs = gt.get("defenses")
-        if defs is None and gt.get("defender"):
+        if defs is None and gt.get("defender") and gt.get("pursuer"):
             defs = [{"defender": gt["defender"], "pursuer": gt["pursuer"]}]
         if not defs:
             return _res(UNVERIFIABLE, "no defense in context")

@@ -18,6 +18,7 @@ from pathlib import Path
 
 import gradio as gr
 
+import html
 import re
 
 from src.eval.faithfulness import score_text
@@ -30,6 +31,25 @@ INSTANCES = ROOT / "data" / "structured" / "instances.jsonl"
 
 _INSTS = [json.loads(l) for l in INSTANCES.read_text().splitlines() if l.strip()]
 _BY_ID = {i["id"]: i for i in _INSTS}
+
+# Cached real frontier generations (no API needed): {"model|lang": {id: text}}.
+_GENS_PATH = ROOT / "data" / "structured" / "demo_generations.json"
+_GENS = json.loads(_GENS_PATH.read_text()) if _GENS_PATH.exists() else {"models": [], "gens": {}}
+_FRONTIER = list(_GENS.get("models", []))
+
+# Set of real 3-letter driver codes (so we chip drivers, not WET/DRS/SC/VSC).
+_DRIVER_CODES = set()
+for _i in _INSTS:
+    _DRIVER_CODES.update(_i.get("focus_drivers", []))
+    _gt = _i["ground_truth"]
+    for _k in ("driver", "attacker", "defender", "pursuer"):
+        if _gt.get(_k):
+            _DRIVER_CODES.add(_gt[_k])
+    for _c in _gt.get("classification", []):
+        _DRIVER_CODES.add(_c.get("driver"))
+    for _s in _gt.get("stints", []):
+        _DRIVER_CODES.add(_s.get("driver"))
+_DRIVER_CODES = {d for d in _DRIVER_CODES if isinstance(d, str) and len(d) == 3 and d.isupper()}
 
 LABEL_STYLE = {
     "supported": ("#10b981", "✓"),     # green check
@@ -99,6 +119,31 @@ def _race_summary_gt(year, gp):
     return None
 
 
+def _driver_colors(year, gp) -> dict:
+    gt = _race_summary_gt(year, gp)
+    return {c["driver"]: _team_color(c.get("team")) for c in (gt.get("classification") if gt else [])}
+
+
+_CODE_RE = re.compile(r"(?<![A-Za-z])[A-Z]{3}(?![A-Za-z])")
+
+
+def chip_briefing(text, year, gp) -> str:
+    """Render the briefing with driver codes as team-coloured chips (instead of a textbox)."""
+    colors = _driver_colors(year, gp)
+
+    def repl(m):
+        code = m.group(0)
+        if code not in _DRIVER_CODES:
+            return code
+        col = colors.get(code, "#6b7280")
+        return (f"<span style='background:{col}26;border:1px solid {col};color:#e5e7eb;"
+                f"border-radius:5px;padding:0 5px;font-weight:700;white-space:nowrap'>{code}</span>")
+
+    body = _CODE_RE.sub(repl, html.escape(text or ""))
+    return (f"<div style='line-height:2.0;font-size:1.03em;background:#0b1220;border-radius:6px;"
+            f"padding:12px 14px;min-height:120px'>{body or '<span style=opacity:.5>—</span>'}</div>")
+
+
 def tower_html(year, gp, highlight=()):
     """Broadcast-style results tower (the 'cajitas') for a Grand Prix."""
     gt = _race_summary_gt(year, gp)
@@ -127,7 +172,7 @@ def tower_html(year, gp, highlight=()):
             "Drivers in the selected decision are highlighted when in the top 10.</div>")
 
 
-def run(instance_id, backend, lang, commentator=False):
+def run(instance_id, backend, lang, commentator=False, prompt_mode="concise"):
     if not instance_id or instance_id not in _BY_ID:
         return ("⚠ Pick a **Strategic decision** (the third dropdown) before generating.",
                 gr.update(), gr.update(), gr.update(), gr.update(), gr.update())
@@ -137,15 +182,18 @@ def run(instance_id, backend, lang, commentator=False):
         text = template_noisy(inst, lang, seed=3)
     elif backend == "Terse / abstain (demo)":
         text = _terse(inst, lang)
-    elif backend == "Frontier LLM (needs API key)":
-        try:
-            from src.models.generate import azure_openai
-            text = azure_openai(inst, lang)
-        except Exception:
+    elif backend in _FRONTIER:   # real cached frontier output (no API)
+        store = "gens_coverall" if prompt_mode == "cover-all" else "gens"
+        cached = _GENS.get(store, {}).get(f"{backend}|{lang}", {}).get(instance_id)
+        if cached:
+            text = cached
+            note = (f"Real cached **{backend}** output &mdash; **{prompt_mode}** prompt "
+                    f"({lang.upper()}). Try the other prompt to see precision vs. coverage move.")
+        else:
             text = template_faithful(inst, lang)
-            note = ("ℹ️ Live frontier generation is not enabled on this hosted demo — showing "
-                    "the **grounded offline** briefing instead. (Fork the Space and set the "
-                    "`AZURE_OPENAI_*` secrets to call a live model.)")
+            extra = " and is English-only" if prompt_mode == "cover-all" else ""
+            note = (f"ℹ️ Cached {backend} output exists only for the held-out **2025 test sample**{extra} "
+                    "&mdash; pick a 2025 Grand Prix. Showing the grounded offline briefing here.")
     else:
         text = template_faithful(inst, lang)
     if commentator:
@@ -175,7 +223,8 @@ def run(instance_id, backend, lang, commentator=False):
                   "precision alone rewards saying little.</div>")
     ctx = inst["context_text"]
     tower = tower_html(inst["year"], inst["gp"], highlight=inst.get("focus_drivers", []))
-    return (note or ""), text, gauge, _audit_html(r), ctx, tower
+    briefing = chip_briefing(text, inst["year"], inst["gp"])
+    return (note or ""), briefing, gauge, _audit_html(r), ctx, tower
 
 
 def championship_view(year, lang):
@@ -209,10 +258,13 @@ with gr.Blocks(title="Precision Is Not Faithfulness (F1)") as demo:
                 inst = gr.Dropdown([], label="Strategic decision (strategy / undercut / overcut / defense / race summary)")
             with gr.Row():
                 backend = gr.Radio(
-                    ["Grounded (offline)", "Terse / abstain (demo)",
-                     "Inject errors (demo)", "Frontier LLM (needs API key)"],
-                    value="Grounded (offline)", label="Briefing source")
+                    ["Grounded (offline)", "Terse / abstain (demo)", "Inject errors (demo)"]
+                    + _FRONTIER,
+                    value="Grounded (offline)",
+                    label="Briefing source  (model names = real cached frontier output, 2025 test sample)")
                 lang = gr.Radio(["en", "es", "pt"], value="en", label="Language / Idioma")
+                prompt_mode = gr.Radio(["concise", "cover-all"], value="concise",
+                                       label="Prompt (frontier models)")
                 commentator = gr.Checkbox(value=False, label="🎙️ Commentator mode")
             btn = gr.Button("Generate briefing", variant="primary")
             note = gr.Markdown()
@@ -222,7 +274,7 @@ with gr.Blocks(title="Precision Is Not Faithfulness (F1)") as demo:
                     out_tower = gr.HTML()
                 with gr.Column(scale=2):
                     gr.Markdown("### Strategy briefing")
-                    out_text = gr.Textbox(label="", lines=8)
+                    out_text = gr.HTML()
                     out_gauge = gr.HTML()
                 with gr.Column(scale=2):
                     gr.Markdown("### Audit vs telemetry: precision + coverage")
@@ -232,7 +284,7 @@ with gr.Blocks(title="Precision Is Not Faithfulness (F1)") as demo:
             y.change(lambda yy: (gr.update(choices=gps_for(yy), value=None), ""), y, [g, out_tower])
             g.change(lambda yy, gg: (gr.update(choices=instances_for(yy, gg), value=None),
                                      tower_html(yy, gg)), [y, g], [inst, out_tower])
-            btn.click(run, [inst, backend, lang, commentator],
+            btn.click(run, [inst, backend, lang, commentator, prompt_mode],
                       [note, out_text, out_gauge, out_audit, out_ctx, out_tower])
 
         with gr.Tab("Championship"):

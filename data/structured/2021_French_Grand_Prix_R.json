@@ -772,7 +772,8 @@
       "pursuer_pace_s": 99.845,
       "defender_pace_s": 100.154,
       "pace_delta_s": 0.309,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "ALO",
@@ -783,7 +784,8 @@
       "pursuer_pace_s": 99.415,
       "defender_pace_s": 99.518,
       "pace_delta_s": 0.103,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "LAT",
@@ -794,7 +796,8 @@
       "pursuer_pace_s": 100.103,
       "defender_pace_s": 100.764,
       "pace_delta_s": 0.661,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "RAI",
@@ -805,7 +808,8 @@
       "pursuer_pace_s": 100.431,
       "defender_pace_s": 101.073,
       "pace_delta_s": 0.641,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -816,7 +820,8 @@
       "pursuer_pace_s": 99.518,
       "defender_pace_s": 99.845,
       "pace_delta_s": 0.327,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "RIC",
@@ -827,7 +832,8 @@
       "pursuer_pace_s": 99.2,
       "defender_pace_s": 99.415,
       "pace_delta_s": 0.215,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "RAI",
@@ -838,7 +844,104 @@
       "pursuer_pace_s": 100.04,
       "defender_pace_s": 101.073,
       "pace_delta_s": 1.033,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "BOT",
+      "pursuer": "PER",
+      "start_lap": 46,
+      "end_lap": 48,
+      "n_laps": 3,
+      "pursuer_pace_s": 98.25,
+      "defender_pace_s": 98.716,
+      "pace_delta_s": 0.466,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "LAT",
+      "pursuer": "TSU",
+      "start_lap": 2,
+      "end_lap": 3,
+      "n_laps": 2,
+      "pursuer_pace_s": 100.04,
+      "defender_pace_s": 100.764,
+      "pace_delta_s": 0.724,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "LEC",
+      "pursuer": "RIC",
+      "start_lap": 12,
+      "end_lap": 13,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.415,
+      "defender_pace_s": 100.259,
+      "pace_delta_s": 0.844,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GIO",
+      "pursuer": "LEC",
+      "start_lap": 22,
+      "end_lap": 23,
+      "n_laps": 2,
+      "pursuer_pace_s": 100.259,
+      "defender_pace_s": 100.821,
+      "pace_delta_s": 0.562,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "LEC",
+      "start_lap": 24,
+      "end_lap": 25,
+      "n_laps": 2,
+      "pursuer_pace_s": 100.259,
+      "defender_pace_s": 100.801,
+      "pace_delta_s": 0.542,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "NOR",
+      "start_lap": 27,
+      "end_lap": 28,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.2,
+      "defender_pace_s": 99.845,
+      "pace_delta_s": 0.645,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "SAI",
+      "pursuer": "NOR",
+      "start_lap": 29,
+      "end_lap": 30,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.2,
+      "defender_pace_s": 100.154,
+      "pace_delta_s": 0.955,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "BOT",
+      "pursuer": "VER",
+      "start_lap": 42,
+      "end_lap": 43,
+      "n_laps": 2,
+      "pursuer_pace_s": 97.716,
+      "defender_pace_s": 98.716,
+      "pace_delta_s": 0.999,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

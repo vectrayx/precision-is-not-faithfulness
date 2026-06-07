@@ -692,7 +692,8 @@
       "pursuer_pace_s": 78.403,
       "defender_pace_s": 78.568,
       "pace_delta_s": 0.165,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "RIC",
@@ -703,7 +704,8 @@
       "pursuer_pace_s": 80.525,
       "defender_pace_s": 80.845,
       "pace_delta_s": 0.32,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "RUS",
@@ -714,7 +716,8 @@
       "pursuer_pace_s": 78.55,
       "defender_pace_s": 78.637,
       "pace_delta_s": 0.087,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "BOT",
@@ -725,7 +728,8 @@
       "pursuer_pace_s": 79.867,
       "defender_pace_s": 80.525,
       "pace_delta_s": 0.658,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "VER",
@@ -736,7 +740,20 @@
       "pursuer_pace_s": 78.51,
       "defender_pace_s": 78.55,
       "pace_delta_s": 0.04,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "ZHO",
+      "pursuer": "SAR",
+      "start_lap": 64,
+      "end_lap": 67,
+      "n_laps": 4,
+      "pursuer_pace_s": 80.849,
+      "defender_pace_s": 80.946,
+      "pace_delta_s": 0.097,
+      "teammate_protected": true,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

@@ -753,7 +753,8 @@
       "pursuer_pace_s": 100.165,
       "defender_pace_s": 100.789,
       "pace_delta_s": 0.624,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -764,7 +765,8 @@
       "pursuer_pace_s": 100.587,
       "defender_pace_s": 101.115,
       "pace_delta_s": 0.529,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -775,7 +777,8 @@
       "pursuer_pace_s": 100.772,
       "defender_pace_s": 101.115,
       "pace_delta_s": 0.343,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "COL",
@@ -786,7 +789,8 @@
       "pursuer_pace_s": 99.903,
       "defender_pace_s": 101.142,
       "pace_delta_s": 1.239,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "HAD",
@@ -797,7 +801,8 @@
       "pursuer_pace_s": 100.155,
       "defender_pace_s": 100.772,
       "pace_delta_s": 0.617,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "OCO",
@@ -808,7 +813,116 @@
       "pursuer_pace_s": 99.88,
       "defender_pace_s": 99.903,
       "pace_delta_s": 0.023,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
+    },
+    {
+      "defender": "COL",
+      "pursuer": "STR",
+      "start_lap": 8,
+      "end_lap": 11,
+      "n_laps": 4,
+      "pursuer_pace_s": 100.165,
+      "defender_pace_s": 101.142,
+      "pace_delta_s": 0.977,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "STR",
+      "start_lap": 16,
+      "end_lap": 19,
+      "n_laps": 4,
+      "pursuer_pace_s": 100.165,
+      "defender_pace_s": 101.115,
+      "pace_delta_s": 0.95,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "SAI",
+      "pursuer": "TSU",
+      "start_lap": 3,
+      "end_lap": 5,
+      "n_laps": 3,
+      "pursuer_pace_s": 99.945,
+      "defender_pace_s": 100.716,
+      "pace_delta_s": 0.771,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "HAD",
+      "pursuer": "ANT",
+      "start_lap": 14,
+      "end_lap": 16,
+      "n_laps": 3,
+      "pursuer_pace_s": 99.88,
+      "defender_pace_s": 100.772,
+      "pace_delta_s": 0.892,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "COL",
+      "pursuer": "ANT",
+      "start_lap": 20,
+      "end_lap": 22,
+      "n_laps": 3,
+      "pursuer_pace_s": 99.88,
+      "defender_pace_s": 101.142,
+      "pace_delta_s": 1.262,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "HAD",
+      "pursuer": "BOR",
+      "start_lap": 26,
+      "end_lap": 28,
+      "n_laps": 3,
+      "pursuer_pace_s": 100.587,
+      "defender_pace_s": 100.772,
+      "pace_delta_s": 0.186,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "COL",
+      "pursuer": "BOR",
+      "start_lap": 31,
+      "end_lap": 32,
+      "n_laps": 2,
+      "pursuer_pace_s": 100.587,
+      "defender_pace_s": 101.142,
+      "pace_delta_s": 0.555,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "BOR",
+      "pursuer": "ALO",
+      "start_lap": 31,
+      "end_lap": 32,
+      "n_laps": 2,
+      "pursuer_pace_s": 100.539,
+      "defender_pace_s": 100.587,
+      "pace_delta_s": 0.047,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "ANT",
+      "start_lap": 35,
+      "end_lap": 36,
+      "n_laps": 2,
+      "pursuer_pace_s": 99.88,
+      "defender_pace_s": 101.115,
+      "pace_delta_s": 1.236,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

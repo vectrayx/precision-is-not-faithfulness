@@ -1101,7 +1101,8 @@
       "pursuer_pace_s": 79.145,
       "defender_pace_s": 79.148,
       "pace_delta_s": 0.002,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -1112,7 +1113,8 @@
       "pursuer_pace_s": 79.033,
       "defender_pace_s": 79.512,
       "pace_delta_s": 0.479,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "DEV",
@@ -1123,7 +1125,8 @@
       "pursuer_pace_s": 79.457,
       "defender_pace_s": 79.578,
       "pace_delta_s": 0.121,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -1134,7 +1137,8 @@
       "pursuer_pace_s": 78.178,
       "defender_pace_s": 78.291,
       "pace_delta_s": 0.113,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "LEC",
@@ -1145,7 +1149,8 @@
       "pursuer_pace_s": 78.291,
       "defender_pace_s": 78.312,
       "pace_delta_s": 0.021,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "SAR",
@@ -1156,7 +1161,32 @@
       "pursuer_pace_s": 79.512,
       "defender_pace_s": 80.232,
       "pace_delta_s": 0.72,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
+    },
+    {
+      "defender": "SAR",
+      "pursuer": "ZHO",
+      "start_lap": 17,
+      "end_lap": 19,
+      "n_laps": 3,
+      "pursuer_pace_s": 79.145,
+      "defender_pace_s": 80.232,
+      "pace_delta_s": 1.087,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "PER",
+      "pursuer": "STR",
+      "start_lap": 31,
+      "end_lap": 32,
+      "n_laps": 2,
+      "pursuer_pace_s": 79.033,
+      "defender_pace_s": 79.047,
+      "pace_delta_s": 0.014,
+      "teammate_protected": true,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

@@ -837,7 +837,8 @@
       "pursuer_pace_s": 75.277,
       "defender_pace_s": 75.305,
       "pace_delta_s": 0.028,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "SAR",
@@ -848,7 +849,8 @@
       "pursuer_pace_s": 76.812,
       "defender_pace_s": 76.919,
       "pace_delta_s": 0.106,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "RUS",
@@ -859,7 +861,8 @@
       "pursuer_pace_s": 75.305,
       "defender_pace_s": 75.454,
       "pace_delta_s": 0.149,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "BOT",
@@ -870,7 +873,8 @@
       "pursuer_pace_s": 76.237,
       "defender_pace_s": 76.882,
       "pace_delta_s": 0.645,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "OCO",
@@ -881,7 +885,8 @@
       "pursuer_pace_s": 76.453,
       "defender_pace_s": 77.169,
       "pace_delta_s": 0.716,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "PER",
@@ -892,7 +897,8 @@
       "pursuer_pace_s": 75.143,
       "defender_pace_s": 75.314,
       "pace_delta_s": 0.171,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "HUL",
@@ -903,7 +909,8 @@
       "pursuer_pace_s": 75.262,
       "defender_pace_s": 76.317,
       "pace_delta_s": 1.055,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "VER",
@@ -914,7 +921,8 @@
       "pursuer_pace_s": 74.892,
       "defender_pace_s": 75.232,
       "pace_delta_s": 0.34,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GAS",
@@ -925,7 +933,8 @@
       "pursuer_pace_s": 76.353,
       "defender_pace_s": 76.382,
       "pace_delta_s": 0.029,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "ALO",
@@ -936,7 +945,128 @@
       "pursuer_pace_s": 76.284,
       "defender_pace_s": 76.353,
       "pace_delta_s": 0.07,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "STR",
+      "pursuer": "HAM",
+      "start_lap": 10,
+      "end_lap": 13,
+      "n_laps": 4,
+      "pursuer_pace_s": 75.262,
+      "defender_pace_s": 76.284,
+      "pace_delta_s": 1.022,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GAS",
+      "pursuer": "SAI",
+      "start_lap": 8,
+      "end_lap": 10,
+      "n_laps": 3,
+      "pursuer_pace_s": 75.143,
+      "defender_pace_s": 76.382,
+      "pace_delta_s": 1.239,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "MAG",
+      "start_lap": 19,
+      "end_lap": 21,
+      "n_laps": 3,
+      "pursuer_pace_s": 76.97,
+      "defender_pace_s": 77.169,
+      "pace_delta_s": 0.2,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALB",
+      "pursuer": "RIC",
+      "start_lap": 43,
+      "end_lap": 45,
+      "n_laps": 3,
+      "pursuer_pace_s": 76.237,
+      "defender_pace_s": 76.453,
+      "pace_delta_s": 0.216,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ZHO",
+      "pursuer": "MAG",
+      "start_lap": 6,
+      "end_lap": 7,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.97,
+      "defender_pace_s": 77.537,
+      "pace_delta_s": 0.567,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALO",
+      "pursuer": "HAM",
+      "start_lap": 14,
+      "end_lap": 15,
+      "n_laps": 2,
+      "pursuer_pace_s": 75.262,
+      "defender_pace_s": 76.353,
+      "pace_delta_s": 1.091,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "TSU",
+      "start_lap": 28,
+      "end_lap": 29,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.812,
+      "defender_pace_s": 77.169,
+      "pace_delta_s": 0.357,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "MAG",
+      "pursuer": "HUL",
+      "start_lap": 30,
+      "end_lap": 31,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.317,
+      "defender_pace_s": 76.97,
+      "pace_delta_s": 0.653,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "MAG",
+      "pursuer": "ALB",
+      "start_lap": 37,
+      "end_lap": 38,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.453,
+      "defender_pace_s": 76.97,
+      "pace_delta_s": 0.517,
+      "teammate_protected": true,
+      "kind": "brief"
+    },
+    {
+      "defender": "ALB",
+      "pursuer": "STR",
+      "start_lap": 41,
+      "end_lap": 42,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.284,
+      "defender_pace_s": 76.453,
+      "pace_delta_s": 0.169,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

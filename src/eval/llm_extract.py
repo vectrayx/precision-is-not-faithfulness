@@ -25,6 +25,8 @@ UPPERCASE: SOFT/MEDIUM/HARD/INTERMEDIATE/WET):
 - battle: {"kind": "undercut"|"overcut", "attacker": str, "defender": str}
 - battle_outcome: {"success": true|false}           (the move worked or not)
 - gain: {"value": float}                            (seconds gained)
+- winner: {"driver": str}                           (a driver won the race)
+- defense: {"defender": str, "pursuer": str}        (defender kept the pursuer behind)
 Only include claims actually asserted in the text. No commentary."""
 
 

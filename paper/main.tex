@@ -287,10 +287,37 @@ system, gpt-5.5, is not ranked top by its own family's extractor under either ch
 gemini-2.5-pro cross-lingual drop reproduces under the cross-family extractor, confirming
 it is a property of the generations, not the extractor.
 
+\paragraph{Open-ended summaries.} The same metric extends to the open-ended
+\emph{race-summary} task (recap the result and key moments), which our oracle scores
+against winner, finishing positions, battles, and defenses. Here the failure mode flips:
+free-form recaps are \emph{verbose but imprecise} -- DeepSeek-V3.2 reaches recall
+$\RSDeepseekRecall{}$ at precision only $\RSDeepseekPrec{}$ -- while the terse model stays
+precise but partial (gemini-2.5-pro $\RSGeminiPrec{}$/$\RSGeminiRecall{}$). Ranking by
+precision and by $F_1$ again disagree. Precision and recall capture both failure modes;
+neither alone does.
+
 \IfFileExists{coverage_table.tex}{\input{coverage_table.tex}}{}
+\IfFileExists{ablation_table.tex}{\input{ablation_table.tex}}{}
 \IfFileExists{weather_table.tex}{\input{weather_table.tex}}{}
 \IfFileExists{models_table.tex}{\input{models_table.tex}}{}
 \IfFileExists{extractor_agreement.tex}{\input{extractor_agreement.tex}}{}
+
+\section{Is It Just Prompting?}\label{sec:ablation}
+A natural objection is that low coverage is an artifact of under-prompting: the default
+prompt even asks the model to be \emph{concise}. We test this directly with a prompt
+ablation -- the same data and metric, but an explicit \emph{cover-all} prompt that asks
+the model to state every supportable fact (pit laps, compounds, stops, the move and its
+outcome, time gained, positions). Table~\ref{tab:ablation} compares the two. Coverage is
+indeed prompt-sensitive: $\AblNUp{}$ of $\AblNModels{}$ models raise recall when asked to
+be thorough (mean recall $\AblMeanRecallA{}\!\to\!\AblMeanRecallB{}$). But this
+\emph{strengthens}, not weakens, the case for measuring coverage. (i)~A precision-only
+metric is blind to the entire swing -- faithfulness barely moves while recall nearly
+doubles for some models. (ii)~The precision/recall trade-off is explicit: stating more
+costs precision. (iii)~Even when explicitly told to cover everything, most models still
+omit roughly half the relevant facts (recall well below~$1$). (iv)~Prompt response is
+strongly model-dependent: gemini-2.5-pro, the abstainer, abstains \emph{harder} under the
+cover-all prompt (recall $\AblGeminiRecallA{}\!\to\!\AblGeminiRecallB{}$). A
+single-axis faithfulness score reports none of this; precision and recall together do.
 
 \section{Generalization: A Second Oracle}\label{sec:weather}
 The abstention problem is a claim about reference-free precision metrics in general, not
@@ -329,10 +356,11 @@ human extractor/judge remains future work. Fine-tuning supervision is silver
 (deterministic faithful templates), which risks rewarding template mimicry; stronger
 supervision and out-of-template evaluation are future work. The model comparison uses a
 stratified test sample for cost, covers EN/ES/PT, and the held-out split is a single
-season (2022 omitted: timing data unavailable). Our quantitative comparison focuses on
-the three core decision types (strategy, undercut, overcut); the defense and
-race-summary types are released and exercised in the demo, with full model evaluation
-left to future work.
+season (2022 omitted: timing data unavailable). Our headline model comparison focuses on the three core decision types (strategy,
+undercut, overcut); we additionally evaluate the open-ended race-summary task
+(Section~\ref{sec:exp}), while a full evaluation of the on-track defense type -- now
+including the brief, overtake-ending holds the detector newly recovers -- is left to
+future work.
 
 \bibliography{refs}
 

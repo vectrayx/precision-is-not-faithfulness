@@ -714,7 +714,8 @@
       "pursuer_pace_s": 103.227,
       "defender_pace_s": 104.067,
       "pace_delta_s": 0.84,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "STR",
@@ -725,7 +726,8 @@
       "pursuer_pace_s": 103.545,
       "defender_pace_s": 103.875,
       "pace_delta_s": 0.33,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "RIC",
@@ -736,7 +738,8 @@
       "pursuer_pace_s": 102.908,
       "defender_pace_s": 102.939,
       "pace_delta_s": 0.031,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "STR",
@@ -747,7 +750,8 @@
       "pursuer_pace_s": 103.704,
       "defender_pace_s": 103.875,
       "pace_delta_s": 0.171,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "GIO",
@@ -758,7 +762,8 @@
       "pursuer_pace_s": 104.51,
       "defender_pace_s": 104.552,
       "pace_delta_s": 0.042,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "MAG",
@@ -769,7 +774,116 @@
       "pursuer_pace_s": 105.031,
       "defender_pace_s": 105.506,
       "pace_delta_s": 0.475,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "NOR",
+      "pursuer": "ALB",
+      "start_lap": 2,
+      "end_lap": 5,
+      "n_laps": 4,
+      "pursuer_pace_s": 101.996,
+      "defender_pace_s": 102.908,
+      "pace_delta_s": 0.912,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "RIC",
+      "start_lap": 2,
+      "end_lap": 5,
+      "n_laps": 4,
+      "pursuer_pace_s": 102.939,
+      "defender_pace_s": 103.704,
+      "pace_delta_s": 0.765,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "VET",
+      "pursuer": "STR",
+      "start_lap": 31,
+      "end_lap": 34,
+      "n_laps": 4,
+      "pursuer_pace_s": 103.875,
+      "defender_pace_s": 104.07,
+      "pace_delta_s": 0.195,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "VET",
+      "pursuer": "SAI",
+      "start_lap": 14,
+      "end_lap": 16,
+      "n_laps": 3,
+      "pursuer_pace_s": 103.043,
+      "defender_pace_s": 104.07,
+      "pace_delta_s": 1.026,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "KVY",
+      "pursuer": "RIC",
+      "start_lap": 9,
+      "end_lap": 10,
+      "n_laps": 2,
+      "pursuer_pace_s": 102.939,
+      "defender_pace_s": 103.715,
+      "pace_delta_s": 0.776,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "GIO",
+      "pursuer": "OCO",
+      "start_lap": 13,
+      "end_lap": 14,
+      "n_laps": 2,
+      "pursuer_pace_s": 103.704,
+      "defender_pace_s": 104.552,
+      "pace_delta_s": 0.848,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "MAG",
+      "pursuer": "RUS",
+      "start_lap": 14,
+      "end_lap": 15,
+      "n_laps": 2,
+      "pursuer_pace_s": 104.51,
+      "defender_pace_s": 105.506,
+      "pace_delta_s": 0.996,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "RUS",
+      "pursuer": "LEC",
+      "start_lap": 32,
+      "end_lap": 33,
+      "n_laps": 2,
+      "pursuer_pace_s": 103.227,
+      "defender_pace_s": 104.51,
+      "pace_delta_s": 1.282,
+      "teammate_protected": false,
+      "kind": "brief"
+    },
+    {
+      "defender": "RUS",
+      "pursuer": "VET",
+      "start_lap": 39,
+      "end_lap": 40,
+      "n_laps": 2,
+      "pursuer_pace_s": 104.07,
+      "defender_pace_s": 104.51,
+      "pace_delta_s": 0.44,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

@@ -20,10 +20,13 @@ cs.LG
 
 COMMENTS
 --------
+v2: adds a prompt-sensitivity ablation (concise vs. cover-all), an open-ended
+race-summary evaluation, and a brief-defense detector; refreshed dataset counts.
 7 pages. Reference-free faithfulness metrics reward abstention; a complete structured
 oracle lets us measure recall and shows the model ranking inverts under coverage.
-Validated in two domains (F1 telemetry, NOAA weather), multilingual (EN/ES/PT). Code +
-demo: https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1
+Validated in two domains (F1 telemetry, NOAA weather), multilingual (EN/ES/PT). Code:
+https://github.com/vectrayx/precision-is-not-faithfulness  Demo:
+https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1
 
 ABSTRACT
 --------
@@ -36,7 +39,7 @@ where strategic ground truth is derived deterministically and, crucially, comple
 for each decision we know the full set of facts that mattered. This completeness --
 absent in open-domain faithfulness benchmarks -- lets us measure recall (coverage of
 the relevant facts) alongside precision. On a multilingual (EN/ES/PT) benchmark of
-5,887 decision instances spanning 150 races, the most "faithful" frontier model attains
+7,253 decision instances spanning 150 races, the most "faithful" frontier model attains
 high precision yet covers only about a quarter of the relevant facts, and requiring
 coverage inverts the model ranking, moving it from first to last; the same abstention
 behavior reappears in a second complete-oracle domain (NOAA weather forecasts). We pair

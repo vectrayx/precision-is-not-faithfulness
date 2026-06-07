@@ -21,9 +21,13 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+import os
+
 from src.models.generate import SYSTEM_PROMPT, _user_prompt
 from src.eval.faithfulness import score_text
 from experiments.run_frontier import summarize, OUT, RESULTS_DIR
+
+SYS = os.environ.get("SYSTEM_PROMPT_OVERRIDE") or SYSTEM_PROMPT
 
 
 def _project():
@@ -39,7 +43,7 @@ def gemini_generate(model, project, location, token, inst, lang):
     url = (f"https://{location}-aiplatform.googleapis.com/v1/projects/{project}"
            f"/locations/{location}/publishers/google/models/{model}:generateContent")
     payload = {
-        "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
+        "systemInstruction": {"parts": [{"text": SYS}]},
         "contents": [{"role": "user", "parts": [{"text": _user_prompt(inst, lang)}]}],
         "generationConfig": {"temperature": 0.3, "maxOutputTokens": 800},
     }
@@ -74,12 +78,14 @@ def main():
     ap.add_argument("--location", default="us-central1")
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--instances", default=str(ROOT / "data/structured/test_sample.jsonl"))
+    ap.add_argument("--out", default=str(OUT), help="output json path")
     args = ap.parse_args()
 
+    out_path = Path(args.out)
     project, token = _project(), _token()
     instances = [json.loads(l) for l in Path(args.instances).read_text().splitlines() if l.strip()]
 
-    out = json.loads(OUT.read_text()) if OUT.exists() else \
+    out = json.loads(out_path.read_text()) if out_path.exists() else \
         {"models": [], "langs": args.langs, "n_instances": len(instances),
          "summaries": [], "runs": {}}
     out["models"] = sorted(set(out.get("models", [])) | {args.model})
@@ -95,8 +101,8 @@ def main():
         print(f"{args.model} {lang}  faith={s['macro_faithfulness']:.3f} "
               f"halluc={s['macro_hallucination']:.3f} claims={s['total_claims']} "
               f"errors={s['errors']}", flush=True)
-        OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False))
-    print(f"Merged Gemini into {OUT}")
+        out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    print(f"Merged Gemini into {out_path}")
 
 
 if __name__ == "__main__":

@@ -660,7 +660,8 @@
       "pursuer_pace_s": 75.736,
       "defender_pace_s": 75.8,
       "pace_delta_s": 0.064,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
     },
     {
       "defender": "ALO",
@@ -671,7 +672,8 @@
       "pursuer_pace_s": 77.156,
       "defender_pace_s": 77.254,
       "pace_delta_s": 0.097,
-      "teammate_protected": true
+      "teammate_protected": true,
+      "kind": "sustained"
     },
     {
       "defender": "OCO",
@@ -682,7 +684,20 @@
       "pursuer_pace_s": 76.53,
       "defender_pace_s": 76.915,
       "pace_delta_s": 0.385,
-      "teammate_protected": false
+      "teammate_protected": false,
+      "kind": "sustained"
+    },
+    {
+      "defender": "GIO",
+      "pursuer": "OCO",
+      "start_lap": 31,
+      "end_lap": 32,
+      "n_laps": 2,
+      "pursuer_pace_s": 76.915,
+      "defender_pace_s": 76.963,
+      "pace_delta_s": 0.048,
+      "teammate_protected": false,
+      "kind": "brief"
     }
   ],
   "track_status_periods": [

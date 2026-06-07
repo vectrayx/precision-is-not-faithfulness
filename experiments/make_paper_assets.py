@@ -152,6 +152,41 @@ def write_coverage_table():
     print("Wrote paper/coverage_table.tex")
 
 
+def write_ablation_table():
+    """Prompt-sensitivity ablation: concise (A) vs cover-all (B) prompt, EN."""
+    a_src = RESULTS_DIR / "coverage_llm.json"
+    b_src = RESULTS_DIR / "coverage_promptB.json"
+    if not (a_src.exists() and b_src.exists()):
+        print("No ablation inputs yet; skipping ablation table.")
+        return
+    A = {r["model"]: r for r in json.loads(a_src.read_text())["rows"] if r["lang"] == "en"}
+    B = {r["model"]: r for r in json.loads(b_src.read_text())["rows"] if r["lang"] == "en"}
+    models = sorted(set(A) & set(B))
+    rows = []
+    for m in models:
+        a, b = A[m], B[m]
+        rows.append(f"{m} & {a['precision']:.2f} & {a['recall']:.2f} & {a['f1']:.2f} & "
+                    f"{b['precision']:.2f} & {b['recall']:.2f} & {b['f1']:.2f} \\\\")
+    table = (
+        "\\begin{table}[t]\n\\centering\\small\n"
+        "\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{lcccccc}\n\\toprule\n"
+        " & \\multicolumn{3}{c}{Concise prompt} & \\multicolumn{3}{c}{Cover-all prompt} \\\\\n"
+        "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\n"
+        "Model & P & R & F1 & P & R & F1 \\\\\n\\midrule\n"
+        + "\n".join(rows) +
+        "\n\\bottomrule\n\\end{tabular}}\n"
+        "\\caption{Prompt-sensitivity ablation (English): the default \\emph{concise} prompt "
+        "vs.\\ an explicit \\emph{cover-all} prompt. Coverage is prompt-sensitive -- four of "
+        "five models raise recall when asked to be thorough -- yet precision-only faithfulness "
+        "would show none of this swing, the precision/recall trade-off persists, recall stays "
+        "well below 1 for most, and gemini-2.5-pro abstains \\emph{harder} under the cover-all "
+        "prompt (recall $0.27\\!\\to\\!0.08$).}\n"
+        "\\label{tab:ablation}\n\\end{table}\n"
+    )
+    (PAPER / "ablation_table.tex").write_text(table)
+    print("Wrote paper/ablation_table.tex")
+
+
 def write_weather_table():
     """Second-domain (weather) precision/recall/F1 replication."""
     src = RESULTS_DIR / "weather_coverage.json"
@@ -264,6 +299,29 @@ def write_result_macros():
             if others:
                 macros["WxOthersRecall"] = f"{min(r['recall'] for r in others):.2f}--{max(r['recall'] for r in others):.2f}"
             macros["WxFlip"] = "yes" if by_p != by_f1 else "no"
+    abA = RESULTS_DIR / "coverage_llm.json"
+    abB = RESULTS_DIR / "coverage_promptB.json"
+    if abA.exists() and abB.exists():
+        A = {r["model"]: r for r in json.loads(abA.read_text())["rows"] if r["lang"] == "en"}
+        B = {r["model"]: r for r in json.loads(abB.read_text())["rows"] if r["lang"] == "en"}
+        ms = sorted(set(A) & set(B))
+        if ms:
+            import statistics as _st
+            macros["AblMeanRecallA"] = f"{_st.mean(A[m]['recall'] for m in ms):.2f}"
+            macros["AblMeanRecallB"] = f"{_st.mean(B[m]['recall'] for m in ms):.2f}"
+            macros["AblNModels"] = str(len(ms))
+            macros["AblNUp"] = str(sum(B[m]['recall'] > A[m]['recall'] for m in ms))
+            if "gemini-2.5-pro" in A:
+                macros["AblGeminiRecallA"] = f"{A['gemini-2.5-pro']['recall']:.2f}"
+                macros["AblGeminiRecallB"] = f"{B['gemini-2.5-pro']['recall']:.2f}"
+    rs = RESULTS_DIR / "coverage_racesummary.json"
+    if rs.exists():
+        R = {r["model"]: r for r in json.loads(rs.read_text())["rows"] if r["lang"] == "en"}
+        if "gemini-2.5-pro" in R and "DeepSeek-V3.2" in R:
+            macros["RSGeminiPrec"] = f"{R['gemini-2.5-pro']['precision']:.2f}"
+            macros["RSGeminiRecall"] = f"{R['gemini-2.5-pro']['recall']:.2f}"
+            macros["RSDeepseekPrec"] = f"{R['DeepSeek-V3.2']['precision']:.2f}"
+            macros["RSDeepseekRecall"] = f"{R['DeepSeek-V3.2']['recall']:.2f}"
     if macros:
         lines = [f"\\newcommand{{\\{k}}}{{{v}}}" for k, v in macros.items()]
         (PAPER / "result_macros.tex").write_text("\n".join(lines) + "\n")
@@ -275,6 +333,7 @@ if __name__ == "__main__":
     write_dataset_stats()
     write_results_table()
     write_coverage_table()
+    write_ablation_table()
     write_weather_table()
     write_models_table()
     write_result_macros()

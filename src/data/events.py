@@ -83,6 +83,7 @@ class Defense:
     defender_pace_s: Optional[float]
     pace_delta_s: Optional[float]      # how much faster the pursuer's pace was
     teammate_protected: bool           # defender's teammate finished ahead of the pursuer
+    kind: str = "sustained"            # "sustained" (>= min_laps) or "brief" (short hold ending in an overtake)
 
 
 @dataclass
@@ -296,10 +297,16 @@ def extract_classification(session) -> list[dict]:
 
 
 def detect_defenses(laps: pd.DataFrame, classification: list[dict],
-                    min_laps: int = 5, max_gap_s: float = 1.5) -> list[Defense]:
-    """Detect sustained defensive holds: a faster pursuer kept within `max_gap_s`
-    behind a slower car for >= `min_laps` consecutive laps. Validated to recover
-    canonical cases (e.g. Alonso holding Hamilton ~11 laps, Hungary 2021)."""
+                    min_laps: int = 5, max_gap_s: float = 1.5,
+                    min_brief: int = 2) -> list[Defense]:
+    """Detect on-track defensive holds: a faster pursuer kept within `max_gap_s` behind a
+    slower car. Two kinds:
+      - "sustained": held for >= `min_laps` consecutive laps (e.g. Alonso/Hamilton,
+        Hungary 2021).
+      - "brief": a short hold (`min_brief`..`min_laps`-1 laps) that ENDS IN AN OVERTAKE
+        (the pursuer passes the defender) -- the fierce corner-by-corner battles the
+        lap-count threshold misses (e.g. Perez holding Hamilton ~2 laps before being
+        passed, Abu Dhabi 2021)."""
     drivers = [d for d in laps["Driver"].unique()]
     max_lap = int(laps["LapNumber"].max()) if len(laps) else 0
     team = {c["driver"]: c.get("team") for c in classification}
@@ -316,44 +323,55 @@ def detect_defenses(laps: pd.DataFrame, classification: list[dict],
         return _to_seconds(r["Time"].iloc[0]) if len(r) else None
 
     runs: dict[tuple, list[int]] = {}   # (pursuer, defender) -> [start_lap, len]
-    finished: list[Defense] = []
+    sustained: list[Defense] = []
+    brief: list[Defense] = []
 
-    def close_run_end(key):
-        if key in runs and runs[key][1] >= min_laps:
-            P, D = key
-            start = runs[key][0]; n = runs[key][1]
-            if pace.get(P) and pace.get(D) and pace[P] < pace[D]:  # pursuer genuinely faster
-                tm = any(team.get(x) == team.get(D) and x != D and pos.get(x) is not None
-                         and pos.get(P) is not None and pos[x] < pos[P] for x in drivers)
-                finished.append(Defense(
-                    defender=D, pursuer=P, start_lap=start, end_lap=start + n - 1, n_laps=n,
-                    pursuer_pace_s=round(pace[P], 3), defender_pace_s=round(pace[D], 3),
-                    pace_delta_s=round(pace[D] - pace[P], 3), teammate_protected=bool(tm)))
-        runs.pop(key, None)
+    def _make(P, D, start, n):
+        tm = any(team.get(x) == team.get(D) and x != D and pos.get(x) is not None
+                 and pos.get(P) is not None and pos[x] < pos[P] for x in drivers)
+        return Defense(
+            defender=D, pursuer=P, start_lap=start, end_lap=start + n - 1, n_laps=n,
+            pursuer_pace_s=round(pace[P], 3), defender_pace_s=round(pace[D], 3),
+            pace_delta_s=round(pace[D] - pace[P], 3), teammate_protected=bool(tm))
+
+    def close_run_end(key, swapped):
+        start, n = runs.pop(key)
+        P, D = key
+        if not (pace.get(P) and pace.get(D) and pace[P] < pace[D]):
+            return  # pursuer must be genuinely faster
+        if n >= min_laps:
+            sustained.append(_make(P, D, start, n))
+        elif n >= min_brief and swapped:   # short hold ended by an overtake
+            d = _make(P, D, start, n); d.kind = "brief"; brief.append(d)
 
     for lap in range(2, max_lap + 1):
         order = sorted(((d, time_at(d, lap)) for d in drivers), key=lambda z: (z[1] is None, z[1]))
         order = [(d, x) for d, x in order if x is not None]
+        rank = {d: i for i, (d, _) in enumerate(order)}
         active = set()
         for i in range(1, len(order)):
             D, tD = order[i - 1]; P, tP = order[i]
             if 0 < tP - tD < max_gap_s:
                 key = (P, D); active.add(key)
-                if key in runs:
-                    runs[key][1] += 1
-                else:
-                    runs[key] = [lap, 1]
+                runs[key] = [runs[key][0], runs[key][1] + 1] if key in runs else [lap, 1]
         for key in list(runs):
             if key not in active:
-                close_run_end(key)
+                P, D = key            # swap = pursuer now ahead of the defender this lap
+                close_run_end(key, swapped=rank.get(P, 99) < rank.get(D, 99))
     for key in list(runs):
-        close_run_end(key)
-    # keep the longest hold per pursuer (the decisive one)
-    finished.sort(key=lambda d: -d.n_laps)
+        close_run_end(key, swapped=False)
+
+    # sustained: keep the longest hold per pursuer (the decisive one)
+    sustained.sort(key=lambda d: -d.n_laps)
     seen, out = set(), []
-    for d in finished:
+    for d in sustained:
         if d.pursuer not in seen:
             seen.add(d.pursuer); out.append(d)
+    # brief: add per (pursuer, defender) pair not already covered by a sustained hold
+    have = {(d.pursuer, d.defender) for d in out}
+    for d in sorted(brief, key=lambda d: -d.n_laps):
+        if (d.pursuer, d.defender) not in have:
+            have.add((d.pursuer, d.defender)); out.append(d)
     return out
 
 
