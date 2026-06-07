@@ -1,0 +1,140 @@
+{
+  "extractor_a": "gpt-5.x",
+  "extractor_b": "deepseek-v32",
+  "models": [
+    "DeepSeek-V3.2",
+    "gemini-2.5-pro",
+    "gpt-5.4-mini",
+    "gpt-5.5",
+    "grok-4.3"
+  ],
+  "langs": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "per_model": {
+    "DeepSeek-V3.2": {
+      "gpt5x": 0.8631,
+      "xfam": 0.8606,
+      "gpt5x_by_lang": {
+        "en": 0.8376,
+        "es": 0.8879,
+        "pt": 0.8639
+      },
+      "xfam_by_lang": {
+        "en": 0.8318,
+        "es": 0.8914,
+        "pt": 0.8587
+      }
+    },
+    "gemini-2.5-pro": {
+      "gpt5x": 0.824,
+      "xfam": 0.8045,
+      "gpt5x_by_lang": {
+        "en": 0.9015,
+        "es": 0.8197,
+        "pt": 0.7507
+      },
+      "xfam_by_lang": {
+        "en": 0.8857,
+        "es": 0.7424,
+        "pt": 0.7855
+      }
+    },
+    "gpt-5.4-mini": {
+      "gpt5x": 0.8287,
+      "xfam": 0.8245,
+      "gpt5x_by_lang": {
+        "en": 0.8187,
+        "es": 0.8515,
+        "pt": 0.8158
+      },
+      "xfam_by_lang": {
+        "en": 0.8051,
+        "es": 0.8408,
+        "pt": 0.8276
+      }
+    },
+    "gpt-5.5": {
+      "gpt5x": 0.8506,
+      "xfam": 0.8579,
+      "gpt5x_by_lang": {
+        "en": 0.843,
+        "es": 0.8526,
+        "pt": 0.8563
+      },
+      "xfam_by_lang": {
+        "en": 0.8429,
+        "es": 0.8626,
+        "pt": 0.8682
+      }
+    },
+    "grok-4.3": {
+      "gpt5x": 0.8635,
+      "xfam": 0.8693,
+      "gpt5x_by_lang": {
+        "en": 0.8548,
+        "es": 0.8725,
+        "pt": 0.8631
+      },
+      "xfam_by_lang": {
+        "en": 0.8613,
+        "es": 0.8775,
+        "pt": 0.869
+      }
+    }
+  },
+  "system_level": {
+    "overall": {
+      "spearman": 1.0,
+      "pearson": 0.9657
+    },
+    "by_lang": {
+      "en": {
+        "spearman": 1.0,
+        "pearson": 0.9545
+      },
+      "es": {
+        "spearman": 1.0,
+        "pearson": 0.9383
+      },
+      "pt": {
+        "spearman": 0.7,
+        "pearson": 0.9862
+      }
+    }
+  },
+  "instance_level": {
+    "overall": {
+      "n": 1090,
+      "pearson": 0.8173,
+      "spearman": 0.8383,
+      "mean_gpt5x": 0.8477,
+      "mean_xfam": 0.8488
+    },
+    "by_lang": {
+      "en": {
+        "n": 433,
+        "pearson": 0.7646,
+        "spearman": 0.8283,
+        "mean_gpt5x": 0.8543,
+        "mean_xfam": 0.8532
+      },
+      "es": {
+        "n": 343,
+        "pearson": 0.8272,
+        "spearman": 0.8399,
+        "mean_gpt5x": 0.8573,
+        "mean_xfam": 0.8543
+      },
+      "pt": {
+        "n": 314,
+        "pearson": 0.8603,
+        "spearman": 0.8472,
+        "mean_gpt5x": 0.828,
+        "mean_xfam": 0.8367
+      }
+    }
+  }
+}

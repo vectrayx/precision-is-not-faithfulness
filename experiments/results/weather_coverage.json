@@ -1,0 +1,125 @@
+{
+  "extractor": "gpt-54-mini",
+  "rows": [
+    {
+      "model": "DeepSeek-V3.2",
+      "lang": "en",
+      "precision": 0.8649,
+      "recall": 0.8433,
+      "f1": 0.854,
+      "claims_per_inst": 5.47
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "lang": "es",
+      "precision": 0.9102,
+      "recall": 0.6533,
+      "f1": 0.7606,
+      "claims_per_inst": 4.19
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "lang": "pt",
+      "precision": 0.8538,
+      "recall": 0.4133,
+      "f1": 0.557,
+      "claims_per_inst": 2.83
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "lang": "en",
+      "precision": 0.9125,
+      "recall": 0.25,
+      "f1": 0.3925,
+      "claims_per_inst": 1.34
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "lang": "es",
+      "precision": 0.8356,
+      "recall": 0.215,
+      "f1": 0.342,
+      "claims_per_inst": 1.09
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "lang": "pt",
+      "precision": 0.8676,
+      "recall": 0.2083,
+      "f1": 0.3359,
+      "claims_per_inst": 1.03
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "lang": "en",
+      "precision": 0.9436,
+      "recall": 0.4617,
+      "f1": 0.62,
+      "claims_per_inst": 2.85
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "lang": "es",
+      "precision": 0.916,
+      "recall": 0.4417,
+      "f1": 0.596,
+      "claims_per_inst": 2.83
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "lang": "pt",
+      "precision": 0.9528,
+      "recall": 0.46,
+      "f1": 0.6205,
+      "claims_per_inst": 2.87
+    },
+    {
+      "model": "gpt-5.5",
+      "lang": "en",
+      "precision": 0.9359,
+      "recall": 0.47,
+      "f1": 0.6258,
+      "claims_per_inst": 2.97
+    },
+    {
+      "model": "gpt-5.5",
+      "lang": "es",
+      "precision": 0.932,
+      "recall": 0.4583,
+      "f1": 0.6145,
+      "claims_per_inst": 2.85
+    },
+    {
+      "model": "gpt-5.5",
+      "lang": "pt",
+      "precision": 0.9457,
+      "recall": 0.4567,
+      "f1": 0.6159,
+      "claims_per_inst": 2.86
+    },
+    {
+      "model": "grok-4.3",
+      "lang": "en",
+      "precision": 0.939,
+      "recall": 0.4733,
+      "f1": 0.6294,
+      "claims_per_inst": 2.93
+    },
+    {
+      "model": "grok-4.3",
+      "lang": "es",
+      "precision": 0.9483,
+      "recall": 0.46,
+      "f1": 0.6195,
+      "claims_per_inst": 2.89
+    },
+    {
+      "model": "grok-4.3",
+      "lang": "pt",
+      "precision": 0.974,
+      "recall": 0.45,
+      "f1": 0.6156,
+      "claims_per_inst": 2.82
+    }
+  ]
+}

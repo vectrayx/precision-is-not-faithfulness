@@ -1,0 +1,144 @@
+{
+  "n_models": 5,
+  "models": [
+    "DeepSeek-V3.2",
+    "gemini-2.5-pro",
+    "gpt-5.4-mini",
+    "gpt-5.5",
+    "grok-4.3"
+  ],
+  "langs": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "per_model": {
+    "DeepSeek-V3.2": {
+      "regex": 0.7502,
+      "llm": 0.8631,
+      "regex_by_lang": {
+        "en": 0.7346,
+        "es": 0.7887,
+        "pt": 0.7273
+      },
+      "llm_by_lang": {
+        "en": 0.8376,
+        "es": 0.8879,
+        "pt": 0.8639
+      }
+    },
+    "gemini-2.5-pro": {
+      "regex": 0.8034,
+      "llm": 0.824,
+      "regex_by_lang": {
+        "en": 0.9246,
+        "es": 0.8481,
+        "pt": 0.6374
+      },
+      "llm_by_lang": {
+        "en": 0.9015,
+        "es": 0.8197,
+        "pt": 0.7507
+      }
+    },
+    "gpt-5.4-mini": {
+      "regex": 0.755,
+      "llm": 0.8287,
+      "regex_by_lang": {
+        "en": 0.7417,
+        "es": 0.7787,
+        "pt": 0.7447
+      },
+      "llm_by_lang": {
+        "en": 0.8187,
+        "es": 0.8515,
+        "pt": 0.8158
+      }
+    },
+    "gpt-5.5": {
+      "regex": 0.7833,
+      "llm": 0.8506,
+      "regex_by_lang": {
+        "en": 0.7526,
+        "es": 0.8157,
+        "pt": 0.7817
+      },
+      "llm_by_lang": {
+        "en": 0.843,
+        "es": 0.8526,
+        "pt": 0.8563
+      }
+    },
+    "grok-4.3": {
+      "regex": 0.7879,
+      "llm": 0.8635,
+      "regex_by_lang": {
+        "en": 0.7492,
+        "es": 0.7894,
+        "pt": 0.8252
+      },
+      "llm_by_lang": {
+        "en": 0.8548,
+        "es": 0.8725,
+        "pt": 0.8631
+      }
+    }
+  },
+  "system_level": {
+    "en_spearman": 0.8,
+    "en_pearson": 0.9219,
+    "avg_spearman": -0.3,
+    "avg_pearson": -0.2586,
+    "en_regex_ranking": [
+      "gemini-2.5-pro",
+      "gpt-5.5",
+      "grok-4.3",
+      "gpt-5.4-mini",
+      "DeepSeek-V3.2"
+    ],
+    "en_llm_ranking": [
+      "gemini-2.5-pro",
+      "grok-4.3",
+      "gpt-5.5",
+      "DeepSeek-V3.2",
+      "gpt-5.4-mini"
+    ],
+    "en_top_agrees": true
+  },
+  "instance_level": {
+    "overall": {
+      "n": 1527,
+      "pearson": 0.4914,
+      "spearman": 0.5614,
+      "mean_regex": 0.7771,
+      "mean_llm": 0.8457
+    },
+    "by_lang": {
+      "en": {
+        "n": 564,
+        "pearson": 0.4984,
+        "spearman": 0.5857,
+        "mean_regex": 0.7828,
+        "mean_llm": 0.8454
+      },
+      "es": {
+        "n": 503,
+        "pearson": 0.3728,
+        "spearman": 0.4768,
+        "mean_regex": 0.8065,
+        "mean_llm": 0.8562
+      },
+      "pt": {
+        "n": 460,
+        "pearson": 0.5869,
+        "spearman": 0.6193,
+        "mean_regex": 0.7381,
+        "mean_llm": 0.8344
+      }
+    }
+  },
+  "claim_volume": {
+    "regex_total": 7792,
+    "llm_total": 12855
+  }
+}

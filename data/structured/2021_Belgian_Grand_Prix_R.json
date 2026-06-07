@@ -1,0 +1,430 @@
+{
+  "year": 2021,
+  "gp": "Belgian Grand Prix",
+  "total_laps": 3,
+  "fastest_lap": {
+    "driver": "VER",
+    "lap": 1,
+    "laptime_s": 207.071,
+    "compound": "UNKNOWN"
+  },
+  "stints": [
+    {
+      "driver": "ALO",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "BOT",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "GAS",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "GIO",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "HAM",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "LAT",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "LEC",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "MAZ",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "MSC",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "NOR",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "OCO",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "PER",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RAI",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RIC",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RUS",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "SAI",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "STR",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "TSU",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "VER",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "VET",
+      "stint": 1,
+      "compound": "UNKNOWN",
+      "start_lap": 1,
+      "end_lap": 3,
+      "n_laps": 3,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    }
+  ],
+  "pit_stops": [],
+  "pit_battles": [],
+  "defenses": [],
+  "track_status_periods": [
+    {
+      "time_s": 0.0,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 1525.432,
+      "status": "yellow",
+      "code": "2"
+    },
+    {
+      "time_s": 1937.778,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 5380.939,
+      "status": "red_flag",
+      "code": "5"
+    },
+    {
+      "time_s": 15020.221,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 15875.144,
+      "status": "red_flag",
+      "code": "5"
+    }
+  ],
+  "classification": [
+    {
+      "driver": "VER",
+      "team": "Red Bull Racing",
+      "position": 1,
+      "grid": 1,
+      "status": "Finished",
+      "points": 12.5
+    },
+    {
+      "driver": "RUS",
+      "team": "Williams",
+      "position": 2,
+      "grid": 2,
+      "status": "Finished",
+      "points": 9.0
+    },
+    {
+      "driver": "HAM",
+      "team": "Mercedes",
+      "position": 3,
+      "grid": 3,
+      "status": "Finished",
+      "points": 7.5
+    },
+    {
+      "driver": "RIC",
+      "team": "McLaren",
+      "position": 4,
+      "grid": 4,
+      "status": "Finished",
+      "points": 6.0
+    },
+    {
+      "driver": "VET",
+      "team": "Aston Martin",
+      "position": 5,
+      "grid": 5,
+      "status": "Finished",
+      "points": 5.0
+    },
+    {
+      "driver": "GAS",
+      "team": "AlphaTauri",
+      "position": 6,
+      "grid": 6,
+      "status": "Finished",
+      "points": 4.0
+    },
+    {
+      "driver": "OCO",
+      "team": "Alpine",
+      "position": 7,
+      "grid": 8,
+      "status": "Finished",
+      "points": 3.0
+    },
+    {
+      "driver": "LEC",
+      "team": "Ferrari",
+      "position": 8,
+      "grid": 9,
+      "status": "Finished",
+      "points": 2.0
+    },
+    {
+      "driver": "LAT",
+      "team": "Williams",
+      "position": 9,
+      "grid": 10,
+      "status": "Finished",
+      "points": 1.0
+    },
+    {
+      "driver": "SAI",
+      "team": "Ferrari",
+      "position": 10,
+      "grid": 11,
+      "status": "Finished",
+      "points": 0.5
+    },
+    {
+      "driver": "ALO",
+      "team": "Alpine",
+      "position": 11,
+      "grid": 12,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "BOT",
+      "team": "Mercedes",
+      "position": 12,
+      "grid": 13,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "GIO",
+      "team": "Alfa Romeo Racing",
+      "position": 13,
+      "grid": 14,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "NOR",
+      "team": "McLaren",
+      "position": 14,
+      "grid": 15,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "TSU",
+      "team": "AlphaTauri",
+      "position": 15,
+      "grid": 16,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "MSC",
+      "team": "Haas F1 Team",
+      "position": 16,
+      "grid": 17,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "MAZ",
+      "team": "Haas F1 Team",
+      "position": 17,
+      "grid": 18,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "RAI",
+      "team": "Alfa Romeo Racing",
+      "position": 18,
+      "grid": 0,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "PER",
+      "team": "Red Bull Racing",
+      "position": 19,
+      "grid": 0,
+      "status": "Finished",
+      "points": 0.0
+    },
+    {
+      "driver": "STR",
+      "team": "Aston Martin",
+      "position": 20,
+      "grid": 19,
+      "status": "Finished",
+      "points": 0.0
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "n_subset": 207,
+  "extractor": "llm",
+  "rows": [
+    {
+      "system": "DeepSeek-V3.2 (zero-shot)",
+      "faithfulness": 0.8376,
+      "hallucination": 0.0499,
+      "claims": 660,
+      "coverage": 7.76
+    },
+    {
+      "system": "gemini-2.5-pro (zero-shot)",
+      "faithfulness": 0.9015,
+      "hallucination": 0.0792,
+      "claims": 336,
+      "coverage": 3.05
+    },
+    {
+      "system": "gpt-5.4-mini (zero-shot)",
+      "faithfulness": 0.8187,
+      "hallucination": 0.0812,
+      "claims": 925,
+      "coverage": 8.26
+    },
+    {
+      "system": "gpt-5.5 (zero-shot)",
+      "faithfulness": 0.843,
+      "hallucination": 0.0309,
+      "claims": 2057,
+      "coverage": 9.94
+    },
+    {
+      "system": "grok-4.3 (zero-shot)",
+      "faithfulness": 0.8548,
+      "hallucination": 0.0225,
+      "claims": 755,
+      "coverage": 8.58
+    },
+    {
+      "system": "Qwen2.5-3B (zero-shot)",
+      "faithfulness": 0.8306,
+      "hallucination": 0.1005,
+      "claims": 1425,
+      "coverage": 7.05
+    },
+    {
+      "system": "Qwen2.5-3B (fine-tuned)",
+      "faithfulness": 0.9948,
+      "hallucination": 0.0052,
+      "claims": 643,
+      "coverage": 5.59
+    }
+  ]
+}

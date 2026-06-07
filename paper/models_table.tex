@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+System (EN) & Faithf. & Halluc. & Claims/inst. \\
+\midrule
+DeepSeek-V3.2 (zero-shot) & 0.838 & 0.050 & 7.8 \\
+gemini-2.5-pro (zero-shot) & 0.901 & 0.079 & 3.0 \\
+gpt-5.4-mini (zero-shot) & 0.819 & 0.081 & 8.3 \\
+gpt-5.5 (zero-shot) & 0.843 & 0.031 & 9.9 \\
+grok-4.3 (zero-shot) & 0.855 & 0.022 & 8.6 \\
+Qwen2.5-3B (zero-shot) & 0.831 & 0.101 & 7.0 \\
+Qwen2.5-3B (fine-tuned) & 0.995 & 0.005 & 5.6 \\
+\bottomrule
+\end{tabular}}
+\caption{Small open model (Qwen2.5-3B) before/after fine-tuning vs.\ frontier on the held-out 2025 test sample, English, same LLM-extractor metric. Faithfulness is read alongside coverage (claims per instance): the fine-tuned model is both more faithful and more concise. Fine-tuned only on \FOneFirstSeason{}--2024 (no test leakage).}
+\label{tab:models}
+\end{table}

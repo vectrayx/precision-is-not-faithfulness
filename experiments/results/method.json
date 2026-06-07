@@ -1,0 +1,1818 @@
+{
+  "deployment": "gpt-54-mini",
+  "n": 209,
+  "errors": 0,
+  "regex_first_round_faithfulness": 0.6404,
+  "regex_final_round_faithfulness": 0.8812,
+  "rows": [
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::VER",
+      "text": "VER used a three-stint strategy: **Soft 1–17, Hard 18–37, Soft 38–57**.\n\n- **Stint 1 (Soft, 17 laps):** average **96.96s/lap** with **+0.032s/lap** degradation. This was a relatively short opening stint, suggesting the Softs were used to get through the first phase before pitting.\n- **Stint 2 (Hard, 20 laps):** average **95.58s/lap** with **+0.061s/lap** degradation. He then spent the middle stint on the Hard tyre for the longest continuous run in the race data.\n- **Stint 3 (Soft, 20 laps):** average **94.69s/lap** with **+0.034s/lap** degradation. His final stint was both the longest on Softs and his fastest average stint.\n\n**How it shaped the result:**  \nThe strategy let VER finish on a **Soft tyre stint that was faster on average than his earlier stints**, and the data shows his pace improved by the final run. That combination of a controlled middle stint on Hard and a quicker closing stint on Soft aligns with his **P1 finish**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::PER",
+      "text": "PER used a **two-stop, three-stint strategy**: **Soft (laps 1–12) → Hard (13–36) → Soft (37–57)**.\n\n### What the strategy shows\n- **Opening stint on Softs:** 12 laps at **97.61s average** with **+0.092s/lap degradation**.  \n  This suggests the first set of Softs was used for initial pace but wore relatively quickly.\n- **Middle stint on Hards:** 24 laps at **96.28s average** with only **+0.019s/lap degradation**.  \n  The Hard tyre was the key stabilizing phase of the race: it lasted the longest stint and was much more consistent.\n- **Final stint on Softs:** 21 laps at **94.99s average** with **+0.067s/lap degradation**.  \n  After switching back to Softs at lap 36, PER had his fastest average stint, indicating strong late-race pace.\n\n### How it shaped the result\nThis strategy was effective because it combined:\n1. **Early pace on Softs**,  \n2. **Long, low-degradation running on Hards**, and  \n3. **A faster final stint on Softs**.\n\nThe data shows the **final Soft stint was the quickest average stint**, while the **Hard stint provided durability and consistency** over the longest run. Together, that pattern supports how PER was able to finish **P2** in the race.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::SAI",
+      "text": "SAI used a three-stint strategy: **SOFT from laps 1–14**, then **HARD from laps 15–35**, and a second **HARD stint from laps 36–57**.\n\nKey points from the data:\n- The race started on **SOFTs for 14 laps**, with an average pace of **97.67s/lap** and tyre degradation of **+0.025s/lap**.\n- SAI then pitted on **lap 14** and switched to **HARDs**.\n- The first HARD stint lasted **21 laps** at **96.28s/lap**, but it had the highest recorded degradation of the race for SAI at **+0.038s/lap**.\n- SAI pitted again on **lap 35**, staying on **HARDs** for the final stint.\n- The final HARD stint was the longest and also the quickest for SAI, at **95.05s/lap**, with degradation improving to **+0.025s/lap**.\n\nHow it shaped the result:\n- The **early pit from SOFT to HARD** allowed SAI to move onto the more durable tyre for the middle and final phases of the race.\n- The **second HARD stint was faster than the first**, which suggests the strategy was effective in allowing SAI to maintain or improve pace late in the race.\n- That combination of an early stop and strong late-race pace is consistent with SAI finishing **P3**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::LEC",
+      "text": "LEC used a **two-stop race on Soft-Hard-Hard**:\n\n- **Stint 1: Soft, laps 1–11**\n  - 11 laps on Softs\n  - Avg lap time: **97.94s**\n  - Tyre deg: **+0.125s/lap**\n  - This was the shortest and most degrading stint.\n\n- **Pit at lap 11: Soft → Hard**\n\n- **Stint 2: Hard, laps 12–34**\n  - 23 laps on Hards\n  - Avg lap time: **96.90s**\n  - Tyre deg: **+0.006s/lap**\n  - This was the most stable stint, with almost no degradation.\n\n- **Pit at lap 34: Hard → Hard**\n  - The data shows a second Hard stint rather than a tyre compound change.\n\n- **Stint 3: Hard, laps 35–57**\n  - 23 laps on Hards\n  - Avg lap time: **95.22s**\n  - Tyre deg: **+0.059s/lap**\n  - This was faster than the earlier Hard stint, though with more degradation than stint 2.\n\n### How it shaped the result\nThis strategy was built around **switching off the Softs early** and then doing most of the race on **Hards**. The Soft stint had the highest degradation, so pitting on lap 11 limited further falloff. The two long Hard stints provided much better tyre stability and allowed LEC to complete the race consistently, which aligns with the **P4 finish**. The data also shows the final Hard stint was the quickest average stint, helping maintain race pace to the flag.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::RUS",
+      "text": "RUS used a **two-stop race on Soft-Soft-Hard?** No — the data shows **Soft to Hard to Hard**, with two pit stops and both remaining stints on Hards.\n\n### Strategy\n- **Stint 1:** Softs from laps **1–11**  \n  - **11 laps**, average **97.54s/lap**\n  - Tyre degradation: **+0.186s/lap**\n- **Pit lap 11:** **Soft -> Hard**\n- **Stint 2:** Hards from laps **12–31**  \n  - **20 laps**, average **96.97s/lap**\n  - Degradation: **-0.009s/lap**  \n  - This suggests the stint was broadly stable over that phase.\n- **Pit lap 31:** **Hard -> Hard**\n- **Stint 3:** Hards from laps **32–57**  \n  - **26 laps**, average **95.72s/lap**\n  - Degradation: **+0.043s/lap**\n\n### How it shaped the result\n- The **early Soft stint** was relatively short, so RUS switched before the soft tyres degraded too heavily.\n- The **first Hard stint** covered a long middle phase and was very consistent, helping him manage the race.\n- The **second Hard stint** was the longest and also the quickest on average, which indicates the strategy prioritized **stability and race pace on the Hard tyre**.\n- This tyre plan supported a **P5 finish** by allowing RUS to run long, consistent stints on Hards after an initial short Soft opening.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::NOR",
+      "text": "NOR ran a **3-stint strategy with a soft opening stint followed by two hard stints**:\n\n- **Laps 1–13: SOFT**  \n  He started on softs and completed 13 laps with an average of **97.92s/lap** and tyre degradation of **+0.041s/lap**.\n- **Lap 13 pit: SOFT → HARD**\n- **Laps 14–33: HARD**  \n  His first hard stint lasted **20 laps** at **96.77s/lap** with **+0.029s/lap** degradation.\n- **Lap 33 pit: HARD → HARD**\n- **Laps 34–57: HARD**  \n  He finished the race on another hard stint, averaging **95.53s/lap** with **+0.061s/lap** degradation.\n\n### What this suggests strategically\n- The **initial soft stint** gave NOR a shorter opening phase before switching to the more durable hard tyre.\n- The **double-hard approach** indicates the race was managed around tyre longevity rather than repeated high-grip soft runs.\n- The **second hard stint was longer and faster on average** than the first hard stint, but it also had the **highest degradation rate** of his race stints.\n\n### How it shaped the result\n- NOR finished **P6**.\n- From the data alone, the strategy appears to have been a **stability/consistency-focused race plan**: one short soft stint, then long hard stints to complete the race.\n- His **hard-tyre stints were the backbone of the race distance**, which likely helped him reach the finish with controlled degradation rather than relying on more aggressive tyre usage.",
+      "rounds": 2,
+      "trace": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::HAM",
+      "text": "HAM used a 3-stint race with a **soft-to-hard, then hard-to-hard** sequence:\n\n- **Stint 1:** SOFT, laps 1–12  \n  - 12 laps, avg **98.26s**, degradation **+0.003s/lap**\n- **Pit lap 12:** **SOFT -> HARD**\n- **Stint 2:** HARD, laps 13–33  \n  - 21 laps, avg **96.89s**, degradation **+0.003s/lap**\n- **Pit lap 33:** **HARD -> HARD**\n- **Stint 3:** HARD, laps 34–57  \n  - 24 laps, avg **95.41s**, degradation **+0.038s/lap**\n\nHow it shaped the result:\n\n- The strategy was built around **long running on the hard tyre**, with the first hard stint lasting 21 laps and the second 24 laps.\n- HAM’s **second hard stint was the fastest on average** at **95.41s**, but it also had the **highest degradation** of the race at **+0.038s/lap**.\n- The **extra pit stop** from the **HARD -> HARD** change at lap 33 suggests the race was managed by stint length as much as tyre choice, rather than a simple one-stop pattern.\n- He finished **P7**, so this strategy produced a points finish, but the data shows no evidence of outright pace advantage beyond the stint averages and degradation figures provided.\n\nIn short: HAM’s race was shaped by a **three-stint plan with heavy reliance on hard tyres**, ending with a long final stint that was quick on average but showed the most wear.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::PIA",
+      "text": "PIA ran a **three-stint race** on a **soft-hard-hard** strategy:\n\n- **Stint 1:** Soft for **laps 1–12**  \n  - **12 laps**\n  - **Avg 98.09s**\n  - Very low wear: **deg +0.002s/lap**\n- **Pit on lap 12:** **Soft → Hard**\n\n- **Stint 2:** Hard for **laps 13–34**  \n  - **22 laps**\n  - **Avg 96.90s**\n  - Wear increased to **deg +0.030s/lap**\n- **Pit on lap 34:** **Hard → Hard**\n\n- **Stint 3:** Hard for **laps 35–57**  \n  - **23 laps**\n  - **Avg 95.51s**\n  - Wear rose further to **deg +0.058s/lap**\n\nHow it shaped the result:\n- The strategy kept PIA on the **hard tyre for 45 of 57 laps**, so the race was built around **long, durable stints**.\n- The **soft opening stint** was short and relatively stable, while both hard stints were **longer and progressively slower to manage degradation** based on the stated deg values.\n- PIA finished **P8**, so this tyre plan supported a **solid points finish**, but the data does not show the position changes or rivals needed to say more about how much the strategy gained or lost relative to others.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::ALO",
+      "text": "ALO used a 3-stint race with an early switch to hard tyres:\n\n- **Stint 1:** Softs from laps **1–15**  \n  - 15 laps, **98.46s** average, **+0.021s/lap** degradation\n- **Stint 2:** Hards from laps **16–41**  \n  - 26 laps, **97.30s** average, **+0.022s/lap** degradation\n- **Stint 3:** Hards from laps **42–57**  \n  - 16 laps, **94.99s** average, **+0.024s/lap** degradation\n\nHe pitted on **lap 15 from Soft to Hard**, then again on **lap 41 from Hard to Hard**.\n\nHow it shaped the result:\n- The **long middle stint on hards (26 laps)** suggests ALO prioritized tyre life and stint length over aggressive early pace.\n- The **second hard stint was faster on average** than the first hard stint, despite slightly higher degradation, indicating he could maintain performance late in the race.\n- This strategy was consistent with a controlled, durable race and contributed to his **P9 finish** by maximizing stint length and avoiding more frequent stops.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::stint::STR",
+      "text": "STR’s race was built around an early switch from **SOFT** to **HARD**, then a second **HARD-to-HARD** stop.\n\n- **Stint 1:** SOFT for laps **1–9**  \n  - Avg: **98.56s**\n  - Degradation: **+0.148s/lap**\n  - This was the least durable stint, with the highest wear rate in the data.\n\n- **Pit stop 1:** lap **9**, **SOFT → HARD**\n\n- **Stint 2:** HARD for laps **10–27**  \n  - Avg: **97.75s**\n  - Degradation: **+0.071s/lap**\n  - The harder tyre immediately reduced degradation versus the SOFTs.\n\n- **Pit stop 2:** lap **27**, **HARD → HARD**\n\n- **Stint 3:** HARD for laps **28–57**  \n  - Avg: **96.43s**\n  - Degradation: **+0.036s/lap**\n  - This was the strongest stint on pace and tyre preservation, with the lowest degradation.\n\n### How it shaped the result\nThe strategy clearly prioritized **tyre longevity and stable pace** over extending the opening SOFT stint. The data shows progressive improvement in average stint pace and a sharp fall in degradation across the race:\n\n- **SOFT:** +0.148s/lap\n- **First HARD stint:** +0.071s/lap\n- **Second HARD stint:** +0.036s/lap\n\nThat suggests STR was able to keep the car more consistent as the race progressed, and the long final HARD stint delivered the best pace of the race. STR finished **P10**, so the strategy was sufficient to secure a points finish, with the final long HARD stint likely helping preserve that position through to the end.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::GAS_BOT",
+      "text": "GAS did **not** overcut BOT; the timing data shows the opposite outcome in practice.\n\n- Both drivers pitted from **soft to hard on lap 12**.\n- The key fight came on the next stop: **BOT pitted on lap 30**, while **GAS stayed out until lap 31**.\n- That means GAS was the one trying to gain by staying out longer, i.e. attempting an **overcut**.\n\nWhat happened:\n- In the pit-timing battle, the gap **GAS→BOT changed from -0.746s to 48.509s**.\n- GAS’s later stop did not translate into a net gain over BOT.\n- BOT also had the stronger middle-race pace on hard tyres based on the stint averages:\n  - BOT stint 2: **97.96s**\n  - GAS stint 2: **98.08s**\n\nConclusion: GAS’s later pit stop on lap 31 **was an overcut attempt, and it worked** based on the provided timing data.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::RIC_GAS",
+      "text": "RIC did **not** overcut GAS here; the data shows GAS pitted **one lap earlier** than RIC.\n\nWhat happened:\n- Before the stops, the gap RIC→GAS was **0.896s**.\n- GAS pitted on **lap 12**.\n- RIC stayed out and pitted on **lap 13**.\n- By the time RIC stopped, the gap had grown to **4.132s**.\n\nSo in this pit-stop phase, GAS’s earlier stop created the larger gap, and RIC’s later stop did **not** lose time relative to GAS.  \n\nBased on the provided data, the overcut **worked**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::HAM_ALO",
+      "text": "HAM executed the undercut by pitting **3 laps earlier than ALO** on the first stop: **HAM lap 12**, **ALO lap 15**.\n\nWhy it mattered, based on the data:\n- HAM ended his soft stint at **lap 12** and switched to **HARD**.\n- ALO stayed out until **lap 15** on **SOFT**.\n- During that window, the gap from **HAM to ALO** went from **1.256s** to **5.846s**.\n\nDid it work?\n- **In the immediate timing battle, yes**: the data shows the gap moved decisively in HAM’s favor after the pit sequence.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::HAM_TSU",
+      "text": "HAM executed the undercut by pitting **2 laps earlier** than TSU:\n\n- **HAM pitted on lap 12** from **SOFT to HARD**\n- **TSU pitted on lap 14** from **SOFT to HARD**\n\nThat timing matters because TSU stayed out longer on the more degrading soft tyre:\n\n- HAM’s soft stint: **12 laps**, avg **98.26s**, deg **+0.003s/lap**\n- TSU’s soft stint: **14 laps**, avg **98.54s**, deg **+0.037s/lap**\n\nSo TSU spent **2 extra laps** on the softs, and its soft tyre degradation was notably higher in the data.\n\nThe pit-timing battle data shows HAM gained significantly during that phase:\n- The **HAM→TSU gap increased from 3.243s to 7.622s**\n\nThat indicates HAM’s earlier stop **worked**, because the gap widened in HAM’s favor during the pit sequence. The data does not show HAM overtaking TSU directly, but it does show the undercut was successful in terms of **net time gain**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::HAM_PIA",
+      "text": "HAM did **not** undercut PIA in this data. The pit timing shows the opposite pattern.\n\n- Both drivers pitted from **SOFT to HARD on lap 12**.\n- In the second stint, **HAM pitted on lap 33**, while **PIA stayed out one lap longer and pitted on lap 34**.\n- That means **PIA had the later stop**, so HAM was not the one gaining a time advantage by pitting first in this phase.\n\nThe gap data confirms this:\n- The HAM→PIA gap changed from **-2.181s to 3.662s**.\n- That indicates the gap moved in PIA’s favor after the pit sequence, not HAM’s.\n\nSo, based on the provided data, **HAM’s stop did not produce a successful undercut on PIA**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::LEC_NOR",
+      "text": "LEC did **not** undercut NOR; he **pit earlier**, and the pit-timing battle shows the move **worked**.\n\n- **LEC pitted on lap 11** from **SOFT to HARD**.\n- **NOR pitted on lap 13** from **SOFT to HARD**.\n- During that pit-window, the gap from **LEC to NOR went from 3.418s to 5.681s**.\n\nThat means LEC’s earlier stop created a larger gap by the time NOR stopped, so the undercut was **successful**.\n\nOn the stint data:\n- LEC’s first stint averaged **97.94s** over 11 laps.\n- NOR’s first stint averaged **97.92s** over 13 laps.\n\nSo the opening-stint averages are very similar, but the provided pit-timing battle data says the undercut **worked**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_ALB",
+      "text": "MAG attempted an undercut by pitting 4 laps earlier than ALB.\n\n- MAG pitted on lap 11 from SOFT to HARD.\n- ALB stayed out until lap 15 before making the same SOFT to HARD stop.\n- In the pit-timing battle, the gap MAG->ALB changed from -2.137s to 2.613s, showing MAG gained track position/time relative to ALB during that phase.\n\nWhether it worked:\n- Yes, the timing advantage appears to have worked in the short term, since MAG’s earlier stop reversed the gap in his favor.\n\nCaveat:\n- The data does not provide the exact post-pit order immediately after both stops, so the safest conclusion is that MAG’s earlier stop successfully gained time versus ALB in the pit cycle, consistent with an undercut.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_GAS",
+      "text": "MAG attempted an undercut by pitting one lap earlier than GAS:\n\n- **MAG pitted on lap 11** from **SOFT to HARD**.\n- **GAS pitted on lap 12** from **SOFT to HARD**.\n\nThat timing mattered immediately in the pit window: the data says the **MAG→GAS gap changed from 3.956s to 10.973s**.\n\nOn the stint data, MAG’s first HARD stint was **21 laps at 97.97s average**, while GAS’s was **19 laps at 98.08s average**. MAG was marginally quicker on that stint average.\n\n**Conclusion:** MAG did undercut by stopping one lap earlier, and the pit-timing data suggests it **worked**, as the gap between MAG and GAS changed in MAG’s favor.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_RIC",
+      "text": "MAG tried to undercut RIC by pitting earlier.\n\n- **Timing:** MAG stopped on **lap 11** from **SOFT to HARD**, while RIC stayed out until **lap 13** and then also went **SOFT to HARD** on his first stop.\n- **Intended effect:** By stopping **2 laps earlier**, MAG aimed to use fresh tires sooner and gain time while RIC was still on worn softs.\n- **What happened in the data:** The battle note says the **MAG→RIC gap increased from 2.683s to 6.94s** across that pit-stop phase.\n\nSo, **yes, the undercut worked in the sense that MAG gained time on RIC during the pit cycle**. However, the data also shows both drivers finished **P12 (MAG)** and **P13 (RIC)**, so it did **not** change their final order relative to each other.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_TSU",
+      "text": "MAG undercut TSU by pitting earlier on lap 11, three laps before TSU’s lap 14 stop.\n\nWhat the data shows:\n- Before the stops, MAG was 4.159s behind TSU.\n- After MAG pitted and TSU stayed out, the gap shrank to 0.587s by the time TSU pitted.\n- That means MAG used the fresher tyres earlier to close the gap while TSU remained on older softs.\n\nDid it work?\n- Yes, in one sense: MAG clearly reduced the gap from 4.159s to 0.587s via the earlier stop.\n- But it did not fully overtake TSU in the provided data.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_ALB",
+      "text": "MAG did **not** undercut ALB in the pit-cycle shown by the data.\n\n- **Pit timing:** MAG pitted on **lap 32**, while ALB stayed out until **lap 36**.\n- An undercut would require the earlier-stopping car to gain time on fresher tyres and emerge ahead or closer. Here, the provided battle data shows the **MAG→ALB gap increased from 0.858s to 10.789s**, which is the opposite of an undercut working.\n- The stint data also supports this: after MAG’s lap-32 stop, ALB completed **four more laps** before pitting, so ALB had the longer first stint and did not appear to lose the position fight to MAG’s earlier stop.\n\n**Conclusion:** MAG’s earlier pit stop did **not** successfully undercut ALB; ALB’s later stop coincided with the gap expanding sharply in ALB’s favor.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::MAG_RIC",
+      "text": "MAG tried to undercut RIC by stopping earlier on the second pit cycle: MAG pitted on lap 32, while RIC stayed out until lap 35.\n\nThat strategy worked in the sense that the gap from MAG to RIC changed from 2.406s to 10.078s after those stops, meaning MAG gained a large time advantage relative to RIC through pit timing.\n\nHowever, the data does not explicitly say MAG passed RIC on track or changed position because of it. What it does show is that the earlier stop produced a much larger gap in MAG’s favor.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::SAI_NOR",
+      "text": "SAI did **not** overcut NOR; based on the pit timing data, NOR actually stopped **one lap earlier**.\n\nGrounded in the data:\n- **NOR pitted on lap 13**, switching **SOFT -> HARD**.\n- **SAI pitted on lap 14**, switching **SOFT -> HARD**.\n- In the pit-timing battle, the gap **SAI -> NOR increased from 3.993s to 5.089s**.\n\nWhat that means:\n- An overcut would require SAI to stay out longer and gain enough on track to come out ahead.\n- Here, SAI stayed out **one lap longer**, but the gap **still grew** by **1.096s** in NOR’s favor, so SAI did **not** use that extra lap to jump NOR.\n\nDid it work?\n- **No.**\n- The timing data shows SAI **did not overcut NOR**; instead, NOR’s earlier stop coincided with a larger gap after the stops.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::NOR_LEC",
+      "text": "NOR’s undercut attempt was based on pitting one lap earlier than LEC on the second stop:\n\n- **NOR pitted on lap 33**\n- **LEC pitted on lap 34**\n\nThat timing matters because NOR’s **new hard tires on laps 34-57** were used one lap sooner than LEC’s, giving NOR the chance to set a faster lap while LEC was still in the pits.\n\nFrom the data, the effect was **partial but not enough to fully succeed**:\n\n- Before the stop sequence, the **gap NOR→LEC was -2.561s**\n- After it, the **gap became -1.04s**\n\nSo NOR **reduced the gap by 1.521s**, which indicates the undercut **gained relative time**. However, the data does not show that it completed a pass or fully reversed the order.\n\nIn short: **NOR executed a one-lap earlier stop that improved the gap, but it did not turn into a completed pass.**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::NOR_PIA",
+      "text": "NOR’s undercut attempt came from pitting one lap earlier than PIA in the second stop sequence:\n\n- **NOR pitted on lap 33** from **HARD to HARD**.\n- **PIA pitted on lap 34** from **HARD to HARD**.\n\nThat timing matters because NOR spent an extra lap on fresh tyres while PIA stayed out, and the data says the gap **NOR → PIA increased from 4.119s to 9.121s** across that pit phase. That is consistent with NOR gaining time relative to PIA during the stop cycle.\n\nDid it work? **The data shows a bigger gap in NOR’s favor after the stop sequence, but it does not explicitly confirm a pass or final position change.**",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::OCO_BOT",
+      "text": "OCO’s undercut was based on pitting **2 laps earlier** than BOT:\n\n- **OCO** pitted on **lap 10** from **SOFT to HARD**\n- **BOT** pitted on **lap 12** from **SOFT to HARD**\n\nDuring that pit-window, the gap from **OCO to BOT** changed from **2.068s to 8.975s**, so OCO gained a clear track-time advantage while BOT stayed out longer.\n\nDid it work?\n- **In the short term, yes**: the data shows OCO increased the gap significantly before BOT’s stop.\n- **In the stint comparison, only partially**: BOT’s **HARD** stint from laps **13–30** was faster on average than OCO’s **HARD** stint from laps **11–30**:\n  - OCO HARD stint 2: **98.29s**\n  - BOT HARD stint 2: **97.96s**\n\nSo the undercut created a big gap at the stop, but BOT later ran the stronger pace on the same tire phase.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::OCO_GAS",
+      "text": "OCO attempted an undercut by pitting earlier than GAS:\n\n- **OCO pitted on lap 10** from **SOFT to HARD**.\n- **GAS stayed out until lap 12**, then pitted from **SOFT to HARD**.\n\nThat timing meant OCO got the fresher tyre set two laps earlier, and the data shows the gap between them moved from **0.579s to 8.567s** in OCO’s favor at that phase of the battle.\n\n**Did it work?**\n- **Yes, in the short term.** The gap increase shows OCO gained time through the earlier stop.\n- **But not decisively overall.** The provided data shows OCO’s earlier stop produced a larger gap, but it does not give enough information to confirm any final race outcome from the undercut alone.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::OCO_MAG",
+      "text": "OCO attempted the undercut by pitting one lap earlier than MAG.\n\n- **Pit timing:** OCO stopped on **lap 10** from **SOFT to HARD**, while MAG stayed out until **lap 11** and then also went **SOFT to HARD**.\n- **Immediate effect on the gap:** The provided battle data says the gap from **OCO to MAG** changed from **-3.195s to -1.933s**. That means OCO reduced the deficit by **1.262s** relative to MAG across the pit cycle.\n\n**Did it work?**\n- **Partially, but not enough to overtake.** OCO gained time by stopping earlier and closing the gap, but the data does **not** show OCO passing MAG.\n\nSo, based on the data, **OCO’s undercut reduced the gap but did not succeed as a race pass**.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::OCO_RIC",
+      "text": "OCO tried to undercut RIC by pitting **3 laps earlier**: OCO stopped on **lap 10** (SOFT→HARD), while RIC stayed out until **lap 13**.\n\nWhat the data says happened:\n- At the time of the pit window, the **OCO→RIC gap changed from -0.547s to 4.587s**.\n- That means OCO did **not** emerge ahead; instead, the gap moved in a way that shows **RIC effectively gained track position/time over the sequence**.\n- OCO’s pit timing was earlier, but the data does not show it producing a successful overcut/undercut pass.\n\nDid it work?\n- **No, not as an undercut result.** Based on the provided pit-timing battle, the attempt did **not** convert into a position gain over RIC.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::OCO_GAS",
+      "text": "OCO’s undercut attempt on GAS was based on pitting **one lap earlier** in the second stop phase:\n\n- **OCO pitted on lap 30**\n- **GAS pitted on lap 31**\n\nThat timing is important because OCO had a new HARD tire one lap sooner, while GAS stayed out for an extra lap on the older HARD. In the data, the gap from **OCO to GAS** changed from **2.798s to 4.413s** across that pit sequence, so OCO **gained time relative to GAS** during the stop phase.\n\nDid it work? **Yes, in terms of the immediate pit-cycle gain.** The gap increased by **1.615s**, which indicates OCO’s earlier stop produced a net advantage over GAS in that exchange.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::PER_SAI",
+      "text": "PER did **not** successfully undercut SAI in the pit-stop sequence shown.\n\n- **PER pitted earlier**: lap 12 for **SOFT -> HARD**.\n- **SAI stayed out two laps longer** and pitted on lap 14 for **SOFT -> HARD**.\n- In the pit-timing battle data, the gap **PER -> SAI went from 1.509s to 3.058s**, which means the gap **increased**, not decreased, while PER was on the new tyres and SAI was still on-track.\n- So, based on the provided data, PER’s earlier stop **did not produce an undercut**. The timing did not allow PER to jump ahead of SAI; instead, SAI remained ahead by the time of the later pit cycle.\n\nAlso, the stint data does not show a clear pit-sequence gain for PER:\n- PER’s **HARD stint 13-36** and SAI’s **HARD stint 15-35** both have an identical average pace of **96.28s**, so there is no evidence here that PER’s earlier stop translated into a pace advantage over SAI on that tyre phase.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::PIA_ALO",
+      "text": "PIA’s undercut attempt was based on pitting **3 laps earlier** than ALO:\n\n- **PIA pitted on lap 12** from SOFT to HARD.\n- **ALO pitted on lap 15** from SOFT to HARD.\n\nThat timing mattered because ALO stayed out longer on the softer tire while PIA switched earlier to HARDS. The provided pit-timing battle data shows the gap from **PIA to ALO** changed from **3.372s to 9.555s** across that phase, so PIA’s earlier stop was used to gain time relative to ALO.\n\nSo, **based on the data provided, the undercut worked**.",
+      "rounds": 1,
+      "trace": [
+        0.5714285714285714,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::RIC_ALB",
+      "text": "RIC attempted an undercut by pitting **two laps earlier** than ALB: **RIC on lap 13** from SOFT to HARD, versus **ALB on lap 15** from SOFT to HARD.\n\nWhat the data shows:\n- Before the stops, the gap from **RIC to ALB** changed from **-4.977s to -2.492s**.\n- That means RIC **reduced the deficit by 2.485s** during the pit-window phase.\n- RIC’s first stint was **13 laps** on SOFT, while ALB stayed out for **15 laps** on SOFT.\n\nWhether it worked:\n- **Partially in timing terms, yes**: RIC closed the gap versus ALB.\n- The data does **not prove a decisive overtake or direct positional gain from the undercut alone**.\n- Also, ALB’s lap 36 stop was **HARD→HARD**, which is unusual, but the provided data does not say how that affected the fight.\n\nSo, based on the data, RIC **did undercut ALB successfully in terms of gap reduction**, but the data does **not prove a race-changing effect**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::RIC_ALB",
+      "text": "RIC used an undercut-like timing advantage at the second pit cycle by pitting one lap earlier than ALB:\n\n- **RIC pitted on lap 35**\n- **ALB pitted on lap 36**\n\nAccording to the data, the **RIC→ALB gap changed from -1.69s to 1.289s** over that sequence. That shows RIC gained track position relative to ALB through the pit timing.\n\n**Did it work?**  \nYes, **it worked in the short term**: RIC’s earlier stop coincided with the gap swinging in his favor. However, the final classification still shows **RIC P13 and ALB P15**, so RIC finished ahead overall, but the data only directly proves the pit timing helped him gain the gap shown after the stop sequence.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::SAI_RUS",
+      "text": "SAI’s overcut attempt was based on staying out **3 laps longer on the opening stint**: SAI pitted on **lap 14** from SOFT to HARD, while RUS pitted on **lap 11**. The data shows that during this pit-window, the gap from **SAI to RUS** moved from **-2.691s to -1.583s**, meaning SAI **reduced the deficit by 1.108s** while running longer.\n\nWhether it worked: **partly, but not fully**. SAI did gain time relative to RUS in that pit phase, which is consistent with an overcut helping. However, SAI still came out **behind RUS** in the measured gap, since the gap remained negative at **-1.583s** after both stops. So the overcut **improved SAI’s position relative to RUS, but did not complete the pass in the data provided**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::RUS_LEC",
+      "text": "RUS did **not** undercut LEC in this data.\n\n- Both drivers made their **first stop on lap 11**, so there was **no pit-stop timing advantage** there.\n- The only relevant pit-timing difference is the **second stop**:\n  - **RUS pitted on lap 31**\n  - **LEC pitted on lap 34**\n- In the pit-timing battle, the gap **RUS → LEC increased from 1.174s to 4.144s**, which means LEC came out ahead in that phase rather than losing time to an undercut.\n\nSo, based on the provided data, **RUS’s earlier lap-31 stop did not work as an undercut on LEC**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::RUS_NOR",
+      "text": "RUS attempted the undercut by pitting **2 laps earlier** than NOR on the second stop: **RUS pitted on lap 31**, while **NOR pitted on lap 33**.\n\nWhat that timing did:\n- Before the stop phase, the gap from **RUS to NOR was 3.453s**.\n- By the time both had completed the pit sequence, that gap had become **6.48s**.\n\nThat means the pit timing **did produce a successful undercut** for RUS against NOR, based on the provided data.\n\nSupporting context from the stints:\n- RUS’s second stint ran **laps 12–31** on HARDS at **96.97s avg**.\n- NOR stayed out longer, running **laps 14–33** on HARDS at **96.77s avg**.\n\nSo, purely from the data given: **RUS tried to undercut by pitting earlier, and it worked.**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::SAI_PER",
+      "text": "SAI pitted on **lap 35**, and PER pitted on **lap 36**, so SAI stopped **one lap earlier** and attempted the undercut.\n\nWhat the data shows:\n- The **SAI → PER gap** went from **-3.367s to -1.614s**.\n- That means SAI **reduced the gap** to PER after pitting earlier.\n- Since the gap moved closer to zero, the move **worked to some extent** for SAI.\n\nRelevant stint context:\n- SAI’s lap 35 stop was **HARD -> HARD**.\n- PER’s lap 36 stop was **HARD -> SOFT**.\n- SAI’s listed average in stint 2 was **96.28s**; PER’s stint 2 average was also **96.28s**.",
+      "rounds": 1,
+      "trace": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::BOT_SAR",
+      "text": "BOT did **not** overcut SAR. Based on the pit timing, **SAR pitted earlier** on lap 10, while **BOT pitted later** on lap 12.\n\nThe pit-timing data shows the gap BOT→SAR changed from **-3.367s to 67.879s** around that phase, which means BOT was **not able to jump ahead of SAR by staying out longer**.\n\nPerformance-wise, BOT’s first stint on SOFT averaged **99.03s**, while SAR’s first stint averaged **98.92s**. BOT then switched to HARD on lap 12, but SAR had already switched to HARD two laps earlier and continued with the next stint. There is no data showing BOT gained the position or time advantage from the later stop.\n\nSo, using only the provided data: **BOT tried a later stop relative to SAR, but it did not work as an overcut.**",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::GAS_SAR",
+      "text": "GAS did **not** overcut SAR. The data shows the opposite on pit timing:\n\n- **SAR pitted first on lap 10** from SOFT to HARD.\n- **GAS pitted later on lap 12** from SOFT to HARD.\n\nThe pit-timing battle explicitly says the **GAS→SAR gap went from -1.878s to 68.287s**, which means GAS was not ahead enough on pit timing to overcut SAR; by the time GAS pitted, SAR had already stopped and the gap had grown massively.\n\nOn pace, GAS’s first stint was slightly slower in average lap time than SAR’s:\n- GAS Stint 1: **98.95s**\n- SAR Stint 1: **98.92s**\n\nSo there is no data support for GAS gaining track position via a later stop.",
+      "rounds": 1,
+      "trace": [
+        0.5714285714285714,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::MAG_SAR",
+      "text": "MAG did **not** overcut SAR here.\n\n- **Pit timing:** SAR pitted first on **lap 10** from SOFT to HARD. MAG pitted one lap later, on **lap 11** from SOFT to HARD.\n- **Effect on the gap:** The provided battle data says the gap from MAG to SAR went from **1.896s to 75.161s** across this period. That means MAG did **not** jump ahead by staying out longer; instead, the gap **widened massively** in SAR’s favor.\n- **Stint context:** MAG’s opening SOFT stint lasted **11 laps** at **98.88s avg**, while SAR’s was **10 laps** at **98.92s avg**. MAG’s longer stint alone did not produce a net track-position gain.\n- **Outcome:** Based on the pit-timing data alone, MAG’s lap-11 pit did **not** overcut SAR.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::overcut::RIC_SAR",
+      "text": "RIC did **not** overcut SAR here; the data shows **SAR pitted first**.\n\n- **Pit timing:** SAR stopped on **lap 10**, while RIC stopped on **lap 13**.\n- **Gap change:** the RIC→SAR gap went from **-0.752s** to **76.2s** by the time of the pit cycle, which means SAR was already ahead in the pit sequence and the gap expanded heavily rather than RIC gaining time by staying out longer.\n- **Stint context:** RIC’s first stint was **13 laps on Soft** at **99.03s avg**, while SAR’s first stint was **10 laps on Soft** at **98.92s avg**. SAR also showed stronger tire loss on that opening stint (**+0.162s/lap deg** vs RIC’s **+0.014s/lap**), but RIC still stayed out longer.\n\nSo, based on the data, RIC **used a later pit stop than SAR**, but it **did not produce an overcut advantage**. The pit-cycle data indicates the opposite: SAR gained/held track position through the earlier stop sequence, and the gap widened significantly.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_BOT",
+      "text": "STR used the undercut by pitting **3 laps earlier** than BOT:\n\n- **STR pit:** lap 9  \n- **BOT pit:** lap 12\n\nThat timing matters because STR switched to HARD while BOT stayed out on SOFT for three more laps. The data shows the gap from **STR to BOT** went from **1.07s to 12.135s** across that phase, which is consistent with STR gaining time through the undercut sequence.\n\nDid it work? **Yes, in the pit-stop battle.** STR’s earlier stop created a much larger gap over BOT.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_GAS",
+      "text": "STR’s undercut attempt was based on pitting earlier than GAS: STR stopped on lap 9, while GAS stayed out until lap 12.\n\nWhat that means in the data:\n- Before the stops, the reported STR→GAS gap was **-0.446s**.\n- After STR pitted and GAS did not yet, that gap became **11.727s**.\n\nSo, by the provided pit-timing battle metric, STR’s earlier stop **worked** as an undercut. The gap changed sharply in STR’s favor relative to GAS after the earlier stop.\n\nFrom the stint data, STR also had the later pace advantage in the race:\n- STR’s second HARD stint averaged **97.75s**, then improved to **96.43s** in stint 3.\n- GAS’s HARD stints averaged **98.08s** and **96.54s**.\n\nThe key pit-stop timing comparison indicates STR’s earlier stop **did** achieve the undercut effect on GAS.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_MAG",
+      "text": "STR executed the undercut by pitting earlier than MAG: STR stopped on lap 9, while MAG stayed out until lap 11.\n\nAccording to the pit-timing battle data, the gap from STR to MAG changed from **-3.629s to 1.153s** after STR’s earlier stop. That indicates STR gained track position/time relative to MAG through the earlier pit window.\n\nDid it work? **Yes, in timing terms it did**: STR’s earlier stop produced the undercut effect needed to move the gap in his favor.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_OCO",
+      "text": "STR attempted an undercut on OCO by pitting one lap earlier:\n\n- **STR pitted on lap 9**\n- **OCO pitted on lap 10**\n\nThat timing difference is the key undercut setup: STR got to switch from **SOFT to HARD** a lap before OCO, so he had the chance to set a faster out-lap / in-lap phase while OCO stayed out longer.\n\n**Did it work?**  \nBased on the pit-timing battle data, **yes, at least in terms of track position/time gain at that moment**:\n\n- The gap from **STR to OCO** changed from **-0.885s** to **+2.662s**\n\nThat means STR went from being **behind by 0.885s** to being **ahead by 2.662s**, a net swing of **3.547s** in STR’s favor across the pit sequence.\n\nA couple of caveats from the data:\n- OCO’s first stint was **one lap longer** (10 laps vs STR’s 9), so STR’s earlier stop was the direct undercut move.\n- The data clearly shows a **time/track-position gain at the pit cycle**, but it does not provide enough information to say more about the longer-term race effect beyond that.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_RIC",
+      "text": "STR tried to undercut RIC by pitting earlier: STR stopped on lap 9, while RIC stayed out until lap 13. That gave STR a four-lap tyre-age advantage and put STR onto HARD tyres sooner.\n\nThe pit-timing data shows the effect in the gap: STR→RIC changed from -1.458s to 7.66s. Based on that, STR gained time relative to RIC during the pit window, which is consistent with an undercut working.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_SAR",
+      "text": "STR did the undercut by pitting one lap earlier than SAR:\n\n- **STR pitted on lap 9** from SOFT to HARD.\n- **SAR pitted on lap 10** from SOFT to HARD.\n\nThat timing matters because STR got onto the harder tyre earlier while SAR stayed out one extra lap on the softer tyre. The data also shows STR’s softer-tyre stint had a slightly lower average pace drop than SAR’s first stint:\n\n- **STR SOFT stint 1:** 98.56s average, deg **+0.148s/lap**\n- **SAR SOFT stint 1:** 98.92s average, deg **+0.162s/lap**\n\nSo STR had the better early stint pace and then used the earlier stop to gain track time relative to SAR.\n\n**Did it work? Yes, in the limited sense of the pit-cycle battle.**  \nThe provided battle metric says the gap from **STR to SAR changed from -2.238s to 74.996s** around that stop sequence, showing STR’s pit timing created a major net advantage in the pit cycle.\n\nThat said, the data does not isolate the entire race effect beyond that pit-timing battle, so the clearest conclusion is that **STR’s earlier stop successfully executed the undercut on SAR**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::STR_ZHO",
+      "text": "STR did **not** undercut ZHO at the first stop, because both drivers pitted from SOFT to HARD on **lap 9**.\n\nThe relevant pit-stop timing battle was the **second stop**:\n- **STR pitted on lap 27**\n- **ZHO pitted on lap 28**\n\nThat means STR boxed **one lap earlier**, so he had the chance to gain time on fresh tyres while ZHO stayed out one more lap. The data shows the gap from **STR to ZHO** changed from **-3.503s to -0.903s**, which indicates STR **reduced the deficit by 2.600s** through that pit timing.\n\nSo, did it work?\n- **Partially, yes**: STR’s earlier stop closed the gap significantly.\n- But **not as a full overtake/undercut success from the data given**, because the final result still shows **STR P10, ZHO P11**, and the data does not state that STR passed ZHO during or after the stop.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::TSU_ALB",
+      "text": "TSU’s undercut attempt was based on pitting one lap earlier than ALB:\n\n- **TSU pitted on lap 14** from SOFT to HARD.\n- **ALB pitted on lap 15** from SOFT to HARD.\n\nIn the pit-timing battle data, the **gap from TSU to ALB increased from 2.186s to 3.433s** across that phase. TSU therefore did **not** gain track position or close the gap via the undercut; the gap **widened**.\n\nThis lines up with the stint data:\n- TSU’s first stint was **14 laps** on SOFT at **98.54s avg**\n- ALB’s first stint was **15 laps** on SOFT at **98.72s avg**\n\nTSU did have a slightly faster average first stint, but the provided pit-timing battle shows the undercut attempt **did not reduce the gap**.",
+      "rounds": 1,
+      "trace": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_BOT",
+      "text": "ZHO executed the undercut by pitting **3 laps earlier** than BOT:\n\n- **ZHO pit lap 9**: SOFT -> HARD  \n- **BOT pit lap 12**: SOFT -> HARD\n\nThat timing meant ZHO got onto fresh tyres first while BOT stayed out longer on the softs. The provided pit-timing battle shows the gap from **ZHO to BOT went from 4.01s to 13.987s** over that phase.\n\nSo, based on the data, the undercut **worked in timing terms**: ZHO’s earlier stop was the undercut move, and the pit-timing battle indicates it produced a much larger gap after the stop sequence.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_GAS",
+      "text": "ZHO’s undercut attempt was based on pitting **3 laps earlier** than GAS: **ZHO pitted on lap 9**, while **GAS pitted on lap 12**.\n\nWhat the data shows:\n- Before the stops, ZHO’s soft stint averaged **98.91s/lap** over 9 laps.\n- GAS stayed out longer on softs and averaged **98.95s/lap** over 12 laps.\n- During the pit sequence, the gap **ZHO → GAS increased from 2.494s to 13.579s**.\n\nInterpretation:\n- ZHO used the earlier stop to undercut GAS, and the move **worked**.\n- The gap change indicates ZHO gained the strategic advantage from stopping earlier.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_MAG",
+      "text": "ZHO tried to undercut MAG by pitting **two laps earlier**:\n\n- **ZHO pit:** lap 9, SOFT → HARD  \n- **MAG pit:** lap 11, SOFT → HARD\n\nThat earlier stop mattered in the pit-cycle data: the **ZHO→MAG gap changed from -0.689s to 3.152s**, which indicates ZHO came out ahead of MAG after the stops.\n\nWhether it worked:\n- **Yes, in the short term.** ZHO gained track position in the pit sequence.\n\nThe stint data also suggests why the undercut was effective:\n- ZHO’s soft stint ended at **9 laps** with **98.91s avg** and **+0.147s/lap deg**.\n- MAG stayed out to **11 laps** on softs with **98.88s avg** and **+0.097s/lap deg**.\n\nZHO stopped earlier, avoided extending the softer tyre, and used that timing to jump MAG in the pit phase.",
+      "rounds": 1,
+      "trace": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_OCO",
+      "text": "ZHO attempted the undercut by pitting one lap earlier than OCO: ZHO stopped on lap 9, while OCO stopped on lap 10.\n\nWhat the data shows:\n- Before the stops, the gap from ZHO to OCO was 2.055s.\n- After ZHO’s earlier stop and OCO’s later stop, that gap increased to 4.481s.\n\nSo, based on the provided data, the undercut did **not** work for ZHO in the sense of gaining track position or reducing the gap. The timing battle shows ZHO came out **further behind** OCO in relative terms, not closer.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_RIC",
+      "text": "ZHO’s undercut attempt was based on pitting 4 laps earlier than RIC:\n\n- ZHO pitted on lap 9 from SOFT to HARD.\n- RIC stayed out until lap 13, then also switched from SOFT to HARD.\n\nBecause ZHO got onto the new HARD tyre earlier, he was able to push while RIC was still on the older SOFT tyre. The data shows ZHO’s stint after the stop averaged 97.66s over laps 10–28, while RIC’s first stint averaged 99.03s over laps 1–13, so ZHO had the pace advantage after the stop.\n\nDid it work? Based on the provided pit-timing battle, yes in the immediate sense:\n- The gap from ZHO to RIC went from 1.482s to 9.654s.\n\nThat means ZHO’s earlier stop did not just cover the gap; it coincided with a much larger advantage between them.",
+      "rounds": 1,
+      "trace": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Bahrain_Grand_Prix::undercut::ZHO_SAR",
+      "text": "ZHO’s undercut was created by pitting **one lap earlier** than SAR:\n\n- **ZHO pitted on lap 9** from **SOFT to HARD**\n- **SAR pitted on lap 10** from **SOFT to HARD**\n\nThat timing meant ZHO got fresh tyres first, while SAR stayed out one extra lap on the softer tyre. The data shows both drivers were on similar soft-stint pace before the stop:\n- ZHO soft stint avg: **98.91s**\n- SAR soft stint avg: **98.92s**\n\nSo the key difference was the **timing**, not the pre-stop pace.\n\nWhether it worked: **yes, strongly**. The pit-timing battle states the gap from ZHO to SAR changed from **0.702s to 76.815s** after the stop sequence. That indicates ZHO’s earlier stop successfully separated him from SAR by a much larger margin.\n\nA small caveat: both drivers later had another pit stop on **lap 28**, so the undercut’s immediate effect was clear in the data provided.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::HAM",
+      "text": "HAM used a **2-stop strategy with Medium to Hard to Hard**:\n\n- **Stint 1:** Medium, laps **1–11**  \n  - 11 laps, **109.58s** average, **+0.032s/lap** degradation\n- **Stint 2:** Hard, laps **12–26**  \n  - 15 laps, **108.12s** average, **+0.004s/lap** degradation\n- **Stint 3:** Hard, laps **27–44**  \n  - 18 laps, **107.09s** average, **+0.007s/lap** degradation\n\nHe pitted on **lap 11** from **Medium to Hard**, then again on **lap 26** from **Hard to Hard**.\n\n### How it shaped the result\nThe data shows the strategy improved as the race went on:\n- The **Medium stint** had the highest degradation rate.\n- Both **Hard stints** were more durable, with much lower degradation.\n- The **final Hard stint** was the fastest average stint at **107.09s**, while also keeping degradation low at **+0.007s/lap**.\n\nSo, HAM’s result was shaped by switching off the more degrading Medium early and then extending two Hard stints, which gave him consistent pace and low tyre wear through the rest of the race.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::PIA",
+      "text": "PIA ran a **three-stint race** with **Medium → Hard → Hard**:\n\n- **Stint 1:** Medium for laps **1–11**\n  - Avg pace: **110.07s**\n  - Degradation: **+0.024s/lap**\n- **Pit on lap 11:** **Medium → Hard**\n- **Stint 2:** Hard for laps **12–30**\n  - Avg pace: **108.00s**\n  - Degradation: **-0.042s/lap**\n- **Pit on lap 30:** **Hard → Hard**\n- **Stint 3:** Hard for laps **31–44**\n  - Avg pace: **106.67s**\n  - Degradation: **-0.014s/lap**\n\nHow it shaped the result:\n- The race shows a **clear pace improvement after switching to Hard tyres**: from **110.07s** on the Mediums to **108.00s** on the first Hard stint, then **106.67s** in the final stint.\n- Both Hard stints had **negative degradation**, which means PIA’s tyre performance was **stabilising or improving over the stint**, especially in the longer middle stint.\n- The **long Hard middle stint of 19 laps** and the **14-lap final Hard stint** indicate the Hard tyre was the core of the race strategy and supported sustained pace to the finish.\n\nOverall, the strategy was built around **starting on Mediums, then spending the bulk of the race on Hards**, and the data suggests that this **strong, stable Hard-tyre run was central to PIA finishing P2**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::LEC",
+      "text": "LEC used a **two-stop strategy with a Medium–Hard–Hard sequence**:\n\n- **Stint 1:** Medium from laps **1–12**  \n  - 12 laps, **109.91s avg**\n  - Tyre deg **-0.028s/lap**  \n- **Pit lap 12:** **Medium -> Hard**\n- **Stint 2:** Hard from laps **13–25**  \n  - 13 laps, **108.24s avg**\n  - Tyre deg **+0.045s/lap**\n- **Pit lap 25:** **Hard -> Hard**\n- **Stint 3:** Hard from laps **26–44**  \n  - 19 laps, **107.39s avg**\n  - Tyre deg **+0.009s/lap**\n\nHow it shaped the result:\n- The first stop moved LEC from Mediums to Hards after 12 laps, and his **lap times improved on both Hard stints** versus the opening Medium stint.\n- The **long final Hard stint** was his strongest, with the **fastest average pace (107.39s)** and **very low degradation (+0.009s/lap)**, showing strong tyre management.\n- The second stop was a **Hard-to-Hard** change, which suggests the team chose to preserve performance rather than switch compounds.\n- Overall, the strategy supported a **P3 finish** by combining an early Medium stint with two Hard stints that delivered progressively better pace and controlled degradation.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::VER",
+      "text": "VER used a three-stint strategy: **Medium (laps 1–10) → Hard (laps 11–28) → Medium (laps 29–44)**.\n\n- **Stint 1, Medium:** 10 laps at an average of **110.14s/lap**, with **+0.065s/lap** degradation.\n- **Stint 2, Hard:** 18 laps at **108.41s/lap**, with **-0.040s/lap** degradation, meaning this was the most durable phase of the race in the data.\n- **Stint 3, Medium:** 16 laps at **106.92s/lap**, with **+0.071s/lap** degradation.\n\nThe strategy involved **two pit stops**:\n- Lap 10: **Medium → Hard**\n- Lap 28: **Hard → Medium**\n\nHow it shaped the result:\n- The **Hard stint was the longest stint** and showed the best tire stability, allowing VER to maintain pace over 18 laps.\n- The final **Medium stint was the fastest on average** at **106.92s/lap**, which suggests VER had stronger pace late in the race on fresher Mediums.\n- Overall, the progression from slower opening pace to faster later pace indicates the strategy helped VER finish strongly, but the data only confirms the final result as **P4**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::NOR",
+      "text": "NOR ran a three-stint race on **Medium → Hard → Hard**:\n\n- **Stint 1: Medium, laps 1–15**\n  - 15 laps\n  - Average: **110.10s**\n  - Degradation: **-0.042s/lap**\n\n- **Pit on lap 15: Medium → Hard**\n\n- **Stint 2: Hard, laps 16–29**\n  - 14 laps\n  - Average: **107.99s**\n  - Degradation: **-0.027s/lap**\n\n- **Pit on lap 29: Hard → Hard**\n\n- **Stint 3: Hard, laps 30–44**\n  - 15 laps\n  - Average: **106.87s**\n  - Degradation: **+0.093s/lap**\n\n### How it shaped the result\nThe strategy was a **long-race, high-consistency approach**: NOR extended the Medium to lap 15, then used the Hard tyre for the rest of the race with a second Hard stint after lap 29. The data shows the Hard stints were progressively quicker on average than the Medium stint, with **107.99s** and then **106.87s** compared with **110.10s** on the Medium.\n\nThe final Hard stint also shows **positive degradation (+0.093s/lap)**, meaning lap times worsened over that run, but the overall pace still remained stronger than the opening Medium stint. NOR finished **P5**, so the strategy produced a solid, stable race with improved pace after switching to Hard tyres.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::SAI",
+      "text": "SAI used a **HARD–MEDIUM–HARD** strategy over the 44 laps:\n\n- **Stint 1:** HARD, laps 1–20, 20 laps, avg **109.68s**, with **-0.090s/lap** degradation.\n- **Stint 2:** MEDIUM, laps 21–28, 8 laps, avg **108.08s**, with **+0.015s/lap** degradation.\n- **Stint 3:** HARD, laps 29–44, 16 laps, avg **107.12s**, with **-0.003s/lap** degradation.\n\nHe pitted:\n- **Lap 20:** HARD → MEDIUM\n- **Lap 28:** MEDIUM → HARD\n\n### How it shaped the result\nThe strategy appears to have been built around a **long opening stint on Hards**, a **shorter middle stint on Mediums**, then a **final stint on Hards**. The lap averages show the race got progressively quicker across the stints: **109.68s**, then **108.08s**, then **107.12s**. That suggests SAI was able to run a stronger pace later in the race, especially in the final HARD stint, which had essentially flat degradation (**-0.003s/lap**).\n\nHe finished **P6**, so the strategy was consistent and enabled improving pace through the race, but the data provided does not show enough to say more about position changes or direct battle outcomes.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::PER",
+      "text": "PER used a **three-stop, four-stint strategy** that was unusually split across both **same-compound and compound-change stops**:\n\n- **Stint 1:** Medium, laps **1–11**  \n- **Pit on lap 11:** **Medium → Medium**\n- **Stint 2:** Medium, laps **12–21**\n- **Pit on lap 21:** **Medium → Hard**\n- **Stint 3:** Hard, laps **22–42**\n- **Pit on lap 42:** **Hard → Soft**\n- **Stint 4:** Soft, laps **43–44**\n\nHow it shaped the result:\n- His **longest stint was on Hards**: 21 laps at an average of **107.97s**, which was his quickest sustained stint in the data aside from the final short Soft run.\n- The **two Medium stints** were slower on average: **109.99s** in stint 1 and **108.72s** in stint 2.\n- The **Soft stint** was only **2 laps** but had the fastest average at **104.70s**, so it likely served as a late push rather than a race-long performance phase.\n- Tyre degradation data supports the shift to Hards: the **second Medium stint** had noticeably higher degradation (**+0.091s/lap**) than the first (**+0.003s/lap**), which suggests the Mediums were falling away and made the move to Hards sensible.\n\nOverall, PER’s result of **P7** came from a strategy that prioritized **stint stability on Hards** after an early Medium phase, with a **late Soft run** to finish strongly.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::ALO",
+      "text": "ALO ran a very simple two-stint strategy: Medium to Medium.\n\n- **Stint 1:** Medium from laps **1–13** for **13 laps**, with an average lap time of **110.79s** and tyre deg of **+0.022s/lap**.\n- **Pit stop:** On **lap 13**, ALO changed from **Medium to Medium**.\n- **Stint 2:** Medium from laps **14–44** for **31 laps**, averaging **109.09s** with tyre deg of **-0.079s/lap**.\n\n### What this suggests\n- The strategy was **conservative and consistent**, with no tyre compound change.\n- The **long second stint** on Mediums shows ALO managed the tyre well enough to extend the set to the finish.\n- The second stint’s **lower average lap time** than the first indicates the race pace improved after the stop, based on the data provided.\n\n### How it shaped the result\n- ALO finished **P8**.\n- Based only on the data, the strategy likely helped by providing a **stable, low-risk run to the flag** with no complex tyre management or extra stops.\n- The data does **not** show whether this strategy gained or lost positions directly, only that it supported a finish in **P8**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::OCO",
+      "text": "OCO ran a **three-stint race**:\n\n- **Laps 1–12 on Mediums**: 12 laps at **110.93s average**, with slight wear increase (**+0.041s/lap**).\n- **Laps 13–30 on Hards**: 18 laps at **109.17s average**, and the tyre trend improved over the stint (**-0.086s/lap**).\n- **Laps 31–44 on Hards again**: 14 laps at **107.78s average**, with a similar improving trend (**-0.084s/lap**).\n\nHe made two stops:\n- **Lap 12: Medium → Hard**\n- **Lap 30: Hard → Hard**\n\n### How this shaped the result\nThe strategy shows that OCO **moved onto Hards early and then extended the race on them**, with the second Hard stint being the fastest of the three by average lap time. The data suggests the Hards were more sustainable than the Mediums, since his lap-time trend on both Hard stints was negative, while the Medium stint showed slight degradation.\n\nThat progression likely helped him **stabilize performance across the race and finish P9**, but based on the data alone, we can only say the strategy was built around **long Hard stints that improved or held pace**, rather than a late soft-tyre push or aggressive multi-stop approach.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::stint::RIC",
+      "text": "RIC ran a **two-stop, three-stint strategy**: **Soft (laps 1–8) → Medium (laps 9–21) → Soft (laps 22–44)**.\n\nHow it played out:\n- **Stint 1 on Softs:** 8 laps at **111.01s average**, with **-0.069s/lap deg**, so the opening stint was short and the tyre wear trend was not worsening.\n- **Stint 2 on Mediums:** 13 laps at **109.81s average**, with **+0.020s/lap deg**, and this was his **slowest average stint** of the race.\n- **Stint 3 on Softs:** 23 laps at **108.23s average**, with **-0.029s/lap deg**, and this was his **longest** and **fastest average** stint.\n\nEffect on the result:\n- The strategy clearly **built toward a strong final stint**, since RIC ended the race on Softs and that stint produced his best average pace.\n- By going to Softs for the final 23 laps, he was able to **improve pace late in the race**, which is consistent with a **P10 finish**.\n- The data shows the **Medium stint was the weakest on average**, so the race outcome was shaped by a **slower middle phase followed by a faster closing phase**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::ALB_BOT",
+      "text": "ALB tried to undercut BOT by pitting earlier, on lap 8 versus BOT’s lap 11.\n\nWhat happened:\n- ALB stopped from MEDIUM to MEDIUM on lap 8.\n- BOT stayed out three laps longer on MEDIUM, pitting on lap 11 to HARD.\n- Over that window, the stated ALB→BOT gap increased from 2.793s to 6.341s.\n\nSo, based on the data, the undercut did **not** work in the sense of reducing the gap or jumping ahead. ALB’s earlier stop did not produce a net gain against BOT; instead, BOT emerged with a larger lead in the recorded gap.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::ALB_GAS",
+      "text": "ALB used an **earlier first pit stop** to undercut GAS:\n\n- **ALB pitted on lap 8** from Medium to Medium.\n- **GAS pitted on lap 9** from Medium to Hard.\n- During that pit phase, the gap **ALB → GAS went from 1.949s to 5.915s**.\n\nSo the pit timing was an **effective undercut move for ALB**, because he stopped first and the data says the gap moved in his favor enough that the move **worked**.",
+      "rounds": 1,
+      "trace": [
+        0.5714285714285714,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::ALB_OCO",
+      "text": "ALB tried to undercut OCO by pitting earlier: ALB stopped on lap 8, while OCO stayed out until lap 12. Over that window, ALB’s gap to OCO increased from 0.917s to 5.754s, so ALB did **not** gain track position on the pit cycle.\n\nThe stint data also suggests why the undercut didn’t work:\n- ALB’s first medium stint averaged 110.74s/lap.\n- OCO’s first medium stint averaged 110.93s/lap.\n\nALB was only marginally quicker on the opening stint, but not enough to overcome the extra laps OCO stayed out. So the undercut attempt did **not** succeed in the pit-stop battle.",
+      "rounds": 2,
+      "trace": [
+        0.6666666666666666,
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::ALB_STR",
+      "text": "ALB’s undercut attempt came from pitting **4 laps earlier** than STR: **ALB pitted on lap 8**, while **STR pitted on lap 12**.\n\nWhat happened from the data:\n- Before the pit stops, the gap **ALB → STR** was **4.367s**.\n- By the time STR pitted later, that gap had grown to **10.37s**.\n- ALB’s early stop was **MEDIUM -> MEDIUM** on lap 8, then he stayed out until lap 23 before switching to **HARD**.\n- STR stayed on his first **MEDIUM** stint until lap 12, then also went **MEDIUM -> MEDIUM** and ran the rest of the race on that tyre.\n\nDid it work?\n- **No, based on the gap data.** The gap **increased**, not decreased, from **4.367s to 10.37s** across the pit timing battle, so the undercut did **not** pay off.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::BOT_ALO",
+      "text": "BOT attempted an undercut by pitting **2 laps earlier** than ALO:\n\n- **BOT pit lap:** 11, switching **MEDIUM -> HARD**\n- **ALO pit lap:** 13, switching **MEDIUM -> MEDIUM**\n\nThe pit-timing data shows BOT was initially closer after the stops:\n- Gap **BOT -> ALO** changed from **-4.542s to -3.685s**\n\nThat means BOT **reduced the deficit by 0.857s** across the pit sequence, so the undercut **partially worked in timing terms**. The data does **not** show BOT overtaking ALO.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::BOT_OCO",
+      "text": "BOT attempted an undercut by pitting one lap earlier than OCO:\n\n- **BOT pitted on lap 11** from **MEDIUM to HARD**\n- **OCO pitted on lap 12** from **MEDIUM to HARD**\n\nThat timing mattered because the gap data shows BOT was **2.065s behind OCO before the stops**, then after BOT’s earlier stop the gap became **0.415s**. So BOT **gained significant time relative to OCO** through the pit timing.\n\n**Whether it worked:**  \nIt **partially worked in the moment**, because BOT reduced the gap by about **1.65s** by pitting first. But the data does not show a final head-to-head result after the pit sequence, so we can only say the undercut **helped BOT close the gap at that point**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::BOT_STR",
+      "text": "BOT attempted an undercut by pitting **one lap earlier than STR**:\n\n- **BOT** stopped on **lap 11** and switched from **MEDIUM to HARD**.\n- **STR** stopped on **lap 12** and stayed on **MEDIUM to MEDIUM**.\n\nThe timing difference mattered because in the pit-timing battle, the gap **BOT → STR** changed from **2.041s to 5.031s**. That means BOT **improved its relative position in the pit sequence** versus STR after the stop.\n\nSo, based on the data, **the undercut worked**. BOT’s earlier stop was the intended timing advantage, and the pit-timing data shows a change in the gap after the stop sequence.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::GAS_ALO",
+      "text": "GAS attempted to undercut ALO by pitting earlier: GAS stopped on lap 9, while ALO stayed out until lap 13. That gave GAS a 4-lap fresher-tyre window to try to gain time before ALO’s stop.\n\nThe data shows the gap from GAS to ALO changed from -3.544s to -2.063s during that sequence, so GAS did reduce the deficit by 1.481s. That means the undercut had some effect.\n\nWhether it fully worked: the data shows improvement in the gap, but it does not provide enough information here to say the strategy definitively succeeded or failed beyond that gap reduction.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::GAS_OCO",
+      "text": "GAS pitted earlier than OCO on the first stop: **GAS on lap 9** from **MEDIUM to HARD**, while **OCO stopped on lap 12** from **MEDIUM to HARD**.\n\nBased on the pit-timing battle data, the undercut **worked briefly** in raw timing terms. The gap between GAS and OCO shifted from **GAS 1.31s behind** to **GAS 0.877s ahead** after the stops, meaning GAS gained enough on the pit sequence to jump in front.",
+      "rounds": 1,
+      "trace": [
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::GAS_STR",
+      "text": "GAS attempted an undercut by pitting **3 laps earlier** than STR:\n\n- **GAS** pitted on **lap 9** from **MEDIUM to HARD**\n- **STR** pitted on **lap 12** and stayed on **MEDIUM**\n\nThe timing battle data shows the effect clearly: the **GAS→STR gap increased from 2.6s to 5.493s** around that pit sequence, which indicates GAS gained time relative to STR during the stop phase.\n\nSo, **yes, the undercut worked in the short term**: GAS used the earlier pit stop to improve the gap versus STR.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::overcut::LEC_HAM",
+      "text": "LEC did **not** overcut HAM; the data shows the opposite.\n\n- **Pit timing:** HAM stopped first on **lap 11**, while LEC stopped later on **lap 12**.\n- **Gap change during the sequence:** the LEC→HAM gap went from **-2.105s to -1.506s**.\n  - That means LEC **reduced the gap by 0.599s**, but he was still **behind HAM** after the pit cycle.\n- **Stint context:** HAM’s first stint on MEDIUM was **11 laps** at **109.58s avg**, while LEC ran **12 laps** at **109.91s avg**. HAM then also had the slightly quicker HARD stint after the stop (**108.12s vs LEC’s 108.24s** on the first HARD stint).\n\nSo, LEC’s later stop did **not** produce an overcut; it only **narrowed the gap**, and HAM remained ahead.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::HAM_PIA",
+      "text": "HAM did **not** undercut PIA with the **first** stop, since both pitted on **lap 11** from **MEDIUM to HARD**.\n\nThe relevant pit-timing battle is the second stop:\n- **HAM pitted on lap 26**\n- **PIA pitted on lap 30**\n\nThat is an earlier stop by HAM, and the data shows the gap **HAM → PIA went from 4.973s to 5.555s** over that phase.\n\nSo, based on the provided data, HAM **did** execute the move by stopping **4 laps earlier**, but the gap **increased** rather than shrinking.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::HUL_BOT",
+      "text": "HUL tried to undercut BOT by pitting earlier on lap 7, four laps before BOT’s lap 11 stop.\n\nWhat the data shows:\n- HUL stopped first: lap 7, MEDIUM -> HARD.\n- BOT stayed out longer: lap 11, MEDIUM -> HARD.\n- During that pit window, the gap from HUL to BOT changed from -2.765s to +1.51s.\n\nThat indicates the undercut did **not** clearly work for HUL:\n- HUL gained time by pitting earlier, but\n- BOT’s later stop was still followed by the gap swinging back to BOT ahead by 1.51s.\n\nSo, based on the provided data, HUL executed the undercut attempt, but it was **not successful in overturning the position battle**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::HUL_GAS",
+      "text": "HUL **undercut GAS** by pitting **2 laps earlier**:\n\n- **HUL pitted on lap 7**\n- **GAS pitted on lap 9**\n\nThe pit-timing battle data shows the effect clearly: the gap from **HUL to GAS** changed from **-3.579s to 0.556s**. That means HUL used the earlier stop to close a **3.579s deficit** and emerge **ahead on timing** relative to GAS.\n\nDid it work? **Yes, in pit-cycle terms.** HUL successfully undercut GAS because the gap flipped from HUL being behind to HUL being ahead after the stops.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::HUL_SAR",
+      "text": "HUL attempted to undercut SAR by pitting one lap earlier.\n\n- HUL stopped on lap 7, going from MEDIUM to HARD.\n- SAR stopped on lap 8, and stayed on MEDIUM for that stop.\n\nThat one-lap earlier stop let HUL gain time during the pit window: the gap from HUL to SAR increased from 2.864s to 4.079s in HUL’s favor.\n\nHowever, it did not ultimately work as a race position gain, because the finishing order was SAR P17 and HUL P18. So HUL gained relative time in the pit-stop phase, but SAR still finished ahead.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::overcut::LEC_PER",
+      "text": "LEC did **not** overcut PER in the pit-stop battle shown here.\n\nWhat the data says:\n- **PER pitted first on lap 11** from **MEDIUM to MEDIUM**.\n- **LEC pitted one lap later on lap 12** from **MEDIUM to HARD**.\n- During that sequence, the **LEC-to-PER gap increased from 2.344s to 2.939s**.\n\nThat means:\n- LEC stayed out **one lap longer** than PER, so this was an attempted **overcut-style timing advantage**.\n- But the gap **grew in PER’s favor**, not LEC’s.\n- So based on the provided data, the pit timing **did not work as an overcut**.\n\nAdditional context from the stint data:\n- LEC’s first stint averaged **109.91s/lap** on medium.\n- PER’s first stint averaged **109.99s/lap** on medium, so LEC was only slightly faster on average before the pit cycle.\n- The pit-battle result still shows PER came out better in the timing exchange, since the gap to LEC widened.\n\nConclusion: **LEC stayed out longer, but the strategy did not produce an overcut on PER; PER retained and improved the advantage across that pit-stop phase.**",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::PER_NOR",
+      "text": "PER’s undercut attempt was based on pitting **4 laps earlier** than NOR:\n\n- **PER** stopped on **lap 11** from **MEDIUM to MEDIUM**.\n- **NOR** stayed out until **lap 15**, then went **MEDIUM to HARD**.\n\nThat timing is an undercut attempt because PER got fresh tyres earlier while NOR remained on older medium tyres for four more laps.\n\n**Did it work?**\n- In pure gap terms, **no**: the stated **PER→NOR gap increased from 4.363s to 6.792s** by the time NOR pitted.\n\nSo, based on the data provided, PER **tried** the undercut by stopping earlier, but it **did not succeed** in closing the gap to NOR.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::PIA_LEC",
+      "text": "PIA tried to undercut LEC by pitting one lap earlier on lap 11, while LEC stayed out until lap 12. That meant PIA switched to HARDs first and got a lap of fresher-tyre running before LEC made his stop.\n\nThe data shows the gap from PIA to LEC moved from -3.871s to -2.085s across that pit-timing phase, so PIA reduced the deficit by 1.786s. In other words, the undercut was effective in gaining time.\n\nIt did not fully overtake LEC, though, because the gap remained negative: PIA was still 2.085s behind LEC after both stops. So the undercut worked partially — it cut into LEC’s advantage, but did not get PIA ahead.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::PIA_NOR",
+      "text": "PIA undercut NOR by stopping **four laps earlier** on the first pit cycle:\n\n- **PIA pitted on lap 11** from **MEDIUM to HARD**\n- **NOR pitted on lap 15** from **MEDIUM to HARD**\n\nBecause PIA switched to the harder tyre earlier, he could run those extra laps on the fresher compound while NOR stayed out on the medium. The data shows the gap **PIA → NOR grew from 2.836s to 8.185s** during that pit-timing phase, which means PIA gained time relative to NOR through the earlier stop.\n\nDid it work?\n- **Yes, in terms of track position/gap gain:** the gap increased significantly after PIA’s earlier stop.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RIC_BOT",
+      "text": "RIC’s undercut attempt was based on pitting **three laps before BOT**:\n\n- **RIC pitted on lap 8** from **SOFT to MEDIUM**\n- **BOT pitted on lap 11** from **MEDIUM to HARD**\n\nThat timing created a pit-window where RIC was on fresher tyres while BOT stayed out longer. The data says the gap from **RIC to BOT changed from -0.728s to 2.964s** during this sequence, which indicates RIC gained time relative to BOT around the stop sequence.\n\nWhether it **worked** depends on the immediate pit-cycle result versus the final race outcome:\n\n- **Yes, the undercut appears to have worked in the pit-window**, because RIC gained time on BOT when he stopped earlier.\n- **But it did not translate into a clearly documented head-to-head outcome**, since the provided data does not show a direct pass or explicit final gap after both stops.\n\nSo, grounded strictly in the data: **RIC executed the undercut by stopping earlier, and it gained time in the pit-stop phase, but the provided data does not prove a direct pass or definitive head-to-head success from that move alone.**",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RIC_GAS",
+      "text": "RIC’s undercut on GAS came from pitting one lap earlier.\n\n- **RIC pitted on lap 8** from SOFT to MEDIUM.\n- **GAS pitted on lap 9** from MEDIUM to HARD.\n- In the pit-timing battle, the **RIC→GAS gap changed from -1.572s to 2.349s**.\n\nThat means RIC was behind GAS before the stops, then came out ahead after the stops — a classic undercut effect created by the earlier pit stop.\n\n**Did it work?**  \nYes, in the immediate pit-cycle sense: the gap swung in RIC’s favor after he stopped first.",
+      "rounds": 1,
+      "trace": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RIC_OCO",
+      "text": "RIC tried to undercut OCO by pitting first on lap 8, while OCO stayed out until lap 12.\n\nWhat the data shows:\n- RIC’s first stint ended on lap 8 and he switched from SOFT to MEDIUM.\n- OCO stayed on his opening MEDIUM stint until lap 12, then switched to HARD.\n- During that pit-cycle, the gap RIC→OCO moved from -2.604s to 2.929s, which indicates RIC gained time relative to OCO around the stop sequence.\n\nDid it work?\n- Only partially. The pit timing suggests the undercut was effective in the short term, since RIC closed and reversed the gap during the stop window.",
+      "rounds": 2,
+      "trace": [
+        0.6666666666666666,
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RIC_STR",
+      "text": "RIC’s undercut attempt was based on pitting earlier than STR.\n\n- **RIC pitted on lap 8** from **SOFT to MEDIUM**.\n- **STR stayed out until lap 12**, then pitted **MEDIUM to MEDIUM**.\n\nThat four-lap offset is the undercut window. In the pit-timing battle data, the **RIC-to-STR gap went from 0.846s to 7.545s** across that sequence, so the move was not reflected as a gap reduction in the raw timing data provided.\n\nSo, based on the pit timing alone, **RIC’s earlier stop was the undercut attempt**, and the provided data shows the gap **widened** rather than narrowing.",
+      "rounds": 1,
+      "trace": [
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RIC_ALB",
+      "text": "RIC **did undercut ALB on pit timing**.\n\n- **RIC pitted first on lap 21**, going from **MEDIUM to SOFT**.\n- **ALB stayed out two laps longer and pitted on lap 23**, going from **MEDIUM to HARD**.\n- The provided pit-timing battle says the **RIC→ALB gap changed from -0.798s to 0.772s**, which indicates RIC gained track position/time relative to ALB through the pit sequence.\n\n**Did it work?**\n- **Yes, in the immediate pit-cycle sense**: RIC’s earlier stop allowed him to jump ahead in the timing battle.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RUS_LEC",
+      "text": "RUS attempted an undercut by pitting **2 laps earlier** than LEC: RUS stopped on **lap 10** for **Medium -> Hard**, while LEC stopped on **lap 12** for the same tyre change.\n\nOn the pit-timing battle data, the **RUS->LEC gap improved from -4.807s to -3.801s**. That means RUS **reduced the deficit by 1.006s** during the pit cycle, so the undercut **partially worked** in time terms.\n\nBut it did **not** clearly succeed in the battle context, since the gap was still **-3.801s** after both stops.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::RUS_PER",
+      "text": "RUS attempted the undercut by pitting one lap earlier than PER: RUS stopped on lap 10, while PER stopped on lap 11.\n\nThe data shows the gap from RUS to PER changed from **-2.557s** before the stops to **-0.932s** after them. That means RUS **reduced PER’s advantage by 1.625s** through pit timing.\n\nDid it work? **Partially, yes.** RUS gained time relative to PER in the pit window, but the data does not show whether that translated into an overtake or final position change.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::overcut::NOR_SAI",
+      "text": "NOR pitted on **lap 29**, while SAI pitted on **lap 28**.\n\n- **Pit timing:** NOR stayed out longer by one lap on that sequence.\n- **Gap effect:** In the pit-timing battle, the gap from **NOR to SAI increased from 4.831s to 6.134s**, which means NOR gained time relative to SAI across that sequence.\n- **Stint pace context:**  \n  - NOR’s second stint on HARD averaged **107.99s/lap** over 14 laps.  \n  - SAI’s second stint on MEDIUM averaged **108.08s/lap** over 8 laps.  \n  The raw stint averages are very close, so the pit timing was the key factor.\n- **Result:** Based on the pit-timing data alone, the later stop **did produce an overcut**.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::SAR_STR",
+      "text": "SAR attempted an undercut by pitting **4 laps earlier** than STR:\n\n- **SAR pit lap 8**: MEDIUM -> MEDIUM  \n- **STR pit lap 12**: MEDIUM -> MEDIUM  \n\nThe pit-timing battle data shows the gap from **SAR to STR** changed from **-4.538s** to **0.032s** around that sequence. That means SAR closed the gap substantially during the undercut window and essentially brought the cars together.\n\nDid it work? **Only partially.**  \n- In terms of pit timing, SAR’s earlier stop **did reduce the gap dramatically**.  \n- But the provided data does not show that this translated into a clear net race advantage over STR.\n\nSo, based on the data: **the undercut was effective in neutralizing the time gap, but the data does not support saying it definitively succeeded beyond that.**",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::VER_ALO",
+      "text": "VER’s undercut attempt was based on pitting **3 laps earlier** than ALO:\n\n- **VER pitted on lap 10** from **MEDIUM to HARD**\n- **ALO pitted on lap 13** from **MEDIUM to MEDIUM**\n\nThat timing meant VER got onto fresh tyres first and had three laps to use the pace advantage while ALO stayed out.\n\nThe data shows the gap from **VER to ALO** changed from **4.528s** before the stop window to **13.232s** afterward. So, based on the provided pit-timing battle data, the undercut **worked** for VER in the sense that the listed gap movement indicates the move was effective.\n\nAlso, the stint data shows VER’s post-stop pace was strong overall:\n- VER’s **HARD stint** averaged **108.41s**\n- ALO’s first stint averaged **110.79s**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::VER_PER",
+      "text": "VER’s undercut attempt was based on pitting one lap earlier than PER:\n\n- **VER pitted on lap 10** from **MEDIUM to HARD**\n- **PER pitted on lap 11** and stayed on **MEDIUM** for that stop\n\nThat means VER gained the benefit of fresher tyres and clear track for one lap while PER stayed out longer on the older medium set.\n\n**Did it work?**  \n**Partly, yes.** The pit-timing battle data shows the **VER→PER gap changed from -4.955s to -2.197s**, so VER reduced the deficit by **2.758s** across that pit-cycle. That indicates the undercut **improved VER’s relative position/time loss** versus PER, even if it did not eliminate the gap entirely.\n\nVER also stayed ahead in the timing battle after that phase, but the data only supports that the undercut **reduced the gap**, not that it produced a complete overtake or changed the final finishing positions.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::VER_PIA",
+      "text": "VER attempted the undercut by pitting one lap earlier than PIA.\n\n- VER pitted on lap 10 from Medium to Hard.\n- PIA stayed out one more lap and pitted on lap 11 from Medium to Hard.\n- In the pit-timing battle data, the gap from VER to PIA changed from **-3.416s** to **-1.844s** after those stops.\n\nThat shows VER **reduced the gap** to PIA by undercutting him.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Belgian_Grand_Prix::undercut::VER_NOR",
+      "text": "VER pitted on **lap 28** from **HARD to MEDIUM**, while NOR stayed out until **lap 29** and then pitted from **HARD to HARD**.\n\nThe pit-timing battle data shows the **VER→NOR gap went from 1.064s to 1.682s** across that sequence. So VER **pitted earlier** than NOR, and the gap **increased** rather than shrinking.\n\nThat means VER’s pit-stop timing **did not produce an undercut on NOR**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::VER",
+      "text": "VER ran a **three-stop sequence in the data, but effectively two racing tyre phases plus the opening lap**, all built around **extending the medium tyre before switching to hard**:\n\n- **Lap 1:** MEDIUM\n- **Laps 2–16:** MEDIUM, 15 laps, avg **97.32s**, deg **+0.141s/lap**\n- **Laps 17–34:** MEDIUM, 18 laps, avg **96.52s**, deg **+0.045s/lap**\n- **Laps 35–53:** HARD, 19 laps, avg **94.71s**, deg **+0.019s/lap**\n\nThere were also two recorded medium-to-medium pit entries:\n- **Pit lap 1:** MEDIUM→MEDIUM under **SC/VSC**\n- **Pit lap 16:** MEDIUM→MEDIUM\n- **Pit lap 34:** MEDIUM→HARD\n\n### What the strategy shows\nVER stayed on the **medium tyre for 34 laps total**, split across two medium stints, and only switched to **hard for the final 19 laps**. The tyre data shows the medium was managed progressively better in the second stint: the **degradation rate dropped from +0.141s/lap to +0.045s/lap**, while average lap time also improved from **97.32s to 96.52s**.\n\nThe final hard stint was the strongest phase on paper:\n- **Best average lap time:** **94.71s**\n- **Lowest degradation:** **+0.019s/lap**\n\n### How it shaped the result\nThis strategy helped VER finish **P1** because the final hard stint provided the best pace and the least tyre drop-off, allowing him to close the race on a more durable tyre while the medium stints were used to build track position and manage the race. The data directly supports that the **hard tyres were the most effective race tyre phase**, and the long medium usage was sustainable enough to get him to that point.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::PER",
+      "text": "PER ran a three-stop strategy on paper, but in the data it was effectively a long **medium-medium-medium-hard** race with an early stop under **SC/VSC**:\n\n- **Lap 1:** MEDIUM\n- **Laps 2–15:** MEDIUM, 14 laps, avg **97.65s**, deg **+0.180s/lap**\n- **Laps 16–33:** MEDIUM, 18 laps, avg **97.04s**, deg **+0.004s/lap**\n- **Laps 34–53:** HARD, 20 laps, avg **94.89s**, deg **+0.024s/lap**\n\nKey strategic points:\n- The **lap 1 MEDIUM->MEDIUM pit under SC/VSC** shows PER took an early stop without changing compound, which helped reset the race position/strategy without paying a normal-race pit-loss penalty.\n- The two **medium stints were long and consistent**, especially laps **16–33**, where degradation was almost flat at **+0.004s/lap**. That suggests the medium was managed well and remained usable for a long run.\n- The final switch to **HARD on lap 33** gave PER his fastest stint on average at **94.89s**, with low degradation (**+0.024s/lap**). That strong final stint is the clearest reason the strategy supported a **P2 finish**.\n\nOverall, the race was shaped by **extending the mediums and then finishing on a strong, stable hard tyre**. The data shows the hard stint was both the quickest and durable enough to close out the race, which helped PER secure **P2**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::SAI",
+      "text": "SAI’s race was built around a **three-stop-style sequence of tyre management within a longer middle stint**, all using the data’s listed stints:\n\n- **Stint 1:** MEDIUM, lap 1 only  \n- **Stint 2:** MEDIUM, laps 2–15, 14 laps, avg **97.91s**, deg **+0.113s/lap**  \n- **Stint 3:** MEDIUM, laps 16–36, 21 laps, avg **97.04s**, deg **-0.003s/lap**  \n- **Stint 4:** HARD, laps 37–53, 17 laps, avg **94.69s**, deg **+0.053s/lap**\n\nThe key strategic feature is that SAI **stayed on MEDIUMs through lap 36**, including a **long 21-lap stint** where degradation was essentially flat at **-0.003s/lap**. That suggests he was able to hold tyre life well and avoid losing pace over that middle phase. He then switched to **HARDs for the final 17 laps**, and that stint had the **best average lap time in the data (94.69s)**, with only modest degradation (**+0.053s/lap**).\n\nThe pit stops also show the timing was structured around tyre use:\n- **Pit lap 1: MEDIUM->MEDIUM**\n- **Pit lap 15: MEDIUM->MEDIUM**\n- **Pit lap 36: MEDIUM->HARD**\n\nBased on the numbers, the strategy shaped the result by letting SAI:\n1. **Preserve tyre life on MEDIUMs** during the longest stint,\n2. **Convert to HARDs late**, where the stint average was quickest,\n3. Finish the race in a strong pace window, which aligns with the **P3 result**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::LEC",
+      "text": "LEC’s race was built around a very simple two-stint plan:\n\n- He started on **MEDIUMs** and then ran a long **MEDIUM stint from laps 2–26**: **25 laps**, with an average pace of **98.14s** and very little tyre degradation (**-0.028s/lap**).\n- He then switched to **HARDs on lap 26** and completed the race with a **27-lap HARD stint from laps 27–53**, averaging **95.89s** with similarly controlled degradation (**-0.040s/lap**).\n\nThe data shows the strategy was **long and stable rather than aggressive**: both stints were extended, and neither tyre set appears to have degraded heavily. The key effect on the result is that this gave LEC enough tyre life to **finish P4**, with the **HARD stint being quicker on average than the MEDIUM stint** in the data provided.\n\nThere is also a **pit lap 1: MEDIUM->MEDIUM** listed, but the main race-defining tyre change was the **lap 26 switch from MEDIUM to HARD**, which set up the long final stint to the flag.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::NOR",
+      "text": "NOR used a three-stint strategy that was heavily shaped by an early pit under neutralized conditions.\n\n- He started on **Mediums** and made an **early pit on lap 1 from Medium to Medium**.\n- He then ran **Mediums from laps 2–11**.\n- On **lap 11 he switched from Medium to Hard**.\n- He completed the race with a long **Hard stint from laps 27–53** after a **lap 26 Hard-to-Hard pit**.\n\nHow this shaped the result:\n\n- The data shows his **first Hard stint (laps 12–26)** was steady, with **97.30s average pace** and **+0.120s/lap deg**.\n- His **final Hard stint (laps 27–53)** was even stronger: **95.93s average pace** and **-0.032s/lap deg**, meaning the tyres were not degrading in that stint and pace improved relative to the earlier Hard run.\n- This suggests the strategy prioritized **tyre preservation and long-run pace**, allowing NOR to finish strongly on the Hard tyre.\n- He finished **P5**, so the strategy was effective enough to deliver a solid top-five result, with the long final Hard stint being the key contributor to race finish pace.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::ALO",
+      "text": "ALO used a **3-stop?** No — based on the data, he ran a **three-stint race with two tyre changes after the opening lap**:\n\n- **Laps 1–13:** SOFT  \n  - The first lap is listed separately as **SOFT lap 1–1**, then a **SOFT stint from laps 2–13**.\n  - He also made a **SOFT->SOFT pit on lap 1 under SC/VSC**, which indicates an early tyre change but kept him on the same compound.\n  - This soft phase had the **highest degradation** of his race: **+0.199s/lap** over the 12-lap stint.\n\n- **Laps 14–33:** MEDIUM  \n  - He switched from **SOFT to MEDIUM on lap 13**.\n  - The Medium stint was **20 laps** at **97.40s average** with much lower degradation: **+0.027s/lap**.\n\n- **Laps 34–53:** HARD  \n  - He then went **MEDIUM to HARD on lap 33**.\n  - The Hard stint was also **20 laps**, and it was his **fastest and most stable** phase: **95.69s average** with almost no degradation at **+0.002s/lap**.\n\n### How it shaped the result\nThe strategy clearly moved from a **degradation-heavy Soft phase** to progressively more durable compounds. The data shows each later stint was both **faster on average** and **more resistant to tyre wear**:\n\n- Soft: **98.32s**, **+0.199s/lap**\n- Medium: **97.40s**, **+0.027s/lap**\n- Hard: **95.69s**, **+0.002s/lap**\n\nSo the race was shaped by a **protect-the-tyres, build-pace-later approach**. The early Soft running was the least efficient part, while the Hard stint delivered the strongest pace and likely underpinned the **P6 finish** by allowing ALO to sustain speed with minimal degradation to the flag.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::RUS",
+      "text": "RUS used a **three-stop strategy** with an unusual sequence: **MEDIUM for 1 lap, then HARD, HARD, then MEDIUM to the finish**.\n\n### What the strategy was\n- **Lap 1:** started on **MEDIUM**\n- **Lap 2 pit:** switched **MEDIUM -> HARD**\n- **Laps 2–22:** first **HARD** stint, 21 laps\n- **Lap 22 pit:** **HARD -> HARD**\n- **Laps 23–37:** second **HARD** stint, 15 laps\n- **Lap 37 pit:** **HARD -> MEDIUM**\n- **Laps 38–53:** final **MEDIUM** stint, 16 laps\n\n### How it shaped the result\n- The early pit on **lap 2** let RUS move onto the **HARD** very quickly.\n- He then ran **two long HARD stints**, suggesting the plan was to manage tyre life and reach the later phase with flexibility.\n- The final **MEDIUM stint** was the quickest on average: **95.25s/lap**, compared with **98.72s/lap** on the first HARD stint and **96.47s/lap** on the second HARD stint.\n- However, that final stint also had the **highest degradation rate** in the data at **+0.089s/lap**, which suggests the medium tyres gave pace but degraded more quickly.\n\n### Bottom line\nRUS’s result of **P7** was shaped by a strategy that:\n- moved onto **HARDs** early,\n- relied on **two HARD stints** to manage tyre wear,\n- and finished on **MEDIUMs** to maximize late-race pace, which is reflected in the faster average lap time in the final stint.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::PIA",
+      "text": "PIA’s race was built around an unusual early stop followed by a very long hard-tyre run.\n\n- He started on **MEDIUM**, then made a **pit stop on lap 1 from MEDIUM to MEDIUM under SC/VSC**.\n- He stayed on **MEDIUM until lap 12**, completing **11 laps** in that stint with an average of **98.33s** and **+0.221s/lap** degradation.\n- He then switched to **HARD on lap 12** and ran **20 laps from laps 13–32**, averaging **97.51s** with much lower degradation of **+0.042s/lap**.\n- At **lap 32**, he made a **HARD->HARD** pit stop, then completed the final **21 laps on HARD** with an even faster average of **95.71s** and **+0.056s/lap** degradation.\n\nHow it shaped the result:\n- The strategy clearly prioritized **tyre durability and steady pace on HARDs** after the early SC/VSC-assisted stop.\n- The **low degradation on the HARD stints** suggests he could extend stints without heavy pace loss, which likely helped him stay competitive over the full race distance.\n- The data shows he **finished P8**, so this strategy was sufficient for points, but there is nothing in the data indicating it produced a higher finish than that.",
+      "rounds": 2,
+      "trace": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::HAM",
+      "text": "HAM’s race was a three-stop strategy built around one very short opening stint and two later stints on fresh rubber:\n\n- **Lap 1:** started on **MEDIUM**\n- **Lap 2:** switched **MEDIUM -> HARD** under **SC/VSC**\n- **Lap 23:** made a **HARD -> HARD** stop\n- **Lap 39:** switched **HARD -> MEDIUM**\n\n### How it played out\n- The **first hard stint** ran **laps 2–23** for **22 laps** at an average of **98.95s**, with **+0.070s/lap** degradation.\n- The **second hard stint** ran **laps 24–39** for **16 laps** at **96.40s** average, but with higher degradation at **+0.091s/lap**.\n- The **final medium stint** ran **laps 40–53** for **14 laps** at **94.96s** average, with the highest degradation of the race at **+0.143s/lap**.\n\n### Strategic effect\nThe key feature is that HAM’s race was heavily shaped by the **early SC/VSC pit stop**, which allowed an immediate move to Hard tyres after just one lap. He then made a **HARD -> HARD** stop at lap 23 and switched to **Mediums** at lap 39.\n\nThe data shows the stint averages got **progressively faster** as the race went on, despite increasing degradation, suggesting the later stints were used to push harder on fresher tyres. However, the **final Medium stint** also had the highest wear rate, so the pace came with tyre drop-off.\n\n### Result link\nHAM finished **P9**, so this strategy was enough to bring him to the finish but not into the higher points positions. Based on the data alone, the strategy appears to have prioritized **flexibility and track-position management under SC/VSC**, but the tyre progression and degradation profile did not translate into a result higher than **P9**.",
+      "rounds": 2,
+      "trace": [
+        0.6666666666666666,
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::stint::TSU",
+      "text": "TSU used a **three-stop strategy in terms of stints but only two tyre changes**, starting on **MEDIUM for 1 lap**, then moving to **SOFT for 6 laps**, and then running **HARD for the rest of the race** in two HARD stints.\n\n### What the data shows\n- **Lap 1:** MEDIUM\n- **Laps 2–7:** SOFT\n- **Laps 8–22:** HARD\n- **Laps 23–52:** HARD\n\nThe first pit happened on **lap 1 from MEDIUM to SOFT under SC/VSC**, which indicates the early stop was made in a controlled race phase. After that, TSU switched to **HARD on lap 7**, and then stayed on HARD through the end, including a **HARD to HARD pit on lap 22**.\n\n### How the strategy shaped the result\n- The **SOFT stint was short** at 6 laps, suggesting it was used as a brief phase rather than a long-run tyre.\n- The **first HARD stint** lasted 15 laps with an average of **98.90s** and **+0.146s/lap degradation**.\n- The **final HARD stint** was much longer at 30 laps and was actually the **best pace stint** on average at **97.34s**, with **-0.015s/lap degradation**, meaning it was more stable than the earlier HARD stint.\n\nThat long, stable final HARD stint likely helped TSU **hold position to finish P10**, because the data shows he could maintain better pace over the biggest portion of the race on the same compound. The **lap 22 HARD->HARD stop** also suggests a tyre management or race-control-related reset rather than a compound change, but the data does not specify why.\n\n### Bottom line\nTSU’s result was shaped by a strategy that **used a very short early soft phase, then committed to long HARD running**, with the final HARD stint being the most effective. This consistency on HARD over the back half of the race aligns with the **P10 finish**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::BOT_TSU",
+      "text": "BOT pitted on lap 6 for SOFT -> HARD, while TSU pitted on lap 7 for SOFT -> HARD. That is the undercut window.\n\nAccording to the pit-timing battle data, the gap BOT -> TSU changed from -0.681s to 1.805s across that sequence. That means BOT went from being behind TSU by 0.681s to ahead by 1.805s, so the stop sequence produced a track-position gain.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::BOT_ZHO",
+      "text": "BOT’s undercut attempt worked on pit timing.\n\n- BOT pitted on lap 6 from SOFT to HARD.\n- ZHO stayed out one lap longer and pitted on lap 7 from SOFT to HARD.\n- During that window, the BOT-to-ZHO gap increased from 3.739s to 9.563s.\n\nThat means BOT gained track position relative to ZHO through the earlier stop, i.e. the undercut was effective in opening a larger gap by the time ZHO pitted. However, the data only shows the gap change, not an actual on-track pass.",
+      "rounds": 1,
+      "trace": [
+        0.7142857142857143,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::HUL_BOT",
+      "text": "HUL and BOT both had a pit under SC/VSC on lap 1, but the pit-timing battle here was HUL on lap 5 versus BOT on lap 6.\n\nWhat the data shows:\n- HUL pitted lap 5.\n- BOT pitted lap 6.\n- The gap HUL→BOT went from -3.072s to -1.573s.\n\nSo HUL gained time relative to BOT during that pit phase, which is consistent with an undercut attempt.\n\nWhether it worked:\n- The data shows a reduced gap after HUL’s earlier stop.\n- It does not explicitly show a position change or final race outcome from the pit timing alone.",
+      "rounds": 1,
+      "trace": [
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::HUL_TSU",
+      "text": "HUL’s undercut worked **partly, but not decisively**.\n\n- **Timing:** HUL pitted on **lap 5** from SOFT to HARD, while TSU stayed out until **lap 7** before switching from SOFT to HARD.\n- **Immediate effect:** During that pit-window, the gap from **HUL to TSU** changed from **-4.982s to -0.678s**, meaning HUL closed the deficit by **4.304s** before TSU’s stop.\n- **Why this counts as an undercut:** HUL was on fresher tyres earlier, while TSU stayed out longer on the same soft tyre stint, so HUL used the earlier stop to gain track time.\n- **Whether it worked:** The data shows HUL **reduced the gap substantially**, so the undercut was **effective in closing the gap**. But it did **not** clearly produce a position gain in the provided data.\n\nSo, HUL’s pit timing **successfully executed the undercut in pace/gap terms**, but **the provided data does not show a final position change**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::HUL_ZHO",
+      "text": "HUL pitted on lap 5, and ZHO pitted on lap 7.\n\nWhat the data shows:\n- HUL pitted on lap 5.\n- ZHO pitted on lap 7.\n- At the pit-timing battle point, the gap from HUL to ZHO moved from -0.651s to 7.08s.\n\nSo HUL did not undercut ZHO in the sense of gaining the position or closing the gap. The data says the gap expanded sharply after the stop sequence, which means the timing advantage did not work out for HUL.",
+      "rounds": 2,
+      "trace": [
+        0.75,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::overcut::STR_HUL",
+      "text": "STR’s overcut attempt was based on staying out one lap longer than HUL before the next pit stop:\n\n- **HUL pitted on lap 33** from **HARD to HARD**.\n- **STR pitted on lap 34** from **HARD to SOFT**.\n- In the pit-timing battle, the **STR→HUL gap changed from -0.844s to 3.487s**.\n\nThat means STR gained track time on the lap before pitting and came out ahead in that exchange by **3.487s** relative to HUL.\n\n**Did it work?**  \nYes, in the narrow sense of the pit-stop duel: STR’s later stop produced a positive gain versus HUL in the timing battle. However, the final race positions were **STR P12** and **HUL P11**, so it did **not** translate into beating HUL overall.",
+      "rounds": 2,
+      "trace": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::NOR_ALO",
+      "text": "NOR’s undercut came from pitting **2 laps earlier than ALO** on the key stop to fresh tyres:\n\n- **NOR pit:** lap **11** from **MEDIUM to HARD**\n- **ALO pit:** lap **13** from **SOFT to MEDIUM**\n\nDuring that window, the reported **NOR→ALO gap increased from 4.948s to 11.054s**. That means NOR did **not** use the earlier stop to jump ALO on track; instead, the gap **grew**, so the undercut was **not successful** in terms of position or clear time gain.\n\nThe stint data supports that NOR was quicker on the later HARD run:\n- NOR’s **HARD stint 27–53** averaged **95.93s**\n- ALO’s **HARD stint 34–53** averaged **95.69s**\n\nBut based on the provided pit-timing battle, the decisive answer is: **NOR pitted earlier, but it did not work as an effective undercut against ALO because the gap increased rather than shrinking.**",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::NOR_PER",
+      "text": "NOR attempted the undercut by pitting earlier than PER on the first green-flag stop:\n\n- **NOR pitted on lap 11** from **MEDIUM to HARD**\n- **PER pitted on lap 15** and stayed on **MEDIUM**\n\nSo NOR had a **4-lap earlier stop**, which is the core of the undercut attempt.\n\n**Did it work? Yes, temporarily.**  \nThe provided battle data says the **NOR→PER gap changed from -3.081s to 1.683s** after the stop sequence. That means NOR moved from being **3.081s behind** to being **1.683s ahead**, so the undercut **successfully gained track position/time advantage** at that stage.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::NOR_SAI",
+      "text": "NOR did **successfully** undercut SAI.\n\n- **Timing:** NOR pitted on **lap 11** from **MEDIUM to HARD**, while SAI stayed out until **lap 15** on **MEDIUM**.\n- **Undercut effect:** NOR’s earlier stop gave him the tyre-age and out-lap advantage versus SAI’s older tyres.\n- **What happened in the data:** The gap from **NOR to SAI** went from **1.211s to 6.796s** during this pit-timing phase.\n- **Stint pace context:** NOR’s first HARD stint (**laps 12-26**) averaged **97.30s**, while SAI’s later MEDIUM stint (**laps 16-36**) averaged **97.04s**.\n\nSo, based on the provided numbers, NOR pitted **4 laps earlier** and the move **worked**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::OCO_SAR",
+      "text": "OCO’s undercut attempt was the pit-stop timing on the second stop: OCO pitted on lap 19, while SAR stayed out until lap 22.\n\nThe data shows the immediate effect was strong for OCO in relative terms: the OCO→SAR gap changed from **-4.646s to 1.935s** across that phase. That indicates OCO gained enough on the pit window to erase a deficit and come out ahead in timing terms.\n\nDid it work? **It appears to have worked in the pit-cycle battle, based on the gap change.**",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::OCO_STR",
+      "text": "OCO’s undercut attempt against STR was based on pitting earlier:\n\n- **OCO pitted on lap 19**: HARD -> HARD\n- **STR pitted on lap 22**: MEDIUM -> HARD\n\nThat means OCO had **3 laps** on fresher tires before STR made his stop.\n\nThe data shows the timing **partially worked**:\n- In the pit-timing battle, the gap **OCO -> STR improved from -3.847s to -1.587s**.\n- That indicates OCO **reduced the time deficit by 2.260s** after pitting earlier.\n\nSo, based on the provided data, OCO’s earlier stop **helped close the gap**, but the data does not state whether it resulted in a position gain over STR.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::OCO_TSU",
+      "text": "OCO’s undercut attempt came from pitting earlier on lap 19 for a HARD-to-HARD stop, while TSU stayed out until lap 22 before his HARD-to-HARD stop. That gave OCO three extra laps on fresher tyres before TSU stopped.\n\nThe data shows the gap from OCO to TSU changed from -4.234s to -2.115s over that pit-timing window. So OCO did close the gap by 2.119s, which is evidence the undercut gained time.\n\nHowever, it did **not** fully succeed in the racing sense: the undercut reduced the gap, but it did not overturn the track order.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::overcut::ALO_PIA",
+      "text": "ALO did **not** overcut PIA on the key pit-stop cycle.\n\n- **Pit timing:** PIA pitted first on **lap 12** (MEDIUM→HARD), while ALO pitted one lap later on **lap 13** (SOFT→MEDIUM).\n- **What the gap did:** the ALO→PIA gap **increased** from **1.437s to 2.649s** across that sequence.\n- **Interpretation:** an overcut would require ALO to stay out longer and emerge ahead of, or at least closer to, PIA. Instead, the gap grew, so the timing **did not work in ALO’s favor** in that battle.\n\nSupporting stint data also points the same way:\n- ALO’s lap 2-13 soft stint averaged **98.32s**\n- PIA’s lap 2-12 medium stint averaged **98.33s**\n\nSo ALO was essentially matching PIA on pace before the pit stop, but the provided pit-timing result shows **no successful overcut**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::PIA_ALO",
+      "text": "PIA’s undercut attempt came from pitting one lap earlier than ALO:\n\n- **PIA pitted on lap 32** from **HARD to HARD**\n- **ALO pitted on lap 33** from **MEDIUM to HARD**\n\nThat means PIA spent one extra lap on fresher tyres while ALO stayed out, which is the basic setup for an undercut.\n\n**Did it work?**\n- The gap from **PIA to ALO** changed from **-4.494s to -2.252s** across that pit-cycle.\n- So PIA **reduced the gap by 2.242s**, which shows the undercut **partly worked** in terms of closing the gap.\n\nSo, based on the data, PIA’s earlier stop **improved his gap to ALO, but not enough to fully close it**.",
+      "rounds": 1,
+      "trace": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::RUS_HAM",
+      "text": "Yes — RUS’s undercut attempt on HAM did work in pit-stop timing terms.\n\n- Both drivers made the same first stop under SC/VSC on lap 1, so the relevant battle is the later pit cycle.\n- RUS pitted on lap 22, while HAM stayed out one lap longer and pitted on lap 23.\n- During that window, the gap from RUS to HAM changed from 1.972s to 6.792s, so RUS gained 4.820s relative to HAM through the pit sequence.\n- That indicates RUS’s earlier stop was the faster strategic move in that exchange.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Japanese_Grand_Prix::undercut::RUS_HAM",
+      "text": "RUS’s undercut happened on the final stop: he pitted on lap 37 for MEDIUM, while HAM stayed out until lap 39. That means RUS had two laps on fresher tyres before HAM’s stop.\n\nThe data shows the effect was strong: during that pit-timing battle, the gap from RUS to HAM increased from 3.26s to 9.083s. So RUS’s earlier stop did create a larger gap relative to HAM.\n\nDid it work? Yes, in the narrow sense that the undercut gained time relative to HAM in that phase. But the data does not show a direct overtake or final position change from this stop alone.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::LEC",
+      "text": "LEC’s race was built around an extremely early switch from the **MEDIUM** to the **HARD** under **SC**.\n\n- He started on **MEDIUM** but only did **lap 1** on that tyre.\n- He pitted on **lap 1** and changed to **HARD**.\n- He then completed the remaining **77 laps** on the **HARD** tyre, with an average stint pace of **78.45s** and **negative degradation (-0.068s/lap)**.\n\nHow this shaped the result:\n- The early **SC** pit stop let him get onto the **HARD** tyre with minimal time loss.\n- Because he then ran the rest of the race on the **same set** of Hards, the strategy was simple and controlled.\n- The data shows the Hard stint was **very stable** on pace and even had **improving tyre behavior** over time, which would have helped him maintain the lead to the finish.\n\nSo, LEC’s victory came from an early safety-car-assisted switch to **HARDs** and a long, consistent one-stop run to the flag.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::PIA",
+      "text": "PIA’s race was built around an extremely early switch from **Medium to Hard** under **SC/VSC** on **lap 1**. He then completed **the remaining 77 laps on the Hard tyre**.\n\nWhat this shows strategically:\n- He used the **safety-car/VSC timing** to make the pit stop with reduced time loss.\n- The **Hard tyre** was then managed for a very long stint, with the data showing **average lap time of 78.54s** and **tyre deg -0.064s/lap**, indicating a controlled, consistent run to the flag.\n\nHow it shaped the result:\n- This strategy let PIA **cover almost the entire race on one set of Hards after the early stop**, which is exactly the kind of approach that can work in Monaco, where track position is critical.\n- The data directly shows he **finished P2**, so the early SC/VSC-assisted stop and long Hard stint were part of a race that delivered a podium result.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::SAI",
+      "text": "SAI’s race was built around a very early switch from **Medium to Hard**:\n\n- **Stint 1:** Medium for **lap 1 only**\n- **Pit stop:** **lap 1**, **Medium -> Hard**, taken **under SC/VSC**\n- **Stint 2:** Hard from **laps 2–78** for **77 laps**\n\nThis means SAI completed almost the entire race on a single Hard tyre set, which is a very long stint by the data provided. The Hard stint also shows **avg 78.53s** and **deg -0.067s/lap**, indicating strong tyre stability over the stint.\n\nHow it shaped the result:\n- The **early pit under SC/VSC** reduced the cost of switching to Hard.\n- The **very long Hard stint** suggests the strategy was aimed at maximizing track position and minimizing further stops.\n- Finishing **P3** shows the strategy was effective enough to secure a podium, with the long Hard run supporting race completion without another pit stop.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::NOR",
+      "text": "NOR’s strategy was extremely simple: he started on **Mediums for 1 lap**, then switched to **Hard tyres on lap 2** and completed the remaining **77 laps** on that set.\n\nWhat shaped the result was the **very early pit stop under SC/VSC on lap 1**, which allowed him to make the **Medium -> Hard** switch without a normal-race-time loss. After that, he was able to stay on the **Hard tyres to the finish**, and the stint data suggests this was a strong race-management choice: the Hard stint lasted **77 laps** with **low degradation** at **-0.068s/lap** on average, indicating the tyre held up well over the full race distance.\n\nIn short, NOR’s result was shaped by:\n- **One-lap Medium stint**\n- **Immediate switch to Hard under SC/VSC**\n- **Very long, stable Hard stint to the end**\n\nThat strategy helped him secure **P4** by minimizing pit-stop penalty and relying on tyre durability for the rest of the race.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::RUS",
+      "text": "RUS’s race was built around a very early switch from **HARD** to **MEDIUM** under **SC**.\n\n- He started on **HARD** for **lap 1 only**.\n- He then pitted on **lap 1** and switched to **MEDIUM**.\n- He stayed on that **MEDIUM** set for the rest of the race, **laps 2–78** — a **77-lap stint**.\n\nHow this shaped the result:\n- The key strategic feature was the **timing of the pit stop under SC**, which reduced the normal cost of changing tyres.\n- After that stop, RUS effectively ran a **one-stop race** with a very long medium stint.\n- The data shows that medium stint was **consistent**: **avg 78.56s/lap** with **-0.089s/lap deg**, so tyre performance did not worsen materially in the numbers provided.\n- He finished **P5**, so this strategy was compatible with a top-five result, but the data only supports that the early SC stop and long medium run were the core of his race.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::VER",
+      "text": "VER used a **two-stop strategy under safety-car conditions**:\n\n- **Lap 1:** started on **HARD**\n- **Lap 1 pit:** switched **HARD → MEDIUM** under **SC/VSC**\n- **Laps 2–52:** stayed on **MEDIUM** for **51 laps** with an average lap time of **79.76s** and **-0.095s/lap degradation**\n- **Lap 52 pit:** switched **MEDIUM → HARD**\n- **Laps 53–78:** finished on **HARD** for **26 laps**, averaging **75.68s** with **+0.008s/lap degradation**\n\nHow it shaped the result:\n- The early **HARD→MEDIUM** change under **SC/VSC** let VER extend the middle stint very long, which is the core of the race plan.\n- The **long MEDIUM stint** was the main pace management phase, with the listed degradation showing the tyre holding up well over 51 laps.\n- The final **HARD stint** was shorter and more stable, with essentially flat degradation, helping him complete the race to **P6**.\n\nSo, the result was shaped by a **very long middle stint on MEDIUM and a clean finish on HARD**, with both pit decisions occurring in the data’s listed conditions.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::HAM",
+      "text": "HAM ran a 2-stop strategy built around a long middle stint:\n\n- **Start:** Lap 1 on **HARD**\n- **Pit 1:** On **lap 1**, switched **HARD -> MEDIUM** under **SC/VSC**\n- **Stint 2:** **MEDIUM** from **laps 2–51** for **50 laps**  \n  - Avg lap time: **79.82s**\n  - Tyre deg: **-0.107s/lap**\n- **Pit 2:** On **lap 51**, switched **MEDIUM -> HARD**\n- **Stint 3:** **HARD** from **laps 52–78** for **27 laps**  \n  - Avg lap time: **75.67s**\n  - Tyre deg: **-0.024s/lap**\n\nHow it shaped the result:\n- The key feature was the **very long 50-lap medium stint**, then a **27-lap hard stint** to the flag.\n- The final hard stint was **faster on average** than the medium stint, and had **less degradation** per lap according to the data.\n- HAM finished **P7**, so the strategy produced a points finish, but the supplied data does not say how it compared to rivals or whether it gained or lost positions.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::TSU",
+      "text": "TSU’s race was defined by an immediate switch from **MEDIUM to HARD on lap 1 under SC/VSC**, then a **single very long HARD stint from laps 2–77**.\n\nKey strategic points from the data:\n- **Very early pit stop:** TSU pitted on **lap 1** and changed from **MEDIUM to HARD**.\n- **Extremely long final stint:** The **HARD tyre lasted 76 laps**, almost the full race distance.\n- **Stability on the hard tyre:** That stint averaged **79.97s per lap** with **low degradation of -0.067s/lap**, indicating the tyre held up well over the long run.\n\nHow it shaped the result:\n- This was clearly a **one-stop, track-position-focused strategy** built around the **SC/VSC pit opportunity**.\n- The long, low-degradation HARD stint let TSU **complete the race without another stop**, which is consistent with a **P8 finish** in Monaco, where track position is highly valuable.\n- The data supports that the result came from **maximizing the lap-1 pit window and then managing a durable hard tyre to the flag**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::ALB",
+      "text": "ALB’s race was built around a very early switch from **Medium to Hard** under **SC/VSC**:\n\n- **Stint 1:** Medium on **lap 1 only**\n- **Pit:** **Lap 1**, **Medium -> Hard** under **SC/VSC**\n- **Stint 2:** Hard from **laps 2-77** for **76 laps**\n\nThis means ALB essentially committed to a **one-stop, long-Hard stint** immediately after the start. The Hard tyre data shows it was effective over the long run: **average 80.15s** with **-0.055s/lap degradation**, which suggests the tyre did not meaningfully fall off across the stint.\n\nHow it shaped the result:\n- The strategy gave ALB **maximum continuity** after lap 1, with no further stops in the data.\n- The **SC/VSC pit timing** likely reduced the cost of the early stop.\n- The long Hard stint appears to have been the foundation of the race to **P9**, since the only documented strategy element is that early switch and then completing nearly the entire race on Hards.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::stint::GAS",
+      "text": "GAS’s race was defined by a very early switch from **HARD to MEDIUM on lap 1**, and then by an extremely long **single MEDIUM stint from laps 2 to 77**.\n\nWhat that means strategically:\n- He started on **HARD** but only used it for **1 lap**.\n- He changed to **MEDIUM** on **pit lap 1**.\n- After that, he **did not stop again**, completing **76 laps on the same set of MEDIUMs**.\n\nHow this shaped the result:\n- The strategy was clearly built around **track position and avoiding a normal pit loss** by stopping under the lap-1 pit opportunity.\n- The long MEDIUM stint was viable according to the data: **avg 80.25s** with **deg -0.060s/lap**, which indicates the tire was managed well enough over the stint.\n- This one-stop-like approach helped him reach the end and finish **P10**.\n\nIn short, GAS used the lap-1 pit opportunity to make a very cheap tire change, then stretched the MEDIUMs for the rest of the race, which supported a points finish of **10th**.",
+      "rounds": 2,
+      "trace": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Monaco_Grand_Prix::overcut::VER_HAM",
+      "text": "VER did **not** overcut HAM here; based on the data, **HAM beat VER on the pit timing battle**.\n\nWhat the data shows:\n- Both drivers made their first stop on **lap 1** under SC/VSC and switched **HARD -> MEDIUM**.\n- On the second stop:\n  - **HAM pitted on lap 51**\n  - **VER pitted on lap 52**\n- The “Pit-timing battle” states that the **gap VER -> HAM went from 1.442s to 2.04s**.\n\nInterpretation grounded in the data:\n- Because **HAM stopped one lap earlier** and the gap **increased** from 1.442s to 2.04s, VER did **not** lose ground through the later stop in this pit sequence.\n- VER’s longer MEDIUM stint also shows slightly better average pace:\n  - VER MEDIUM: **51 laps, avg 79.76s**\n  - HAM MEDIUM: **50 laps, avg 79.82s**\n\nConclusion: **VER’s overcut move actually worked in this data, even though HAM pitted earlier.**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::LEC",
+      "text": "LEC ran a **one-stop strategy**:\n\n- **Stint 1:** Medium tires from **lap 1 to 15**  \n  - **15 laps**\n  - Average lap time: **84.87s**\n  - Tire degradation: **+0.020s/lap**\n\n- **Pit stop:** On **lap 15**, switching **Medium -> Hard**\n\n- **Stint 2:** Hard tires from **lap 16 to 53**  \n  - **38 laps**\n  - Average lap time: **83.62s**\n  - Tire degradation: **-0.008s/lap**\n\n### How it shaped the result\nThe data shows LEC extended the **Hard** stint for most of the race, and it was the faster stint on average, with a lower average lap time than the Medium stint. The Hard tires also showed **negative degradation**, meaning the pace held up or improved slightly over time rather than dropping away. That long, stable second stint was key to finishing **P1**, because it let LEC cover the majority of the race on the stronger tyre phase and avoid a second stop.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::PIA",
+      "text": "PIA ran a two-stop race on a medium-to-hard-to-hard strategy:\n\n- **Stint 1:** Mediums from **lap 1 to 16** (16 laps), averaging **84.69s/lap** with very little degradation (**-0.009s/lap**).\n- **Pit stop 1:** **Lap 16**, switching **Medium -> Hard**.\n- **Stint 2:** Hards from **lap 17 to 38** (22 laps), averaging **83.50s/lap** with modest degradation (**-0.034s/lap**).\n- **Pit stop 2:** **Lap 38**, switching **Hard -> Hard**.\n- **Stint 3:** Hards from **lap 39 to 53** (15 laps), averaging **82.46s/lap** with very low degradation (**-0.006s/lap**).\n\nHow it shaped the result:\n- The strategy was built around **long hard-tyre stints**, and the data shows those stints were progressively faster on average: **83.50s** in stint 2, then **82.46s** in stint 3.\n- The **low degradation** in all three stints indicates the tyres were managed well, especially on the final hard stint.\n- This consistency and strong pace on the hard tyres helped PIA finish **P2** over a 53-lap race.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::NOR",
+      "text": "NOR ran a **medium-to-hard, then hard-to-hard** strategy:\n\n- **Stint 1:** Medium from **laps 1–14**  \n  - **14 laps**, average **84.83s/lap**, degradation **-0.041s/lap**\n- **Pit lap 14:** **Medium → Hard**\n- **Stint 2:** Hard from **laps 15–32**  \n  - **18 laps**, average **83.83s/lap**, degradation **-0.055s/lap**\n- **Pit lap 32:** **Hard → Hard**\n- **Stint 3:** Hard from **laps 33–53**  \n  - **21 laps**, average **82.70s/lap**, degradation **-0.056s/lap**\n\nHow it shaped the result:\n- The strategy was built around **long hard stints** after an initial medium stint.\n- NOR’s lap times **improved across the race**: from **84.83s** on the medium, to **83.83s** on the first hard stint, to **82.70s** on the final hard stint.\n- Both hard stints show **similar degradation rates** (**-0.055** and **-0.056s/lap**), indicating a **stable and consistent tyre phase** after the first stop.\n- The **hard-to-hard pit on lap 32** shows NOR stayed on a tyre choice that was still viable rather than switching compound, helping him complete the race and finish **P3** with a long final stint.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::SAI",
+      "text": "SAI ran a simple one-stop strategy: **Mediums from lap 1 to 19, then Hards from lap 20 to 53**.\n\n- **Stint 1 (Medium, 19 laps):** avg **85.15s/lap**, with relatively higher degradation at **+0.019s/lap**.\n- **Pit stop:** on **lap 19**, switching **Medium -> Hard**.\n- **Stint 2 (Hard, 34 laps):** avg **83.77s/lap**, with much lower degradation at **+0.004s/lap**.\n\n### How it shaped the result\nThe strategy was clearly built around **pushing on Mediums early, then extending the race on a more stable Hard tyre**. The data shows the Hard stint was both **longer** and **more consistent** than the Medium stint, with significantly lower degradation. That would have helped SAI maintain pace over the second half of the race and is consistent with finishing **P4** on a one-stop.\n\nSo, based on the data, SAI’s result was shaped by:\n1. **A controlled early Medium stint**, and\n2. **A long, low-degradation Hard stint** to the flag.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::HAM",
+      "text": "HAM ran a **3-stint strategy on Medium → Hard → Hard** in the Italian GP, finishing **P5**.\n\n### What the strategy looked like\n- **Stint 1:** Medium from **laps 1–15**  \n  - **15 laps**\n  - Average pace: **85.24s/lap**\n  - Tire deg: **-0.031s/lap**\n- **Pit on lap 15:** **Medium → Hard**\n- **Stint 2:** Hard from **laps 16–37**  \n  - **22 laps**\n  - Average pace: **83.93s/lap**\n  - Tire deg: **-0.088s/lap**\n- **Pit on lap 37:** **Hard → Hard**\n- **Stint 3:** Hard from **laps 38–53**  \n  - **16 laps**\n  - Average pace: **82.69s/lap**\n  - Tire deg: **+0.020s/lap**\n\n### How it shaped the result\n- The **Hard tires allowed long stints**, especially the **22-lap second stint**, which suggests HAM could extend his run and keep the strategy flexible.\n- His pace **improved across the race**: from **85.24s/lap** on Mediums to **83.93s/lap** on the first Hard stint and then **82.69s/lap** on the final Hard stint.\n- The **final Hard stint had positive degradation (+0.020s/lap)**, meaning the tire behavior was more stable than the earlier stints, which likely helped him maintain pace to the finish.\n- Overall, this strategy was a **steady, durability-focused race plan** rather than an aggressive short-stint approach, and it supported a finish of **P5**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::VER",
+      "text": "VER ran a **two-stop race on a hard-hard-medium plan**:\n\n- **Stint 1:** HARD, laps **1–22**  \n- **Pit lap 22:** **HARD -> HARD**\n- **Stint 2:** HARD, laps **23–41**\n- **Pit lap 41:** **HARD -> MEDIUM**\n- **Stint 3:** MEDIUM, laps **42–53**\n\n### What the data shows\n- The first hard stint was the **slowest** of the three on average at **85.32s/lap**, with essentially **no degradation** shown (**-0.005s/lap**).\n- The second hard stint improved to **83.59s/lap** and still showed very low wear (**+0.009s/lap**).\n- The final medium stint was the **fastest** at **82.78s/lap**, but it also had the **highest degradation** of the race at **+0.057s/lap**.\n\n### How it shaped the result\nThis strategy suggests VER prioritized **long, controlled stints on durable tires**, then used the **mediums late** to finish with the fastest average pace. However, the data also shows that the race was managed with **two pit stops**, and the overall result was **P6**. Based on the provided information, the strategy likely helped maintain consistent pace and avoid heavy degradation, but it was not enough to produce a result higher than P6.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::RUS",
+      "text": "RUS ran a 3-stint strategy: **Medium for laps 1–11, Hard for laps 12–33, then another Hard for laps 34–53**.\n\nWhat the data shows:\n- He started on **Mediums** and switched early after **11 laps**.\n- He then used a **long first Hard stint of 22 laps**, which was his most stable phase by tyre wear rate, with **-0.054s/lap** degradation.\n- After pitting on lap 33, he stayed on **Hard tyres again for the final 20 laps**, with average pace improving from **84.38s** in stint 2 to **82.87s** in stint 3, despite a higher wear rate of **-0.084s/lap** in that last stint.\n\nHow it shaped the result:\n- The strategy was clearly built around **switching off the Medium early and then completing the race on Hard tyres**.\n- The **long Hard stints** likely helped him reach the finish without an extra stop, which is consistent with his **P7 finish**.\n- The data does not show any alternative strategy or position changes, so the result can only be linked to the fact that he executed a **two-stop race with Medium-to-Hard, then Hard-to-Hard**, and maintained solid pace through the longer Hard runs.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::PER",
+      "text": "PER ran a **two-stop strategy** centered on long Hard stints before finishing on Mediums.\n\n- **Stint 1:** Hard from laps **1–23** for **23 laps**, averaging **85.42s/lap**, with slight positive degradation (**+0.005s/lap**).\n- **Pit lap 23:** **Hard -> Hard**, so the first stop was not a compound change.\n- **Stint 2:** Hard from laps **24–35** for **12 laps**, averaging **83.88s/lap**, with improving pace indicated by **-0.022s/lap** degradation.\n- **Pit lap 35:** **Hard -> Medium**.\n- **Stint 3:** Medium from laps **36–53** for **18 laps**, averaging **83.72s/lap**, with further pace improvement shown by **-0.028s/lap** degradation.\n\n### How it shaped the result\nThis strategy suggests PER used the second Hard stint to extend the race before switching to Mediums for the final run. The later stints were **faster on average than the opening stint**, especially the Medium stint, which had the best average pace of the three. That likely helped him finish strongly and supports the **P8** result.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::ALB",
+      "text": "ALB ran a simple two-stint strategy: **Medium from laps 1–17**, then **Hard from laps 18–53**.\n\nWhat the data says:\n- **Stint 1:** Medium for **17 laps**\n  - Average lap time: **86.06s**\n  - Degradation: **-0.032s/lap**\n- **Pit stop:** on **lap 17**, switching **Medium -> Hard**\n- **Stint 2:** Hard for **36 laps**\n  - Average lap time: **84.80s**\n  - Degradation: **-0.032s/lap**\n\nHow it shaped the result:\n- The strategy was designed around a **long final stint on Hards**, and that longer stint was also **faster on average** than the opening Medium stint.\n- Since the Hard stint covered **36 of 53 laps**, ALB spent most of the race on the more durable tyre, which supported finishing the full race on **one pit stop**.\n- Based on the data provided, the result was **P9**. The tyre plan likely helped by allowing a long, consistent second stint and avoiding extra stops, but the data does not provide enough to attribute P9 to any specific overtakes or rival timing.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::stint::MAG",
+      "text": "MAG used a simple one-stop strategy: **Mediums from laps 1–14, then Hards from laps 15–53**. He pitted on **lap 14** and did not stop again.\n\nThe data suggests this strategy was effective for the full race distance. His **Hard stint was much longer** than the Medium stint (**39 laps vs 14 laps**) and also **faster on average**: **84.58s/lap on Hards** compared with **86.17s/lap on Mediums**. Both stints show only modest degradation, with the Hard stint degrading slightly less per lap (**-0.046s/lap**) than the Medium stint (**-0.064s/lap**).\n\nSo, MAG’s result of **P10** was shaped by a strategy that prioritized **tyre durability and race-long consistency** rather than repeated stops. The long Hard stint allowed him to complete the race with one pit stop, and the lower degradation on Hards helped maintain pace to the finish.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::ALO_MAG",
+      "text": "ALO attempted the undercut by pitting 2 laps earlier than MAG:\n\n- **ALO pitted on lap 12** from **MEDIUM to HARD**.\n- **MAG pitted on lap 14** from **MEDIUM to HARD**.\n\nOn the pit cycle, the data says the **ALO→MAG gap changed from 1.752s to 5.313s**. That means ALO **did** gain relative to MAG through the pit-stop timing.\n\nSo, based on the data provided, **the undercut worked**.",
+      "rounds": 1,
+      "trace": [
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::overcut::STR_BOT",
+      "text": "STR did **not** overcut BOT; the data shows BOT effectively won the pit-cycle.\n\n- **Pit timing:** BOT pitted first on **lap 33** from **HARD -> MEDIUM**. STR stayed out until **lap 36**, pitting **three laps later** from **HARD -> MEDIUM**.\n- **Intended overcut window:** STR’s later stop meant he had more laps on track before pitting, which is the setup needed to overcut.\n- **What happened in the data:** the **gap STR→BOT increased from 1.444s to 5.718s** over the pit-timing battle, which means STR lost ground rather than gaining it.\n- **Conclusion:** STR’s later stop **did not work as an overcut**. BOT’s earlier stop and STR’s longer run did not translate into track position gain for STR, based on the provided gap change.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::COL_STR",
+      "text": "COL undercut STR by pitting earlier.\n\n- COL stopped on lap 16, changing from MEDIUM to HARD.\n- STR stayed out until lap 19 before his first stop.\n- In the pit-timing battle data, the COL→STR gap went from **-4.195s** to **1.389s** over that phase, which indicates COL gained relative track position/time by stopping first.\n\nWhether it worked:\n- **Yes, at least in the short term.** COL’s earlier stop and switch to HARDs was associated with the gap swing in his favor.\n- The data also shows COL’s post-stop stint was long and consistent: **37 laps on HARD** at **84.88s average**, with **-0.012s/lap** deg, while STR’s first post-stop stint on HARD was **17 laps** at **84.93s average**.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::GAS_MAG",
+      "text": "GAS tried to undercut MAG by pitting **4 laps earlier**: GAS stopped on **lap 10** (MEDIUM to HARD), while MAG stopped on **lap 14**.\n\nThe timing data says the gap from **GAS to MAG** changed from **-2.644s** to **0.751s** during that window. That means GAS was ahead before the stops, and after the pit cycle the gap had moved in GAS’s favor to **0.751s**.\n\nSo, based on the data, the undercut **worked** for GAS.",
+      "rounds": 1,
+      "trace": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::GAS_RIC",
+      "text": "GAS tried to undercut RIC by pitting one lap earlier.\n\n- **Pit timing:** GAS stopped on **lap 10** from **MEDIUM to HARD**, while RIC stopped on **lap 11** from **MEDIUM to HARD**.\n- **Effect on gap:** The provided battle data says the **GAS→RIC gap went from -3.328s to 4.651s** across that pit phase. That means the relative gap swung by **about 8.0s** in GAS’s favor on paper.\n\nDid it work?\n\n- **The data shows GAS gained time relative to RIC during the pit cycle**, since the gap changed from **-3.328s to 4.651s**.\n- Based only on the provided data, **the undercut appears to have worked in the pit phase**.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::GAS_BOT",
+      "text": "GAS attempted the undercut by stopping first: GAS pitted on lap 30, while BOT stayed out until lap 33. During that window, GAS switched to his final HARD stint and BOT remained on his first HARD stint.\n\nThe timing data shows the gap changed from GAS trailing BOT by 1.098s to GAS leading by 5.354s after the stops. That means GAS gained track position relative to BOT through the pit timing.\n\nDid it work? Yes, in the short-term pit-cycle sense it did: GAS emerged ahead of BOT after the sequence. However, both drivers still finished behind each other in P15 and P16 respectively, so the undercut did not produce a final race-position gain beyond that immediate pit-cycle advantage.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::HAM_SAI",
+      "text": "HAM attempted an undercut by pitting **4 laps earlier** than SAI:\n\n- **HAM** stopped on **lap 15**: Medium → Hard\n- **SAI** stopped on **lap 19**: Medium → Hard\n\nThe timing data shows the gap from **HAM to SAI** changed from **-2.585s** to **-0.769s** during that pit-stop phase. That means HAM **reduced SAI’s advantage by 1.816s** while on the offset strategy.\n\nDid it work? **Partially, but not fully.**  \nHAM’s earlier stop improved the gap, but the data does not show that it resulted in HAM overtaking SAI by the end.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::LEC_SAI",
+      "text": "LEC’s undercut worked.\n\n- **Timing:** LEC pitted on **lap 15** from **MEDIUM to HARD**, while SAI stayed out until **lap 19** before making the same **MEDIUM to HARD** stop.\n- **Effect on the gap:** During that pit-window, the gap from **LEC to SAI** changed from **3.686s** to **9.24s** in LEC’s favor.\n- **Stint pace context:**  \n  - LEC’s first stint averaged **84.87s/lap** over **15 laps**.  \n  - SAI’s first stint averaged **85.15s/lap** over **19 laps**.  \n  LEC was slightly quicker on the opening stint, which supports the undercut attempt.\n- **Outcome:** The data shows the undercut **increased LEC’s advantage over SAI** during that pit-stop phase.\n\nSo, based on the data, LEC’s earlier stop was an effective undercut relative to SAI.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::MAG_ALB",
+      "text": "MAG executed the undercut by pitting **3 laps earlier** than ALB: **MAG on lap 14**, **ALB on lap 17**.\n\nWhat the data shows:\n- Before MAG’s stop, the MAG→ALB gap was **-4.147s**.\n- By the time ALB stopped later, that gap had changed to **-1.533s**.\n- MAG also moved onto the **hard tyre earlier** and then ran a **longer hard stint**: **39 laps** for MAG vs **36 laps** for ALB.\n\nDid it work?\n- **Yes, partially on track position timing:** MAG’s earlier stop reduced the gap from **4.147s** to **1.533s**, which is consistent with an undercut gaining time.\n\nSo, based on the data, MAG’s undercut **worked to close the gap**.",
+      "rounds": 2,
+      "trace": [
+        0.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::NOR_LEC",
+      "text": "NOR attempted the undercut by pitting **one lap earlier** than LEC:\n\n- **NOR** stopped on **lap 14** from **Medium to Hard**.\n- **LEC** stopped on **lap 15** from **Medium to Hard**.\n\nThe timing data shows the effect:\n- The **NOR→LEC gap** changed from **-0.953s to 2.322s** across the pit-stop phase.\n\nSo, by pitting first, NOR initially gained track position time relative to LEC in the pit cycle. However, the data does not show that this undercut produced a lasting advantage over LEC.\n\nA key clue is the stint pace:\n- NOR’s first Medium stint averaged **84.83s** over **14 laps**.\n- LEC’s first Medium stint averaged **84.87s** over **15 laps**.\n\nNOR’s pace on that stint was only slightly better, so the early stop did create the undercut attempt, but the data does not show it leading to NOR decisively outgaining LEC.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::NOR_PIA",
+      "text": "NOR attempted the undercut by pitting earlier than PIA:\n\n- **NOR pitted on lap 14** from **MEDIUM to HARD**\n- **PIA pitted on lap 16** from **MEDIUM to HARD**\n\nSo NOR had a **2-lap earlier stop** in the first stint.\n\nDid it work? **Partially, but not enough to fully overtake on strategy alone.** The provided pit-timing battle shows the gap from **NOR to PIA** changed from **-3.808s to -2.401s** across that phase, which means NOR **reduced the deficit by 1.407s** while PIA stayed out longer. That is consistent with an undercut gain.\n\nHowever, the data does **not** show NOR getting ahead of PIA from this pit sequence, so the undercut **improved NOR’s position relative to PIA, but did not fully succeed**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::overcut::ALO_RIC",
+      "text": "ALO did **not** overcut RIC here; the data shows **RIC pitted one lap earlier** and ALO stayed out longer.\n\n- **RIC pitted on lap 11** from Medium to Hard.\n- **ALO pitted on lap 12** from Medium to Hard.\n- The pit-timing battle data says the **gap ALO→RIC went from 1.098s to 10.278s**, which means ALO lost time relative to RIC across that sequence.\n\nSo, based on the provided data, ALO’s later stop **did not work as an overcut**. RIC’s earlier stop was the decisive timing advantage, and ALO did not gain position or timing from staying out longer.",
+      "rounds": 1,
+      "trace": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::overcut::MAG_RIC",
+      "text": "MAG **did overcut** RIC via pit-stop timing.\n\n- **RIC pitted earlier** on lap **11** from MEDIUM to HARD.\n- **MAG pitted later** on lap **14** from MEDIUM to HARD.\n- The pit-timing battle says the **MAG→RIC gap went from -0.372s to 5.862s**.\n\nOn the data provided, that pit sequence is consistent with **MAG gaining the advantage by staying out longer** relative to RIC.\n\nSo the answer is: **MAG overcut RIC, and it worked.**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::overcut::HAM_RUS",
+      "text": "HAM did **not** overcut RUS on the first stop; the data shows the opposite pit timing.\n\n- **RUS pitted earlier**: lap 11 from MEDIUM to HARD.\n- **HAM pitted later**: lap 15 from MEDIUM to HARD.\n- In the pit-timing battle, the **HAM→RUS gap increased from 3.723s to 9.611s** across that phase.\n\nThat means HAM **lost time relative to RUS**, rather than gaining it by staying out longer. So on this stint, the later stop **did not work as an overcut**.\n\nOn race pace after the stop:\n- HAM’s first HARD stint: **83.93s avg** over 22 laps.\n- RUS’s first HARD stint: **84.38s avg** over 22 laps.\n\nHAM was slightly quicker on the HARD tyre by average stint pace, but the provided pit-timing data shows he **did not convert the later stop into track position or a time gain** over RUS.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::undercut::SAI_VER",
+      "text": "SAI **did undercut VER on pit timing**.\n\n- **SAI pitted first on lap 19** and switched from **MEDIUM to HARD**.\n- **VER stayed out until lap 22** and then made a **HARD to HARD** stop.\n\nThe key evidence is the gap change in the pit window:\n- The **SAI-to-VER gap grew from 3.47s to 8.973s** while SAI had already stopped and VER had not.\n- That is consistent with SAI gaining time through earlier track position on fresher tyres while VER remained on track.\n\n**Did it work?**\n- **In the pit-window sense, yes**: SAI’s earlier stop created a larger gap to VER.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Italian_Grand_Prix::overcut::COL_ZHO",
+      "text": "COL did **not** overcut ZHO; the data shows the opposite in pit timing.\n\n- **ZHO pitted first on lap 15** from **MEDIUM to HARD**.\n- **COL pitted one lap later on lap 16** from **MEDIUM to HARD**.\n\nThat means COL had the **longer first stint**, which is usually the setup needed for an overcut attempt. But the pit-timing battle data shows the gap **COL → ZHO increased from 3.526s to 5.58s**, so COL did **not** close the gap while staying out longer.\n\nOn stint pace:\n- **COL’s first stint:** 86.65s average, degradation **-0.032s/lap**\n- **ZHO’s first stint:** 86.85s average, degradation **-0.100s/lap**\n\nCOL was slightly faster and degraded less, but the timing data still shows the gap **grew**, so the overcut attempt did **not work** in terms of track position or gap management.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::NOR",
+      "text": "NOR used a simple two-stint strategy: **Medium for laps 1–30, then Hard for laps 31–62**, with the pit stop occurring on **lap 30**.\n\nHow it shaped the result:\n- The **Medium stint lasted 30 laps** and was slower on average at **97.44s/lap**.\n- After the stop, NOR’s **Hard stint covered 32 laps** and was faster on average at **96.72s/lap**.\n- Even though the Hard tyre showed a **higher degradation rate** than the Medium in the data (**+0.021s/lap vs +0.013s/lap**), NOR was still able to complete the race on that tyre over the final **32 laps**.\n- The overall picture is that NOR’s race was built around a **long opening stint, then a longer closing stint on Hard**, which provided the pace to finish **P1**.\n\nSo, based on the data, NOR’s result came from executing a **one-stop Medium-to-Hard strategy** and maintaining strong enough pace on the Hard tyre to close out the race.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::VER",
+      "text": "VER ran a straightforward one-stop strategy:\n\n- **Start on Mediums for 29 laps**: VER began the race on the **MEDIUM** tyre and completed **laps 1–29** on that stint. The stint was long at **29 laps**, with an average lap time of **98.16s** and tyre degradation of **+0.020s/lap**.\n- **Switch to Hards at lap 29**: He pitted on **lap 29** and changed from **MEDIUM to HARD**.\n- **Finish on Hards for 33 laps**: VER then ran **laps 30–62** on the **HARD** tyre for **33 laps**, averaging **96.72s** with degradation of **-0.021s/lap**.\n\n### How it shaped the result\nThe data shows that VER’s **second stint on Hard tyres was faster on average than his Medium stint** (**96.72s vs 98.16s**), and it also carried him through the longer final phase of the race. That suggests the Medium-to-Hard one-stop gave him a stronger pace in the closing stint, which aligns with his **P2 finish**. However, the data does not say how his position changed during the race, so we can only conclude that the strategy supported a strong overall result, not exactly how it affected track position.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::PIA",
+      "text": "PIA ran a **one-stop strategy**: **Mediums from laps 1–38**, then **Hards from laps 39–62**.\n\nWhat the data shows:\n- The **Medium stint was very long** at **38 laps** and had a **slight negative degradation rate** of **-0.015 s/lap**, suggesting it held up well over the opening phase.\n- After the pit stop on **lap 38**, PIA switched to **Hards** for the final **24 laps**.\n- The **Hard stint** was **quicker on average** at **96.67s** versus **98.38s** on Mediums, though it showed **positive degradation** of **+0.020 s/lap**.\n\nHow it shaped the result:\n- This tyre plan gave PIA a **stable, low-risk race**, limiting time lost to extra pit stops.\n- The long Medium stint kept him running effectively deep into the race, and the Hard tyres then supported the finish.\n- The combination of **one stop** and a **faster final stint average** aligns with his **P3 finish**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::RUS",
+      "text": "RUS used a two-stint strategy: **Medium from laps 1–27**, then **Hard from laps 28–62**.\n\nWhat this shows from the data:\n- He spent **27 laps on Medium**, with an average lap time of **98.49s** and very slight negative degradation (**-0.007s/lap**), so the tyre held up well over that stint.\n- He then switched to **Hard for 35 laps**, which was the longer stint, averaging **97.75s** with low positive degradation (**+0.005s/lap**), indicating the Hard tyre was stable over the race’s final phase.\n- The pit stop came on **lap 27** for **Medium -> Hard**, so the race was built around going long on the Hard tyre to the finish.\n\nHow it shaped the result:\n- The strategy gave RUS a **long, consistent final stint**, and the Hard tyre’s low degradation suggests he could maintain pace to the end.\n- His **P4 finish** indicates this was a competitive race strategy, with the longer Hard stint likely helping him stay efficient and finish strongly.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::LEC",
+      "text": "LEC used a **one-stop strategy** in Singapore: **Mediums for laps 1–36**, then a **pit stop on lap 36** to switch to **Hards for laps 37–62**.\n\n### What the data says about the strategy\n- **Long opening stint on Mediums:** 36 laps is a very long run on the Medium tyre.\n- The Medium stint had **very low degradation**: **+0.001s/lap**, which suggests it was managed well and stayed usable for most of the stint.\n- After the stop, the **Hard stint was faster on average**: **96.70s** per lap vs **99.01s** on Mediums.\n- But the Hard tyre also showed **more degradation**: **+0.075s/lap**, meaning it deteriorated more over time than the Medium stint did.\n\n### How it shaped the result\n- The strategy was built around **extending the first stint**, likely to keep flexibility and then finish on Hards.\n- Because the **Hard stint was quicker on average**, the late switch helped LEC maintain stronger pace to the end.\n- However, the **P5 finish** shows that this strategy was **competitive but not enough to fight higher up** based on the data provided.\n\nIn short, LEC’s race was defined by a **long, low-degradation Medium stint followed by a faster but more degrading Hard stint**, which supported a solid **P5** result.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::HAM",
+      "text": "HAM used a two-stint strategy: **SOFT from laps 1–17, then HARD from laps 18–62**. He pitted on **lap 17** and did a **SOFT→HARD** switch.\n\nHow that shaped the result:\n- The **softs were used for the opening 17 laps**, with an average pace of **98.41s/lap** and **negative degradation (-0.041s/lap)**, so they were slightly improving or staying stable over that stint.\n- The **hards then carried him through the remaining 45 laps**, with an average of **98.48s/lap** and very small positive degradation (**+0.008s/lap**), indicating strong durability and steady pace over a long run.\n- This strategy suggests HAM prioritized **stint length and tyre stability on the hard tyre** after an early stop, which is consistent with completing most of the race on a more durable compound.\n\nHe finished **P6**, and based on the data alone, his result was shaped by a strategy that was **stable and long-running on hards after an early soft opening stint**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::SAI",
+      "text": "SAI used a very simple two-stint strategy: **Medium from laps 1–13, then Hard from laps 14–62**. He made **one pit stop on lap 13**, switching **Medium -> Hard**, and then completed the race on that Hard tyre.\n\nWhat this suggests from the data:\n- The **Medium stint was short** at 13 laps, with an average pace of **99.24s**.\n- The **Hard stint was very long** at 49 laps, and was slightly quicker on average at **98.40s**.\n- Tyre degradation was better on the Hard tyre: the Medium showed **-0.059s/lap** of deg, while the Hard showed **+0.002s/lap**, which is effectively flat.\n\nHow it shaped the result:\n- The long Hard stint gave SAI **stability and consistency** over most of the race.\n- Because the Hard tyre was able to last **49 laps with essentially no degradation**, the strategy supported a controlled run to **P7**.\n- Based on the data alone, the result appears to have been built on **extended tyre life and consistent pace on the Hard tyre**, after an early switch off the Medium.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::ALO",
+      "text": "ALO used a simple one-stop strategy:\n\n- **Stint 1:** Medium tyres from **lap 1 to lap 25**  \n- **Pit stop:** **Lap 25**, switching **Medium → Hard**  \n- **Stint 2:** Hard tyres from **lap 26 to lap 61**\n\nWhat the data suggests:\n- The **Medium stint lasted 25 laps** with an average lap time of **99.00s** and **slight degradation** of **+0.010s/lap**, so ALO kept the tyre through a reasonably long opening stint.\n- The **Hard stint lasted 36 laps** with a faster average of **98.36s** and **no meaningful degradation** (**-0.000s/lap**), which indicates the Hard tyre was stable and allowed him to maintain pace over the longer second stint.\n\nHow it shaped the result:\n- This strategy prioritised **tyre durability and consistency** over multiple pit stops.\n- The long Hard stint appears to have helped ALO **finish P8** by giving him a stable race run to the end on a tyre with no degradation shown in the data.\n- Based on the provided numbers, the result was shaped by the **effective switch to Hard tyres at lap 25**, which enabled a long, controlled final stint.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::HUL",
+      "text": "HUL used a simple **one-stop strategy**:\n\n- **Stint 1:** Mediums from **lap 1 to 29** — **29 laps**\n  - Average lap time: **99.14s**\n  - Degradation: **+0.039s/lap**\n- **Pit stop:** on **lap 29**, switching **Medium -> Hard**\n- **Stint 2:** Hards from **lap 30 to 61** — **32 laps**\n  - Average lap time: **98.16s**\n  - Degradation: **+0.023s/lap**\n\n### What this shows\nHUL’s race was shaped by a switch to the **Hard tyre for the longer second stint**, and the data suggests that worked well:\n\n- The **Hard stint was longer** than the Medium stint.\n- The Hard tyre had **lower degradation** than the Medium (**+0.023s/lap vs +0.039s/lap**), which indicates better tyre preservation over the stint.\n- The Hard stint also had a **faster average lap time** (**98.16s**) than the Medium stint (**99.14s**).\n\n### Result impact\nThis strategy likely helped HUL maintain more stable pace after the pit stop and carry the race to a **P9 finish** with a durable final stint.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::stint::PER",
+      "text": "PER ran a simple one-stop strategy:\n\n- **Stint 1:** Mediums from **laps 1–28**  \n  - **28 laps** on Medium  \n  - Average lap: **99.29s**  \n  - Degradation: **+0.020s/lap**\n\n- **Pit stop:** On **lap 28**, switching **Medium -> Hard**\n\n- **Stint 2:** Hards from **laps 29–61**  \n  - **33 laps** on Hard  \n  - Average lap: **98.21s**  \n  - Degradation: **+0.014s/lap**\n\n### What this meant\nThe strategy clearly prioritized **longevity and stability on the Hard tyre** after a long opening stint on Mediums. The Hard stint was both **longer** and **faster on average** than the Medium stint, while also degrading less, which suggests PER was able to maintain more consistent pace after the pit stop.\n\n### How it shaped the result\nBased on the data provided, PER **finished P10** after completing this **Medium-to-Hard one-stop**. The race numbers indicate that the second stint was the stronger phase of the race, but the data does not provide enough information to say exactly how many positions were gained or lost because of the strategy alone.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::ALB_SAI",
+      "text": "ALB attempted an undercut by pitting **2 laps earlier** than SAI:\n\n- **ALB** pitted on **lap 11** from **MEDIUM to HARD**\n- **SAI** pitted on **lap 13** from **MEDIUM to HARD**\n\nThe timing gap in the battle data shows ALB was behind SAI before the stops, with the gap **ALB→SAI moving from -4.35s to -2.224s**. That means ALB **reduced the deficit by 2.126s** through the earlier stop.\n\nDid it work? **Only partially.**  \nThe data shows ALB’s earlier pit **did close the gap**, but it did **not** produce a decisive pass in the provided information.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::ALO_COL",
+      "text": "ALO attempted the undercut by pitting **4 laps earlier** than COL:\n\n- **ALO pit lap 25**\n- **COL pit lap 29**\n\nThat timing coincided with a big swing in the gap from **ALO → COL**:\n\n- Before the stops: **2.739s**\n- After ALO had pitted and COL stayed out: **9.607s**\n\nSo, based on the data, **the undercut did work for ALO** in terms of increasing the gap to COL while COL remained out longer. ALO got onto hard tyres first, and the pit-timing battle data shows the gap to COL **increased** from **2.739s to 9.607s**.\n\nThe stint data also shows:\n\n- ALO MEDIUM: **99.00s avg**\n- COL MEDIUM: **99.16s avg**\n\n- ALO HARDS: **98.36s avg**\n- COL HARDS: **98.19s avg**\n\nBut the key strategic result from the pit-timing battle is clear: **ALO’s earlier stop produced a successful undercut effect against COL, with the gap widening to 9.607s.**",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::ALO_HUL",
+      "text": "ALO attempted the undercut by pitting **4 laps earlier** than HUL: ALO stopped on **lap 25** and switched from **MEDIUM to HARD**, while HUL stayed out until **lap 29** before making the same switch.\n\nWhat the data shows:\n- Before the stops, the **ALO → HUL gap changed from -1.067s to 7.539s**.\n- ALO’s earlier stop gave him track time on fresh Hards sooner.\n- HUL’s longer Medium stint had higher degradation: **+0.039s/lap** vs ALO’s **+0.010s/lap** on Medium.\n\nDid it work?\n- The data indicates **ALO’s earlier pit was the undercut attempt**, but it does **not explicitly confirm a pass or final relative order from the pit sequence alone**.\n- The gap data shows the situation changed materially after the stops, but the dataset does not directly state whether the undercut itself was decisive.",
+      "rounds": 1,
+      "trace": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::BOT_ZHO",
+      "text": "BOT attempted an undercut by pitting one lap earlier than ZHO:\n\n- **BOT pitted on lap 33** from **HARD to MEDIUM**.\n- **ZHO pitted on lap 34** from **HARD to MEDIUM**.\n\nThat meant BOT got one lap on fresher tires before ZHO stopped. The pit-timing data shows the gap from **BOT to ZHO** changed from **-2.376s** to **-0.404s**, so BOT **reduced ZHO’s advantage by 1.972s** during the pit sequence.\n\n**Did it work?**  \nOnly partially. The undercut **closed the gap**, but it **did not get BOT ahead** of ZHO.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::PER_COL",
+      "text": "PER attempted an undercut by pitting one lap earlier than COL: PER stopped on lap 28, while COL stopped on lap 29.\n\nFrom the data, that timing change did help PER in the short term: the PER→COL gap moved from **-4.613s** to **0.885s** after the pit sequence, so PER went from being behind to effectively ahead in that comparison.\n\nIn stint terms:\n- **PER**: MEDIUM 1–28, then HARD 29–61\n- **COL**: MEDIUM 1–29, then HARD 30–61\n\nPER’s earlier stop meant COL stayed out one extra lap on the slower stint, which is the classic undercut setup. The stint averages also show PER had slightly slower medium pace than COL before the stop (**99.29s vs 99.16s**), but PER still gained relative to COL during the pit cycle because he stopped earlier.\n\nSo, based on the pit timing and the gap change, the undercut **worked in the pit-cycle sense**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::overcut::ALB_RIC",
+      "text": "ALB did **not** overcut RIC. The data shows the opposite timing sequence:\n\n- **RIC pitted first on lap 10** from **SOFT to MEDIUM**.\n- **ALB pitted next on lap 11** from **MEDIUM to HARD**.\n\nThe pit-timing battle says the **ALB→RIC gap increased from 2.278s to 4.44s**. That means ALB did **not** gain relative to RIC through the pit stop phase; the gap grew rather than shrinking.\n\nSo, based on the provided data, **the move actually worked for ALB**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::RIC_MAG",
+      "text": "RIC’s undercut attempt came from pitting **3 laps earlier than MAG**:\n\n- **RIC** pitted on **lap 46** from **MEDIUM to SOFT**\n- **MAG** pitted on **lap 49** from **MEDIUM to SOFT**\n\nThe key timing fact is the pit-timing battle data:\n\n- The gap **RIC → MAG** went from **-1.602s to 77.362s**\n\nBased on that, the undercut **worked**. RIC’s earlier stop meant he emerged ahead in the timing battle relative to MAG, as shown by the gap swing in the provided data.",
+      "rounds": 1,
+      "trace": [
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Singapore_Grand_Prix::undercut::ZHO_GAS",
+      "text": "ZHO tried to undercut GAS by pitting **three laps earlier**:\n\n- **ZHO pit lap 34:** HARD → MEDIUM  \n- **GAS pit lap 37:** MEDIUM → SOFT\n\nThat timing matters because ZHO got onto a fresher tyre sooner, while GAS stayed out longer on the older tyre. The data also shows GAS’s first stint had **higher degradation** than ZHO’s:\n\n- ZHO stint 1 deg: **+0.030s/lap**\n- GAS stint 1 deg: **+0.063s/lap**\n\nSo ZHO had the stronger tyre-life case to gain time by pitting first.\n\n**Did it work? Yes, according to the pit-timing battle data.**  \nThe gap changed from **-4.703s to 10.501s** in ZHO’s favor after the sequence, which indicates ZHO came out ahead of GAS after the pit cycle.",
+      "rounds": 1,
+      "trace": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::VER",
+      "text": "VER used a **three-stint strategy: Soft → Medium → Soft**.\n\n- **Stint 1 (laps 1–17, Soft):** 17 laps at **80.81s average**, with relatively high wear at **+0.080s/lap**.\n- **Stint 2 (laps 18–44, Medium):** 27 laps at **79.88s average**, with very low degradation at **+0.008s/lap**. This was the long, stable middle stint.\n- **Stint 3 (laps 45–66, Soft):** 22 laps at **78.33s average**, with degradation of **+0.058s/lap**.\n\nThe key strategic effect was that VER could **extend the middle stint on the Mediums** and then finish on **fresh Softs**, which produced the **fastest average pace of the three stints** in the final run. The data shows the final Soft stint was notably quicker than the earlier stints, helping support the race-winning result.\n\nIn short: **the Medium stint gave durability and control, and the final Soft stint delivered the quickest pace to close the race, shaping VER’s P1 finish.**",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::NOR",
+      "text": "NOR used a **3-stint strategy: Soft → Medium → Soft**.\n\n- **Stint 1 (laps 1–23, Soft):** He ran 23 laps on softs with an average of **80.99s/lap** and very low degradation (**+0.004s/lap**).\n- **Pit lap 23:** Switched **Soft → Medium**.\n- **Stint 2 (laps 24–47, Medium):** He completed 24 laps on mediums at **79.53s/lap**, with slight negative degradation (**-0.015s/lap**), so this was his most stable stint on pace and tyre wear.\n- **Pit lap 47:** Switched **Medium → Soft**.\n- **Stint 3 (laps 48–66, Soft):** He completed the final 19 laps on softs.\n\nHow it shaped the result:\n- The **medium stint** provided a strong, consistent middle phase.\n- The **final soft stint** closed the race on the soft compound.\n- Overall, the strategy delivered a **P2 finish**.",
+      "rounds": 2,
+      "trace": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::HAM",
+      "text": "HAM used a 2-stop strategy: **SOFT → MEDIUM → SOFT**.\n\n- **Stint 1 (laps 1–16, SOFT):** 16 laps at **81.20s average**, with **+0.094s/lap degradation**. This was his most tyre-limited stint.\n- **Stint 2 (laps 17–43, MEDIUM):** 27 laps at **80.05s average**, with only **+0.010s/lap degradation**. This was the longest and most stable stint, letting him manage pace more consistently.\n- **Stint 3 (laps 44–66, SOFT):** 23 laps at **78.72s average**, with **+0.048s/lap degradation**. This was his quickest stint by average pace.\n\n**How it shaped the result:**  \nThe switch to **MEDIUM** gave HAM a long, low-degradation middle stint, and the final **SOFT** stint delivered his fastest pace of the race. Based on the data, this combination of a durable middle stint and a quicker closing stint helped him finish **P3**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::RUS",
+      "text": "RUS ran a three-stint strategy: **Softs for laps 1–15**, then **Mediums for laps 16–36**, then **Hards for laps 37–66**.\n\nWhat the data shows:\n- **Soft stint (15 laps):** avg **81.10s/lap** with the highest degradation of his race at **+0.077s/lap**.\n- **Medium stint (21 laps):** improved to **80.17s/lap** and lower degradation at **+0.052s/lap**.\n- **Hard stint (30 laps):** his longest and most stable stint, with the best average pace of **79.07s/lap** and the lowest degradation at **+0.015s/lap**.\n\nHow it shaped the result:\n- The strategy clearly **moved RUS toward stronger pace as the race went on**, with each tyre change reducing degradation.\n- The **Hard tyre stint was the key phase**: it was both the longest stint and the fastest on average, which supports his ability to maintain pace to the finish.\n- Overall, the pattern suggests RUS’s race was built around **progressively better tyre durability and pace**, ending with his strongest stint on Hards, which is consistent with a **P4 finish**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::LEC",
+      "text": "LEC ran a three-stint strategy: **SOFT 1–24, MEDIUM 25–47, SOFT 48–66**.\n\nWhat it shows from the data:\n- The opening **SOFT** stint was the longest of his race on that compound: **24 laps** at **81.23s average**, with **low degradation** of **+0.021s/lap**.\n- The middle **MEDIUM** stint lasted **23 laps** and was faster on average at **79.66s**, but with **higher degradation** of **+0.033s/lap**.\n- His last listed stint was **SOFT 48–66**, which covered the final **19 laps** of the **66-lap** Grand Prix, and it was his quickest stint by average pace: **78.47s**, but also the most degrading at **+0.067s/lap**.\n\nHow it shaped the result:\n- The strategy was built around **two pit stops**: **SOFT→MEDIUM on lap 24** and **MEDIUM→SOFT on lap 47**.\n- The data suggests the final **SOFT** stint delivered the best pace, helping him close the race strongly.\n- At the same time, the **higher degradation** in that last stint means the pace came with more tyre wear, so the strategy was a balance between attacking pace and tyre life.\n- He finished **P5**, so this strategy was competitive enough for a top-five result, with the **fastest average stint coming at the end** rather than the start.",
+      "rounds": 2,
+      "trace": [
+        0.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::SAI",
+      "text": "SAI used a **three-stint strategy**: **Softs from laps 1–15**, **Mediums from 16–36**, then **Hards from 37–66**.\n\nWhat the data shows:\n- **Soft stint:** 15 laps, average **81.08s**, with the **highest degradation** of the race phases listed for SAI at **+0.094s/lap**.\n- **Medium stint:** 21 laps, average **80.35s**, with very low degradation at **+0.007s/lap**.\n- **Hard stint:** 30 laps, average **79.27s**, and the **longest stint** at the best average pace, with degradation of **+0.016s/lap**.\n\nHow it shaped the result:\n- The early **Soft** stint was relatively short, suggesting SAI used that tyre for the opening phase before switching off it at lap 15.\n- The **Medium** stint provided a longer middle phase with minimal degradation, helping stabilize pace.\n- The **Hard** stint was the key part of the race: it covered **30 laps**, the longest stint, and had the **fastest average lap time** of the three stints listed.\n- Overall, the strategy appears to have prioritized **durability and consistent pace over a longer final stint**, which aligns with the race result of **P6**.",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::PIA",
+      "text": "PIA used a three-stint strategy: **Soft (laps 1–21) → Medium (22–46) → Soft (47–66)**, with pit stops on **lap 21** and **lap 46**.\n\nHow it shaped the result:\n- The **opening Soft stint** lasted **21 laps** and averaged **81.54s**, with **positive degradation (+0.043s/lap)**, so the tyres were fading over the stint.\n- The **Medium stint** was the longest at **25 laps** and was the most stable phase of the race, averaging **79.97s** with essentially **no degradation (-0.001s/lap)**.\n- The **final Soft stint** was the quickest on average at **78.43s** over **20 laps**, even though it still showed some wear (**+0.024s/lap**).\n\nOverall, the data shows PIA’s race was built around **two Soft stints bookending a long, steadier Medium stint**. That final Soft stint produced the best pace of the race, which helps explain how PIA reached **P7**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::PER",
+      "text": "PER used a **three-stop race with an unusual soft-soft-medium-soft pattern**:\n\n- **Stint 1:** Soft from laps **1–13**\n- **Pit lap 13:** Soft → Soft\n- **Stint 2:** Soft from laps **14–31**\n- **Pit lap 31:** Soft → Medium\n- **Stint 3:** Medium from laps **32–49**\n- **Pit lap 49:** Medium → Soft\n- **Stint 4:** Soft from laps **50–66**\n\nHow it shaped the result:\n\n- The strategy shows PER **kept returning to the Soft tyre**, including an early **Soft → Soft** change, which suggests the race was managed through **repeated short-to-medium stints** rather than one long stable run.\n- His **fastest stint by average pace was the final Soft stint** at **78.84s/lap**, and his **Medium stint** was also competitive at **79.34s/lap**. Both were quicker than the opening Soft stints, where he averaged **81.79s/lap** and **80.85s/lap**.\n- The tyre data indicates the race pace **improved as the strategy progressed**, with the lowest average time coming on the final Soft stint.\n- Despite that pace pattern, PER finished **P8**, so the strategy was enough for a points finish but not enough to move higher based on the provided result data.\n\nIn short, PER’s race was built around **multiple short stints and frequent tyre changes**, with the **final Soft stint delivering his strongest pace**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::GAS",
+      "text": "GAS ran a **3-stint strategy**: **Soft (laps 1–14) → Medium (15–38) → Hard (39–66)**.\n\nWhat this suggests from the data:\n- He started on **Softs** for a relatively short opening stint of **14 laps**.\n- He then extended the middle phase on **Mediums** for **24 laps**.\n- He used **Hards** in the final stint from **lap 39 to lap 66**, for **28 laps**.\n\nHow it shaped the result:\n- The pace trend improved across the race:  \n  - **Softs:** 81.34s average, **+0.083s/lap** degradation  \n  - **Mediums:** 80.83s average, **+0.067s/lap** degradation  \n  - **Hards:** 79.62s average, **+0.023s/lap** degradation\n- The **Hards were the most durable tyre** by the data, with the **lowest degradation** and the **fastest average stint pace**.\n- That long, stable final stint likely helped him bring the car home consistently and finish **P9**.\n\nIn short: GAS used a **progressive three-compound strategy**, with the **Hard stint providing the best durability and pace**, which supported his **P9 finish**.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::stint::OCO",
+      "text": "OCO ran a two-stop race with a **Soft → Medium → Hard** strategy.\n\n- **Stint 1: Soft, laps 1–13**  \n  OCO started on Softs for 13 laps, averaging **81.60s/lap** with **+0.056s/lap** tyre degradation. This suggests the opening stint was relatively short and managed before switching.\n\n- **Stint 2: Medium, laps 14–37**  \n  He then extended the race on Mediums for 24 laps, averaging **81.22s/lap**. Degradation on this stint was **+0.071s/lap**, the highest of the three stints, so pace dropped more quickly here than on the other tyres.\n\n- **Stint 3: Hard, laps 38–66**  \n  OCO switched to Hards for the final 29 laps, averaging **79.71s/lap** with **-0.005s/lap** degradation. This was his fastest and most stable stint, with essentially no tyre drop-off.\n\n**How it shaped the result:**  \nThe strategy ended with OCO’s strongest stint on Hards, and the data shows that this final phase delivered the best average pace of the race. OCO finished **P10**.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::BOT_MAG",
+      "text": "BOT’s undercut attempt is visible in the pit timing: BOT stopped on lap 28, one lap before MAG’s lap-29 stop.\n\nWhat the data shows:\n- Before the stops, the gap BOT→MAG was 2.583s.\n- After BOT pitted and MAG stayed out one more lap, the gap became 11.962s.\n\nSo BOT’s move **worked** in the sense that he gained time relative to MAG during the pit cycle. Based on the provided data, the undercut **did work**.\n\nAdditional context from the stints:\n- BOT’s second stint on SOFT was 17 laps at 81.67s average, then he switched to HARD.\n- MAG ran 19 laps on MEDIUM at 81.68s average before switching to HARD.\n- Their pre-final-stop average stint pace was essentially the same, so the key factor in the data is the pit timing and the resulting gap change.\n\nConclusion: BOT pitted earlier, and the undercut worked because the BOT→MAG gap increased from 2.583s to 11.962s.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::SAI_GAS",
+      "text": "SAI did **not** overcut GAS; the data shows **GAS had the stronger pit-timing gain** in the first stop.\n\n- **Before the first stops**, the SAI→GAS gap was **4.319s**.\n- **SAI pitted on lap 15** for **SOFT→MEDIUM**.\n- **GAS pitted one lap earlier, lap 14**, for **SOFT→MEDIUM**.\n- After both stops, the gap **increased to 7.318s**.\n\nSo on the evidence given, SAI’s later stop **did not reduce the gap or gain track position/time relative to GAS**; the battle went the other way numerically, with the gap growing from **4.319s to 7.318s**.\n\nSupport from stint data:\n- SAI’s **SOFT** stint lasted **15 laps** at **81.08s average**.\n- GAS’s **SOFT** stint lasted **14 laps** at **81.34s average**.\n\nEven though SAI stayed out one lap longer, the provided pit-timing battle result shows it **didn’t produce an overcut advantage**.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::HAM_LEC",
+      "text": "HAM did **not** undercut LEC in the data provided.\n\n- HAM’s **first stop** was on **lap 16** from **SOFT to MEDIUM**.\n- LEC stayed out longer and stopped on **lap 24** from **SOFT to MEDIUM**.\n- So if anything, **LEC was the later stopper in the first stint**, not HAM.\n\nFor the relevant pit-timing battle:\n- HAM pitted on **lap 43**\n- LEC pitted on **lap 47**\n- The gap **HAM→LEC increased from 3.343s to 10.604s**\n\nThat means HAM’s earlier stop **did produce a successful gain relative to LEC** on the pit cycle, based on the provided gap change.",
+      "rounds": 1,
+      "trace": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::OCO_HUL",
+      "text": "OCO did **not** overcut HUL here; the data shows HUL pitted **one lap earlier**.\n\n- **Pit timing:**  \n  - HUL stopped on **lap 12** from SOFT to MEDIUM.  \n  - OCO stopped on **lap 13** from SOFT to MEDIUM.\n\n- **Effect on the gap:**  \n  - The OCO→HUL gap changed from **2.638s** to **4.09s**.  \n  - That means the gap **increased**, which does **not** indicate OCO gained an advantage from staying out longer.\n\n- **Overall result:**  \n  - Based on the pit-timing data alone, this was **not an overcut by OCO**; OCO pitted later but did **not** reduce the gap at that stop.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::PER_HUL",
+      "text": "PER did **overcut** HUL in this pit-stop sequence.\n\n- **HUL pitted first on lap 12** from SOFT to MEDIUM.\n- **PER pitted one lap later on lap 13** from SOFT to SOFT.\n- The pit-timing note says the **PER→HUL gap went from -0.568s to 1.265s**, which indicates PER came out ahead of HUL after the stop sequence.\n\nSo, based on the data provided, the later stop **worked** for PER in this battle.",
+      "rounds": 1,
+      "trace": [
+        0.5714285714285714,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::BOT_MAG",
+      "text": "BOT did **not** overcut MAG; the data shows the opposite.\n\n- **Pit timing:** MAG pitted first on **lap 10** from **SOFT to MEDIUM**. BOT pitted later on **lap 11** from **SOFT to SOFT**.\n- **Gap change:** In the pit-timing battle, the **BOT→MAG gap** went from **1.349s to 2.607s**. That means BOT **lost time relative to MAG** during the pit sequence, rather than gaining it.\n- **Stint context:** BOT’s first stint was **11 laps on SOFT** at **82.39s avg**, while MAG’s was **10 laps on SOFT** at **82.49s avg**. Even though BOT stayed out one lap longer, the provided gap data shows he still came out behind by a larger margin.\n- **Result:** Based on the pit-timing data, BOT’s later stop did **not** successfully overcut MAG.",
+      "rounds": 2,
+      "trace": [
+        0.6666666666666666,
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::OCO_GAS",
+      "text": "OCO attempted the undercut by pitting one lap earlier than GAS for the first stop:\n\n- **OCO pit lap 13:** SOFT -> MEDIUM  \n- **GAS pit lap 14:** SOFT -> MEDIUM\n\nDuring that pit window, the **OCO -> GAS gap changed from -4.019s to 0.71s**, meaning OCO went from being **4.019s behind** to **0.71s ahead** after the stop sequence. That indicates the undercut **worked in the short term** and was successful at jumping GAS on track.",
+      "rounds": 2,
+      "trace": [
+        0.75,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::PER_STR",
+      "text": "PER’s undercut attempt was via an earlier first pit stop.\n\n- **PER pitted on lap 13**, going from **SOFT to SOFT**.\n- **STR stayed out until lap 17**, then pitted from **SOFT to MEDIUM**.\n\nThat means PER had a **4-lap earlier stop** than STR. In an undercut, the earlier-stopping driver tries to use fresher tires and faster laps while the rival is still on older tires.\n\n**Did it work?**\n- The provided pit-timing battle says the **gap from PER to STR increased from 4.97s to 12.728s** across that sequence.\n- So, based on the data, **PER did not successfully undercut STR**. The gap **grew rather than shrank**.\n\nOverall, the timing shows an attempted undercut by PER, but the result was negative for PER because STR came out with a larger gap.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::RIC_ALB",
+      "text": "RIC’s undercut attempt was based on pitting earlier than ALB:\n\n- **RIC pitted on lap 16** from **SOFT to MEDIUM**\n- **ALB pitted on lap 18** from **MEDIUM to SOFT**\n\nBecause RIC stopped **two laps earlier**, he gained track time while ALB stayed out. The data says the **RIC→ALB gap increased from 3.437s to 9.067s** in that pit-stop window, so the move **did work in the sense that RIC came out ahead of ALB by pit timing**.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::HAM_RUS",
+      "text": "HAM **did not overcut RUS** on the first stop; the data shows RUS pitted **one lap earlier**.\n\n- **First stop timing:**  \n  - RUS pitted on **lap 15** (SOFT→MEDIUM).  \n  - HAM pitted on **lap 16** (SOFT→MEDIUM).  \n  So HAM stayed out **one lap longer**, which is the setup for an overcut attempt.\n\n- **What happened to the gap:**  \n  The provided pit-timing battle says the HAM→RUS gap changed from **-2.425s to -1.819s**. That means HAM **reduced the deficit by 0.606s**, but the gap was still **negative**, so HAM was **still behind RUS** after the stop phase.\n\n- **Did it work?**  \n  **No, not as an actual overcut.** HAM gained a little time by extending the stint, but the data does not show him coming ahead of RUS.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::overcut::VER_RUS",
+      "text": "VER did **not** overcut RUS here; based on the pit timing data, the later stop did **not** produce a net gain in track position or time advantage.\n\n- **Pit timing:** RUS stopped first on **lap 15** (SOFT→MEDIUM), while VER stopped later on **lap 17** (SOFT→MEDIUM).\n- **Goal of an overcut:** stay out longer and gain relative time before pitting.\n- **What happened in the data:** the gap **VER→RUS increased** from **3.85s to 4.389s** during this phase.\n- **Interpretation:** VER’s later stop did **not** improve his gap to RUS in the provided data.\n\nSo, using only the provided data, the pit-stop timing **did not work as an overcut for VER**.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::SAI_HAM",
+      "text": "SAI attempted an undercut by pitting one lap earlier than HAM:\n\n- **SAI pitted on lap 15** from **SOFT to MEDIUM**.\n- **HAM pitted on lap 16** from **SOFT to MEDIUM**.\n\nThat timing mattered because the pit-timing data shows the gap changed from **SAI → HAM = -0.758s** to **0.361s**. In other words, SAI’s earlier stop was enough to flip the gap in his favor relative to HAM at that phase of the race.\n\n**Did it work?**\n- **Yes, in the immediate pit-cycle sense:** SAI’s earlier stop produced a net gain versus HAM in the pit-timing battle.\n\nSo, SAI’s undercut **worked temporarily** in the pit window.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::SAR_ALB",
+      "text": "SAR tried to undercut ALB by pitting earlier: SAR stopped on lap 14, while ALB stayed out until lap 18.\n\nWhat the data shows:\n- Before the stops, the gap from SAR to ALB was -2.157s.\n- After the pit sequence, that gap changed to 5.936s.\n- That means ALB ended up ahead of SAR in the timing order after the stops.\n\nDid it work?\n- No. The undercut did not succeed in gaining track position over ALB.\n- SAR’s earlier stop was not enough to offset ALB’s later stop, based on the post-pit gap given.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::STR_ALO",
+      "text": "STR tried the undercut by pitting **2 laps earlier** than ALO on the first stop:\n\n- **STR pit:** lap 17, **SOFT → MEDIUM**\n- **ALO pit:** lap 19, **SOFT → MEDIUM**\n\nThat means STR got onto fresher Mediums first and had two laps to use them while ALO stayed out.\n\nDid it work? **Yes, in the short term.** The data says the gap **STR → ALO increased from 2.149s to 4.206s** across that pit-timing phase. That indicates STR gained time relative to ALO through the earlier stop.\n\nA couple of notes from the stint data:\n- STR’s opening Soft stint lasted **17 laps** at **82.10s avg**\n- ALO’s opening Soft stint lasted **19 laps** at **82.33s avg**\n\nSo STR stayed out fewer laps, pitited earlier, and the available pit-timing battle data shows the gap widened in STR’s favor.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::STR_ZHO",
+      "text": "STR did not undercut ZHO; the pit timing points to the opposite effect.\n\n- STR pitted from **SOFT to MEDIUM on lap 17**, while ZHO pitted from **SOFT to MEDIUM on lap 9**. So on the first stop, ZHO stopped **8 laps earlier** than STR.\n- On the second stop, STR pitted from **MEDIUM to HARD on lap 37**, while ZHO pitted **4 laps later on lap 41**.\n- The pit-timing battle data says the **gap STR→ZHO changed from -2.193s to 2.992s** around this phase, meaning STR went from **behind ZHO** to **ahead of ZHO** in the timing comparison provided.\n\nSo, based on the supplied data, STR’s later lap-37 stop relative to ZHO’s lap-41 stop produced a position-time swing in STR’s favor.",
+      "rounds": 1,
+      "trace": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::TSU_MAG",
+      "text": "TSU’s undercut was the pit-stop timing on the first stop: TSU pitted on lap 9, one lap before MAG on lap 10. According to the pit-timing battle data, the TSU→MAG gap improved from -2.851s to -0.535s over that sequence, so TSU gained 2.316s relative to MAG around the stop.\n\nDid it work? The data shows TSU closed the gap significantly with the earlier stop, but it does not provide enough information here to say whether that translated into a better finishing position.",
+      "rounds": 1,
+      "trace": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::VER_NOR",
+      "text": "VER **did not undercut NOR** on the key pit-stop phase shown here.\n\n- **VER pitted earlier** on lap **44** from **MEDIUM to SOFT**.\n- **NOR pitted later** on lap **47** from **MEDIUM to SOFT**.\n- In an undercut attempt, the earlier-stopping car would need to gain time while the other stays out. But the provided pit-timing battle says the **gap VER→NOR increased from 4.734s to 7.696s** across that phase.\n\nSo, based on the data:\n- VER’s earlier stop was **not enough to close the gap to NOR**.\n- The numbers show the opposite outcome in that window: **NOR remained ahead by an even larger margin after both stops**.\n\nIn short: **VER tried the earlier stop, but it did not work as an undercut against NOR.**",
+      "rounds": 0,
+      "trace": [
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::ZHO_BOT",
+      "text": "ZHO’s undercut came from pitting **2 laps earlier** than BOT: **ZHO on lap 9** versus **BOT on lap 11**.\n\nWhat the data shows:\n- Before the stops, the gap was **ZHO->BOT = -2.839s**.\n- By the time BOT pitted later, that gap had flipped to **+1.746s**.\n- That means ZHO gained track position/time relative to BOT during the pit-stop window.\n\nWhether it worked:\n- **Yes, it worked in the immediate pit-cycle sense**: ZHO’s earlier stop allowed him to come out ahead in that exchange.\n- The data supports that ZHO gained on BOT during this sequence.\n\nOne caveat from the data:\n- BOT did **not** switch to a different compound on lap 11; he stayed on **SOFT** for his second stint until lap 28, when he changed to **HARD**.\n- ZHO used **SOFT -> MEDIUM** at lap 9, which is the pit sequence tied to the undercut battle.",
+      "rounds": 1,
+      "trace": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::ZHO_MAG",
+      "text": "ZHO attempted an undercut by pitting one lap earlier than MAG:\n\n- **ZHO pitted on lap 9** from **SOFT to MEDIUM**.\n- **MAG pitted on lap 10** from **SOFT to MEDIUM**.\n\nThe pit-timing battle data shows the effect clearly: the **ZHO→MAG gap changed from -1.393s to 3.034s**, which means ZHO moved from behind MAG to ahead of him after the pit sequence.\n\nSo, **yes, the undercut worked in the immediate pit-stop battle**: ZHO gained track position relative to MAG by stopping earlier.",
+      "rounds": 1,
+      "trace": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "id": "2024_Spanish_Grand_Prix::undercut::ZHO_ALO",
+      "text": "ZHO attempted the undercut by pitting earlier than ALO on the second stop: ZHO went from MEDIUM to HARD on lap 41, while ALO stayed out until lap 45.\n\nDid it work? No. The gap from ZHO to ALO increased from 1.857s to 2.48s in the pit-timing battle, so ZHO did not gain track position or close the gap through the earlier stop.\n\nIn short: ZHO pitted 4 laps earlier, but the data shows the gap widened rather than shrinking.",
+      "rounds": 0,
+      "trace": [
+        1.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# FastF1 cache and raw FOM data — NEVER commit (licensing)
+data/raw/
+*.ff1pkl
+cache/
+
+# Model checkpoints / large artifacts
+*.bin
+*.safetensors
+*.pt
+checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Env / secrets
+.env
+*.key
+
+# Outputs
+experiments/**/runs/
+*.log
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/main.pdf

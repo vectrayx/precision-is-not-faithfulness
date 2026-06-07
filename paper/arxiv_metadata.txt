@@ -1,0 +1,47 @@
+arXiv submission metadata -- Precision Is Not Faithfulness
+==========================================================
+Submission package: arxiv_submission.tar.gz  (compiles with pdflatex+bibtex; .bbl included)
+
+TITLE
+-----
+Precision Is Not Faithfulness: Coverage-Aware Evaluation of Grounded Generation with a Complete Oracle
+
+AUTHORS
+-------
+Juan S. Santillana (Globant)
+
+PRIMARY CATEGORY
+----------------
+cs.CL
+
+CROSS-LIST
+----------
+cs.LG
+
+COMMENTS
+--------
+7 pages. Reference-free faithfulness metrics reward abstention; a complete structured
+oracle lets us measure recall and shows the model ranking inverts under coverage.
+Validated in two domains (F1 telemetry, NOAA weather), multilingual (EN/ES/PT). Code +
+demo: https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1
+
+ABSTRACT
+--------
+Reference-free faithfulness metrics verify each atomic claim a model makes against
+ground truth, and are increasingly used to evaluate grounded generation. We show they
+share a blind spot: they measure only precision -- are the stated claims supported? --
+and therefore reward abstention, since a model can score near-perfect faithfulness by
+saying almost nothing. We make this measurable using Formula 1 telemetry, a domain
+where strategic ground truth is derived deterministically and, crucially, completely:
+for each decision we know the full set of facts that mattered. This completeness --
+absent in open-domain faithfulness benchmarks -- lets us measure recall (coverage of
+the relevant facts) alongside precision. On a multilingual (EN/ES/PT) benchmark of
+5,887 decision instances spanning 150 races, the most "faithful" frontier model attains
+high precision yet covers only about a quarter of the relevant facts, and requiring
+coverage inverts the model ranking, moving it from first to last; the same abstention
+behavior reappears in a second complete-oracle domain (NOAA weather forecasts). We pair
+faithfulness with coverage into a single score, validate the metric (controlled
+perturbation; agreement across a model-free regex extractor and a cross-family LLM
+extractor, system-level Spearman 1.0), and give a verifier-guided generation method that
+improves precision and recall without references. We release the benchmark, structured
+annotations, metric, baselines, and an interactive demo.

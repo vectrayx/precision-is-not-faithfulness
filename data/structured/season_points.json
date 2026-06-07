@@ -1,0 +1,1248 @@
+{
+  "2018": {
+    "year": 2018,
+    "races": 20,
+    "drivers": [
+      [
+        "HAM",
+        383.0,
+        "Mercedes",
+        10
+      ],
+      [
+        "VET",
+        308.0,
+        "Ferrari",
+        5
+      ],
+      [
+        "VER",
+        239.0,
+        "Red Bull Racing",
+        2
+      ],
+      [
+        "RAI",
+        233.0,
+        "Ferrari",
+        1
+      ],
+      [
+        "BOT",
+        232.0,
+        "Mercedes",
+        0
+      ],
+      [
+        "RIC",
+        170.0,
+        "Red Bull Racing",
+        2
+      ],
+      [
+        "HUL",
+        69.0,
+        "Renault",
+        0
+      ],
+      [
+        "PER",
+        56.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "MAG",
+        56.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "ALO",
+        50.0,
+        "McLaren",
+        0
+      ],
+      [
+        "SAI",
+        49.0,
+        "Renault",
+        0
+      ],
+      [
+        "OCO",
+        41.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "LEC",
+        39.0,
+        "Sauber",
+        0
+      ],
+      [
+        "GRO",
+        37.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "GAS",
+        29.0,
+        "Toro Rosso",
+        0
+      ],
+      [
+        "VAN",
+        12.0,
+        "McLaren",
+        0
+      ],
+      [
+        "ERI",
+        9.0,
+        "Sauber",
+        0
+      ],
+      [
+        "HAR",
+        4.0,
+        "Toro Rosso",
+        0
+      ],
+      [
+        "STR",
+        4.0,
+        "Williams",
+        0
+      ],
+      [
+        "SIR",
+        0.0,
+        "Williams",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "Mercedes",
+        615.0
+      ],
+      [
+        "Ferrari",
+        541.0
+      ],
+      [
+        "Red Bull Racing",
+        409.0
+      ],
+      [
+        "Renault",
+        118.0
+      ],
+      [
+        "Haas F1 Team",
+        93.0
+      ],
+      [
+        "McLaren",
+        62.0
+      ],
+      [
+        "Force India",
+        59.0
+      ],
+      [
+        "Sauber",
+        48.0
+      ],
+      [
+        "Racing Point",
+        38.0
+      ],
+      [
+        "Toro Rosso",
+        33.0
+      ],
+      [
+        "Williams",
+        4.0
+      ]
+    ]
+  },
+  "2019": {
+    "year": 2019,
+    "races": 21,
+    "drivers": [
+      [
+        "HAM",
+        413.0,
+        "Mercedes",
+        11
+      ],
+      [
+        "BOT",
+        326.0,
+        "Mercedes",
+        4
+      ],
+      [
+        "VER",
+        278.0,
+        "Red Bull Racing",
+        3
+      ],
+      [
+        "LEC",
+        264.0,
+        "Ferrari",
+        2
+      ],
+      [
+        "VET",
+        240.0,
+        "Ferrari",
+        1
+      ],
+      [
+        "SAI",
+        96.0,
+        "McLaren",
+        0
+      ],
+      [
+        "GAS",
+        95.0,
+        "Toro Rosso",
+        0
+      ],
+      [
+        "ALB",
+        92.0,
+        "Red Bull Racing",
+        0
+      ],
+      [
+        "RIC",
+        54.0,
+        "Renault",
+        0
+      ],
+      [
+        "PER",
+        52.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "NOR",
+        49.0,
+        "McLaren",
+        0
+      ],
+      [
+        "RAI",
+        43.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "KVY",
+        37.0,
+        "Toro Rosso",
+        0
+      ],
+      [
+        "HUL",
+        37.0,
+        "Renault",
+        0
+      ],
+      [
+        "STR",
+        21.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "MAG",
+        20.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "GIO",
+        14.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "GRO",
+        8.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "KUB",
+        1.0,
+        "Williams",
+        0
+      ],
+      [
+        "RUS",
+        0.0,
+        "Williams",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "Mercedes",
+        739.0
+      ],
+      [
+        "Ferrari",
+        504.0
+      ],
+      [
+        "Red Bull Racing",
+        417.0
+      ],
+      [
+        "McLaren",
+        145.0
+      ],
+      [
+        "Renault",
+        91.0
+      ],
+      [
+        "Toro Rosso",
+        85.0
+      ],
+      [
+        "Racing Point",
+        73.0
+      ],
+      [
+        "Alfa Romeo Racing",
+        57.0
+      ],
+      [
+        "Haas F1 Team",
+        28.0
+      ],
+      [
+        "Williams",
+        1.0
+      ]
+    ]
+  },
+  "2020": {
+    "year": 2020,
+    "races": 17,
+    "drivers": [
+      [
+        "HAM",
+        347.0,
+        "Mercedes",
+        11
+      ],
+      [
+        "BOT",
+        223.0,
+        "Mercedes",
+        2
+      ],
+      [
+        "VER",
+        214.0,
+        "Red Bull Racing",
+        2
+      ],
+      [
+        "PER",
+        125.0,
+        "Racing Point",
+        1
+      ],
+      [
+        "RIC",
+        119.0,
+        "Renault",
+        0
+      ],
+      [
+        "ALB",
+        105.0,
+        "Red Bull Racing",
+        0
+      ],
+      [
+        "SAI",
+        105.0,
+        "McLaren",
+        0
+      ],
+      [
+        "LEC",
+        98.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "NOR",
+        97.0,
+        "McLaren",
+        0
+      ],
+      [
+        "STR",
+        75.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "GAS",
+        75.0,
+        "AlphaTauri",
+        1
+      ],
+      [
+        "OCO",
+        62.0,
+        "Renault",
+        0
+      ],
+      [
+        "VET",
+        33.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "KVY",
+        32.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "HUL",
+        10.0,
+        "Racing Point",
+        0
+      ],
+      [
+        "RAI",
+        4.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "GIO",
+        4.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "RUS",
+        3.0,
+        "Williams",
+        0
+      ],
+      [
+        "GRO",
+        2.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "MAG",
+        1.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "LAT",
+        0.0,
+        "Williams",
+        0
+      ],
+      [
+        "FIT",
+        0.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "AIT",
+        0.0,
+        "Williams",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "Mercedes",
+        573.0
+      ],
+      [
+        "Red Bull Racing",
+        319.0
+      ],
+      [
+        "Racing Point",
+        210.0
+      ],
+      [
+        "McLaren",
+        202.0
+      ],
+      [
+        "Renault",
+        181.0
+      ],
+      [
+        "Ferrari",
+        131.0
+      ],
+      [
+        "AlphaTauri",
+        107.0
+      ],
+      [
+        "Alfa Romeo Racing",
+        8.0
+      ],
+      [
+        "Haas F1 Team",
+        3.0
+      ],
+      [
+        "Williams",
+        0.0
+      ]
+    ]
+  },
+  "2021": {
+    "year": 2021,
+    "races": 22,
+    "drivers": [
+      [
+        "VER",
+        395.5,
+        "Red Bull Racing",
+        10
+      ],
+      [
+        "HAM",
+        387.5,
+        "Mercedes",
+        8
+      ],
+      [
+        "BOT",
+        226.0,
+        "Mercedes",
+        1
+      ],
+      [
+        "PER",
+        190.0,
+        "Red Bull Racing",
+        1
+      ],
+      [
+        "SAI",
+        164.5,
+        "Ferrari",
+        0
+      ],
+      [
+        "NOR",
+        160.0,
+        "McLaren",
+        0
+      ],
+      [
+        "LEC",
+        159.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "RIC",
+        115.0,
+        "McLaren",
+        1
+      ],
+      [
+        "GAS",
+        110.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "ALO",
+        81.0,
+        "Alpine",
+        0
+      ],
+      [
+        "OCO",
+        74.0,
+        "Alpine",
+        1
+      ],
+      [
+        "VET",
+        43.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "STR",
+        34.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "TSU",
+        32.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "RUS",
+        16.0,
+        "Williams",
+        0
+      ],
+      [
+        "RAI",
+        10.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "LAT",
+        7.0,
+        "Williams",
+        0
+      ],
+      [
+        "GIO",
+        3.0,
+        "Alfa Romeo Racing",
+        0
+      ],
+      [
+        "MSC",
+        0.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "MAZ",
+        0.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "KUB",
+        0.0,
+        "Alfa Romeo Racing",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "Mercedes",
+        613.5
+      ],
+      [
+        "Red Bull Racing",
+        585.5
+      ],
+      [
+        "Ferrari",
+        323.5
+      ],
+      [
+        "McLaren",
+        275.0
+      ],
+      [
+        "Alpine",
+        155.0
+      ],
+      [
+        "AlphaTauri",
+        142.0
+      ],
+      [
+        "Aston Martin",
+        77.0
+      ],
+      [
+        "Williams",
+        23.0
+      ],
+      [
+        "Alfa Romeo Racing",
+        13.0
+      ],
+      [
+        "Haas F1 Team",
+        0.0
+      ]
+    ]
+  },
+  "2023": {
+    "year": 2023,
+    "races": 22,
+    "drivers": [
+      [
+        "VER",
+        575.0,
+        "Red Bull Racing",
+        19
+      ],
+      [
+        "PER",
+        285.0,
+        "Red Bull Racing",
+        2
+      ],
+      [
+        "HAM",
+        234.0,
+        "Mercedes",
+        0
+      ],
+      [
+        "LEC",
+        206.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "ALO",
+        206.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "NOR",
+        205.0,
+        "McLaren",
+        0
+      ],
+      [
+        "SAI",
+        200.0,
+        "Ferrari",
+        1
+      ],
+      [
+        "RUS",
+        175.0,
+        "Mercedes",
+        0
+      ],
+      [
+        "PIA",
+        97.0,
+        "McLaren",
+        0
+      ],
+      [
+        "STR",
+        74.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "GAS",
+        62.0,
+        "Alpine",
+        0
+      ],
+      [
+        "OCO",
+        58.0,
+        "Alpine",
+        0
+      ],
+      [
+        "ALB",
+        27.0,
+        "Williams",
+        0
+      ],
+      [
+        "TSU",
+        17.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "BOT",
+        10.0,
+        "Alfa Romeo",
+        0
+      ],
+      [
+        "HUL",
+        9.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "RIC",
+        6.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "ZHO",
+        6.0,
+        "Alfa Romeo",
+        0
+      ],
+      [
+        "MAG",
+        3.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "LAW",
+        2.0,
+        "AlphaTauri",
+        0
+      ],
+      [
+        "SAR",
+        1.0,
+        "Williams",
+        0
+      ],
+      [
+        "DEV",
+        0.0,
+        "AlphaTauri",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "Red Bull Racing",
+        860.0
+      ],
+      [
+        "Mercedes",
+        409.0
+      ],
+      [
+        "Ferrari",
+        406.0
+      ],
+      [
+        "McLaren",
+        302.0
+      ],
+      [
+        "Aston Martin",
+        280.0
+      ],
+      [
+        "Alpine",
+        120.0
+      ],
+      [
+        "Williams",
+        28.0
+      ],
+      [
+        "AlphaTauri",
+        25.0
+      ],
+      [
+        "Alfa Romeo",
+        16.0
+      ],
+      [
+        "Haas F1 Team",
+        12.0
+      ]
+    ]
+  },
+  "2024": {
+    "year": 2024,
+    "races": 24,
+    "drivers": [
+      [
+        "VER",
+        437.0,
+        "Red Bull Racing",
+        9
+      ],
+      [
+        "NOR",
+        374.0,
+        "McLaren",
+        4
+      ],
+      [
+        "LEC",
+        356.0,
+        "Ferrari",
+        3
+      ],
+      [
+        "PIA",
+        292.0,
+        "McLaren",
+        2
+      ],
+      [
+        "SAI",
+        290.0,
+        "Ferrari",
+        2
+      ],
+      [
+        "RUS",
+        245.0,
+        "Mercedes",
+        2
+      ],
+      [
+        "HAM",
+        223.0,
+        "Mercedes",
+        2
+      ],
+      [
+        "PER",
+        152.0,
+        "Red Bull Racing",
+        0
+      ],
+      [
+        "ALO",
+        70.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "GAS",
+        42.0,
+        "Alpine",
+        0
+      ],
+      [
+        "HUL",
+        41.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "TSU",
+        30.0,
+        "RB",
+        0
+      ],
+      [
+        "STR",
+        24.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "OCO",
+        23.0,
+        "Alpine",
+        0
+      ],
+      [
+        "MAG",
+        16.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "ALB",
+        12.0,
+        "Williams",
+        0
+      ],
+      [
+        "RIC",
+        12.0,
+        "RB",
+        0
+      ],
+      [
+        "BEA",
+        7.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "COL",
+        5.0,
+        "Williams",
+        0
+      ],
+      [
+        "ZHO",
+        4.0,
+        "Kick Sauber",
+        0
+      ],
+      [
+        "LAW",
+        4.0,
+        "RB",
+        0
+      ],
+      [
+        "DOO",
+        0.0,
+        "Alpine",
+        0
+      ],
+      [
+        "BOT",
+        0.0,
+        "Kick Sauber",
+        0
+      ],
+      [
+        "SAR",
+        0.0,
+        "Williams",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "McLaren",
+        666.0
+      ],
+      [
+        "Ferrari",
+        652.0
+      ],
+      [
+        "Red Bull Racing",
+        589.0
+      ],
+      [
+        "Mercedes",
+        468.0
+      ],
+      [
+        "Aston Martin",
+        94.0
+      ],
+      [
+        "Alpine",
+        65.0
+      ],
+      [
+        "Haas F1 Team",
+        58.0
+      ],
+      [
+        "RB",
+        46.0
+      ],
+      [
+        "Williams",
+        17.0
+      ],
+      [
+        "Kick Sauber",
+        4.0
+      ]
+    ]
+  },
+  "2025": {
+    "year": 2025,
+    "races": 24,
+    "drivers": [
+      [
+        "NOR",
+        423.0,
+        "McLaren",
+        7
+      ],
+      [
+        "VER",
+        421.0,
+        "Red Bull Racing",
+        8
+      ],
+      [
+        "PIA",
+        410.0,
+        "McLaren",
+        7
+      ],
+      [
+        "RUS",
+        319.0,
+        "Mercedes",
+        2
+      ],
+      [
+        "LEC",
+        242.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "HAM",
+        156.0,
+        "Ferrari",
+        0
+      ],
+      [
+        "ANT",
+        150.0,
+        "Mercedes",
+        0
+      ],
+      [
+        "ALB",
+        73.0,
+        "Williams",
+        0
+      ],
+      [
+        "SAI",
+        64.0,
+        "Williams",
+        0
+      ],
+      [
+        "ALO",
+        56.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "HUL",
+        51.0,
+        "Kick Sauber",
+        0
+      ],
+      [
+        "HAD",
+        51.0,
+        "Racing Bulls",
+        0
+      ],
+      [
+        "BEA",
+        41.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "OCO",
+        38.0,
+        "Haas F1 Team",
+        0
+      ],
+      [
+        "LAW",
+        38.0,
+        "Racing Bulls",
+        0
+      ],
+      [
+        "STR",
+        33.0,
+        "Aston Martin",
+        0
+      ],
+      [
+        "TSU",
+        33.0,
+        "Red Bull Racing",
+        0
+      ],
+      [
+        "GAS",
+        22.0,
+        "Alpine",
+        0
+      ],
+      [
+        "BOR",
+        19.0,
+        "Kick Sauber",
+        0
+      ],
+      [
+        "COL",
+        0.0,
+        "Alpine",
+        0
+      ],
+      [
+        "DOO",
+        0.0,
+        "Alpine",
+        0
+      ]
+    ],
+    "constructors": [
+      [
+        "McLaren",
+        833.0
+      ],
+      [
+        "Mercedes",
+        469.0
+      ],
+      [
+        "Red Bull Racing",
+        451.0
+      ],
+      [
+        "Ferrari",
+        398.0
+      ],
+      [
+        "Williams",
+        137.0
+      ],
+      [
+        "Racing Bulls",
+        92.0
+      ],
+      [
+        "Aston Martin",
+        89.0
+      ],
+      [
+        "Haas F1 Team",
+        79.0
+      ],
+      [
+        "Kick Sauber",
+        70.0
+      ],
+      [
+        "Alpine",
+        22.0
+      ]
+    ]
+  }
+}

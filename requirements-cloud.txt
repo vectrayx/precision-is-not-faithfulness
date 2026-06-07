@@ -1,0 +1,8 @@
+# Only needed for the cloud runs (Azure frontier baselines, GCP GPU fine-tuning).
+openai>=1.40
+transformers>=4.44
+datasets>=2.20
+peft>=0.12
+trl>=0.10
+accelerate>=0.33
+# vllm  # install on the GPU VM for serving open models

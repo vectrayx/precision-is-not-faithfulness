@@ -1,0 +1,8 @@
+{
+  "n": 120,
+  "judge": "gpt-55",
+  "pearson": 0.5478,
+  "spearman": 0.5406,
+  "mean_metric": 0.7546,
+  "mean_judge": 0.8374
+}

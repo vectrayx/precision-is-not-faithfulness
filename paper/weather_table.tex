@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{llcccc}
+\toprule
+Model & Lang & Prec. & Recall & F1 & Cl./inst. \\
+\midrule
+DeepSeek-V3.2 & EN & 0.865 & 0.843 & 0.854 & 5.5 \\
+DeepSeek-V3.2 & ES & 0.910 & 0.653 & 0.761 & 4.2 \\
+DeepSeek-V3.2 & PT & 0.854 & 0.413 & 0.557 & 2.8 \\
+gemini-2.5-pro & EN & 0.912 & 0.250 & 0.393 & 1.3 \\
+gemini-2.5-pro & ES & 0.836 & 0.215 & 0.342 & 1.1 \\
+gemini-2.5-pro & PT & 0.868 & 0.208 & 0.336 & 1.0 \\
+gpt-5.4-mini & EN & 0.944 & 0.462 & 0.620 & 2.9 \\
+gpt-5.4-mini & ES & 0.916 & 0.442 & 0.596 & 2.8 \\
+gpt-5.4-mini & PT & 0.953 & 0.460 & 0.621 & 2.9 \\
+gpt-5.5 & EN & 0.936 & 0.470 & 0.626 & 3.0 \\
+gpt-5.5 & ES & 0.932 & 0.458 & 0.615 & 2.9 \\
+gpt-5.5 & PT & 0.946 & 0.457 & 0.616 & 2.9 \\
+grok-4.3 & EN & 0.939 & 0.473 & 0.629 & 2.9 \\
+grok-4.3 & ES & 0.948 & 0.460 & 0.620 & 2.9 \\
+grok-4.3 & PT & 0.974 & 0.450 & 0.616 & 2.8 \\
+\bottomrule
+\end{tabular}
+\caption{Second domain (weather, NOAA forecasts; complete record oracle). The abstention effect replicates outside F1: the same model that abstains there (gemini-2.5-pro) again states the fewest facts and has by far the lowest recall, so precision and $F_1$ disagree on the ranking. The effect is milder than in F1, as weather records have fewer facts to omit.}
+\label{tab:weather}
+\end{table*}

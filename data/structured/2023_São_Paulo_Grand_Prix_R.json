@@ -1,0 +1,1940 @@
+{
+  "year": 2023,
+  "gp": "São Paulo Grand Prix",
+  "total_laps": 71,
+  "fastest_lap": {
+    "driver": "NOR",
+    "lap": 61,
+    "laptime_s": 72.486,
+    "compound": "SOFT"
+  },
+  "stints": [
+    {
+      "driver": "ALB",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "ALO",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "ALO",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "ALO",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 25,
+      "n_laps": 23,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 78.688,
+      "degradation_s_per_lap": -0.5687
+    },
+    {
+      "driver": "ALO",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 26,
+      "end_lap": 47,
+      "n_laps": 22,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.979,
+      "degradation_s_per_lap": -0.0139
+    },
+    {
+      "driver": "ALO",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 48,
+      "end_lap": 71,
+      "n_laps": 24,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 74.952,
+      "degradation_s_per_lap": -0.0045
+    },
+    {
+      "driver": "BOT",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "BOT",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 2.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "BOT",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 18,
+      "n_laps": 16,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 77.548,
+      "degradation_s_per_lap": -0.108
+    },
+    {
+      "driver": "BOT",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 19,
+      "end_lap": 39,
+      "n_laps": 21,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.906,
+      "degradation_s_per_lap": 0.0786
+    },
+    {
+      "driver": "GAS",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 3.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "GAS",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "GAS",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 26,
+      "n_laps": 24,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 77.343,
+      "degradation_s_per_lap": -0.0033
+    },
+    {
+      "driver": "GAS",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 27,
+      "end_lap": 46,
+      "n_laps": 20,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.079,
+      "degradation_s_per_lap": 0.0693
+    },
+    {
+      "driver": "GAS",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 47,
+      "end_lap": 71,
+      "n_laps": 25,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.015,
+      "degradation_s_per_lap": 0.0205
+    },
+    {
+      "driver": "HAM",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "HAM",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "HAM",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 18,
+      "n_laps": 16,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 80.312,
+      "degradation_s_per_lap": -1.3387
+    },
+    {
+      "driver": "HAM",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 19,
+      "end_lap": 46,
+      "n_laps": 28,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.54,
+      "degradation_s_per_lap": 0.0062
+    },
+    {
+      "driver": "HAM",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 47,
+      "end_lap": 71,
+      "n_laps": 25,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 75.396,
+      "degradation_s_per_lap": -0.0058
+    },
+    {
+      "driver": "HUL",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "HUL",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "HUL",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 21,
+      "n_laps": 19,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 78.071,
+      "degradation_s_per_lap": 0.0207
+    },
+    {
+      "driver": "HUL",
+      "stint": 4,
+      "compound": "SOFT",
+      "start_lap": 22,
+      "end_lap": 46,
+      "n_laps": 25,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 76.924,
+      "degradation_s_per_lap": 0.0178
+    },
+    {
+      "driver": "HUL",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 47,
+      "end_lap": 70,
+      "n_laps": 24,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 75.772,
+      "degradation_s_per_lap": -0.0749
+    },
+    {
+      "driver": "MAG",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "NOR",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "NOR",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "NOR",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 27,
+      "n_laps": 25,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 78.607,
+      "degradation_s_per_lap": -0.5768
+    },
+    {
+      "driver": "NOR",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 28,
+      "end_lap": 59,
+      "n_laps": 32,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.447,
+      "degradation_s_per_lap": 0.0126
+    },
+    {
+      "driver": "NOR",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 60,
+      "end_lap": 71,
+      "n_laps": 12,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 73.517,
+      "degradation_s_per_lap": 0.0713
+    },
+    {
+      "driver": "OCO",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "OCO",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "OCO",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 14,
+      "n_laps": 12,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 77.612,
+      "degradation_s_per_lap": -0.1951
+    },
+    {
+      "driver": "OCO",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 15,
+      "end_lap": 31,
+      "n_laps": 17,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.913,
+      "degradation_s_per_lap": 0.0515
+    },
+    {
+      "driver": "OCO",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 32,
+      "end_lap": 51,
+      "n_laps": 20,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 76.055,
+      "degradation_s_per_lap": 0.0869
+    },
+    {
+      "driver": "OCO",
+      "stint": 6,
+      "compound": "SOFT",
+      "start_lap": 52,
+      "end_lap": 70,
+      "n_laps": 19,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.219,
+      "degradation_s_per_lap": 0.0777
+    },
+    {
+      "driver": "PER",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "PER",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "PER",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 20,
+      "n_laps": 18,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 79.26,
+      "degradation_s_per_lap": -0.8264
+    },
+    {
+      "driver": "PER",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 21,
+      "end_lap": 46,
+      "n_laps": 26,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.966,
+      "degradation_s_per_lap": 0.0167
+    },
+    {
+      "driver": "PER",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 47,
+      "end_lap": 71,
+      "n_laps": 25,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 74.828,
+      "degradation_s_per_lap": 0.0085
+    },
+    {
+      "driver": "PIA",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 3.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "PIA",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "PIA",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "start_lap": 3,
+      "end_lap": 24,
+      "n_laps": 22,
+      "tyre_life_start": 2.0,
+      "avg_laptime_s": 77.302,
+      "degradation_s_per_lap": 0.0188
+    },
+    {
+      "driver": "PIA",
+      "stint": 4,
+      "compound": "SOFT",
+      "start_lap": 25,
+      "end_lap": 52,
+      "n_laps": 28,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 76.215,
+      "degradation_s_per_lap": 0.0187
+    },
+    {
+      "driver": "PIA",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 53,
+      "end_lap": 69,
+      "n_laps": 17,
+      "tyre_life_start": 6.0,
+      "avg_laptime_s": 75.08,
+      "degradation_s_per_lap": -0.0475
+    },
+    {
+      "driver": "RIC",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RIC",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RIC",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 26,
+      "n_laps": 24,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": 77.052,
+      "degradation_s_per_lap": 0.0237
+    },
+    {
+      "driver": "RIC",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 27,
+      "end_lap": 55,
+      "n_laps": 29,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.062,
+      "degradation_s_per_lap": 0.0133
+    },
+    {
+      "driver": "RIC",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 56,
+      "end_lap": 70,
+      "n_laps": 15,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 74.834,
+      "degradation_s_per_lap": -0.0118
+    },
+    {
+      "driver": "RUS",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RUS",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "RUS",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 19,
+      "n_laps": 17,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 79.587,
+      "degradation_s_per_lap": -0.9055
+    },
+    {
+      "driver": "RUS",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 20,
+      "end_lap": 45,
+      "n_laps": 26,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.698,
+      "degradation_s_per_lap": 0.0272
+    },
+    {
+      "driver": "RUS",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 46,
+      "end_lap": 57,
+      "n_laps": 12,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 75.782,
+      "degradation_s_per_lap": -0.1947
+    },
+    {
+      "driver": "SAI",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 3.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "SAI",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "SAI",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 26,
+      "n_laps": 24,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": 78.658,
+      "degradation_s_per_lap": -0.3926
+    },
+    {
+      "driver": "SAI",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 27,
+      "end_lap": 51,
+      "n_laps": 25,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.985,
+      "degradation_s_per_lap": 0.0372
+    },
+    {
+      "driver": "SAI",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 52,
+      "end_lap": 71,
+      "n_laps": 20,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 74.834,
+      "degradation_s_per_lap": 0.0026
+    },
+    {
+      "driver": "SAR",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "SAR",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 2.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "SAR",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 17,
+      "n_laps": 15,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 77.76,
+      "degradation_s_per_lap": -0.1221
+    },
+    {
+      "driver": "SAR",
+      "stint": 4,
+      "compound": "SOFT",
+      "start_lap": 18,
+      "end_lap": 44,
+      "n_laps": 27,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.897,
+      "degradation_s_per_lap": 0.0459
+    },
+    {
+      "driver": "SAR",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 45,
+      "end_lap": 70,
+      "n_laps": 26,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.148,
+      "degradation_s_per_lap": 0.011
+    },
+    {
+      "driver": "STR",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "STR",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 2.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "STR",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 22,
+      "n_laps": 20,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 79.591,
+      "degradation_s_per_lap": -0.763
+    },
+    {
+      "driver": "STR",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 23,
+      "end_lap": 52,
+      "n_laps": 30,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.029,
+      "degradation_s_per_lap": 0.0197
+    },
+    {
+      "driver": "STR",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 53,
+      "end_lap": 71,
+      "n_laps": 19,
+      "tyre_life_start": 3.0,
+      "avg_laptime_s": 74.432,
+      "degradation_s_per_lap": -0.0171
+    },
+    {
+      "driver": "TSU",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "TSU",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "TSU",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 26,
+      "n_laps": 24,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 77.473,
+      "degradation_s_per_lap": -0.0487
+    },
+    {
+      "driver": "TSU",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 27,
+      "end_lap": 55,
+      "n_laps": 29,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.059,
+      "degradation_s_per_lap": 0.0218
+    },
+    {
+      "driver": "TSU",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 56,
+      "end_lap": 71,
+      "n_laps": 16,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 74.908,
+      "degradation_s_per_lap": 0.0008
+    },
+    {
+      "driver": "VER",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "VER",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 5.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "VER",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 27,
+      "n_laps": 25,
+      "tyre_life_start": 4.0,
+      "avg_laptime_s": 78.561,
+      "degradation_s_per_lap": -0.592
+    },
+    {
+      "driver": "VER",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 28,
+      "end_lap": 56,
+      "n_laps": 29,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 75.321,
+      "degradation_s_per_lap": 0.0015
+    },
+    {
+      "driver": "VER",
+      "stint": 5,
+      "compound": "SOFT",
+      "start_lap": 57,
+      "end_lap": 71,
+      "n_laps": 15,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 74.017,
+      "degradation_s_per_lap": -0.0525
+    },
+    {
+      "driver": "ZHO",
+      "stint": 1,
+      "compound": "SOFT",
+      "start_lap": 1,
+      "end_lap": 1,
+      "n_laps": 1,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "ZHO",
+      "stint": 2,
+      "compound": "SOFT",
+      "start_lap": 2,
+      "end_lap": 2,
+      "n_laps": 1,
+      "tyre_life_start": 2.0,
+      "avg_laptime_s": null,
+      "degradation_s_per_lap": null
+    },
+    {
+      "driver": "ZHO",
+      "stint": 3,
+      "compound": "SOFT",
+      "start_lap": 3,
+      "end_lap": 15,
+      "n_laps": 13,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 77.684,
+      "degradation_s_per_lap": -0.2008
+    },
+    {
+      "driver": "ZHO",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "start_lap": 16,
+      "end_lap": 22,
+      "n_laps": 7,
+      "tyre_life_start": 1.0,
+      "avg_laptime_s": 76.792,
+      "degradation_s_per_lap": 0.1345
+    }
+  ],
+  "pit_stops": [
+    {
+      "driver": "ALO",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 18.499,
+      "under_neutralization": true
+    },
+    {
+      "driver": "ALO",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1408.218,
+      "under_neutralization": true
+    },
+    {
+      "driver": "ALO",
+      "lap": 25,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 24.312,
+      "under_neutralization": false
+    },
+    {
+      "driver": "ALO",
+      "lap": 47,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.905,
+      "under_neutralization": false
+    },
+    {
+      "driver": "BOT",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 20.828,
+      "under_neutralization": true
+    },
+    {
+      "driver": "BOT",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1418.202,
+      "under_neutralization": true
+    },
+    {
+      "driver": "BOT",
+      "lap": 18,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 24.14,
+      "under_neutralization": false
+    },
+    {
+      "driver": "GAS",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 20.593,
+      "under_neutralization": true
+    },
+    {
+      "driver": "GAS",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1416.702,
+      "under_neutralization": true
+    },
+    {
+      "driver": "GAS",
+      "lap": 26,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 25.374,
+      "under_neutralization": false
+    },
+    {
+      "driver": "GAS",
+      "lap": 46,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.64,
+      "under_neutralization": false
+    },
+    {
+      "driver": "HAM",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 18.593,
+      "under_neutralization": true
+    },
+    {
+      "driver": "HAM",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1406.406,
+      "under_neutralization": true
+    },
+    {
+      "driver": "HAM",
+      "lap": 18,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.546,
+      "under_neutralization": false
+    },
+    {
+      "driver": "HAM",
+      "lap": 46,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 24.031,
+      "under_neutralization": false
+    },
+    {
+      "driver": "HUL",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 34.343,
+      "under_neutralization": true
+    },
+    {
+      "driver": "HUL",
+      "lap": 2,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1421.046,
+      "under_neutralization": true
+    },
+    {
+      "driver": "HUL",
+      "lap": 21,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 24.406,
+      "under_neutralization": false
+    },
+    {
+      "driver": "HUL",
+      "lap": 46,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.937,
+      "under_neutralization": false
+    },
+    {
+      "driver": "NOR",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 19.484,
+      "under_neutralization": true
+    },
+    {
+      "driver": "NOR",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1404.64,
+      "under_neutralization": true
+    },
+    {
+      "driver": "NOR",
+      "lap": 27,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.875,
+      "under_neutralization": false
+    },
+    {
+      "driver": "NOR",
+      "lap": 59,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.641,
+      "under_neutralization": false
+    },
+    {
+      "driver": "OCO",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 22.203,
+      "under_neutralization": true
+    },
+    {
+      "driver": "OCO",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1414.702,
+      "under_neutralization": true
+    },
+    {
+      "driver": "OCO",
+      "lap": 14,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 24.0,
+      "under_neutralization": false
+    },
+    {
+      "driver": "OCO",
+      "lap": 31,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 24.422,
+      "under_neutralization": false
+    },
+    {
+      "driver": "OCO",
+      "lap": 51,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.484,
+      "under_neutralization": false
+    },
+    {
+      "driver": "PER",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 20.86,
+      "under_neutralization": true
+    },
+    {
+      "driver": "PER",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1411.812,
+      "under_neutralization": true
+    },
+    {
+      "driver": "PER",
+      "lap": 20,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.249,
+      "under_neutralization": false
+    },
+    {
+      "driver": "PER",
+      "lap": 46,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.578,
+      "under_neutralization": false
+    },
+    {
+      "driver": "PIA",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 1584.091,
+      "under_neutralization": true
+    },
+    {
+      "driver": "PIA",
+      "lap": 2,
+      "from_compound": "MEDIUM",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 38.594,
+      "under_neutralization": false
+    },
+    {
+      "driver": "PIA",
+      "lap": 24,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.546,
+      "under_neutralization": false
+    },
+    {
+      "driver": "PIA",
+      "lap": 52,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.343,
+      "under_neutralization": false
+    },
+    {
+      "driver": "RIC",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1576.763,
+      "under_neutralization": true
+    },
+    {
+      "driver": "RIC",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 32.813,
+      "under_neutralization": false
+    },
+    {
+      "driver": "RIC",
+      "lap": 26,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.968,
+      "under_neutralization": false
+    },
+    {
+      "driver": "RIC",
+      "lap": 55,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.624,
+      "under_neutralization": false
+    },
+    {
+      "driver": "RUS",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 20.562,
+      "under_neutralization": true
+    },
+    {
+      "driver": "RUS",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1411.0,
+      "under_neutralization": true
+    },
+    {
+      "driver": "RUS",
+      "lap": 19,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.75,
+      "under_neutralization": false
+    },
+    {
+      "driver": "RUS",
+      "lap": 45,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.922,
+      "under_neutralization": false
+    },
+    {
+      "driver": "SAI",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.125,
+      "under_neutralization": true
+    },
+    {
+      "driver": "SAI",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1413.656,
+      "under_neutralization": true
+    },
+    {
+      "driver": "SAI",
+      "lap": 26,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.562,
+      "under_neutralization": false
+    },
+    {
+      "driver": "SAI",
+      "lap": 51,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.781,
+      "under_neutralization": false
+    },
+    {
+      "driver": "SAR",
+      "lap": 1,
+      "from_compound": "MEDIUM",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 27.452,
+      "under_neutralization": true
+    },
+    {
+      "driver": "SAR",
+      "lap": 2,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1421.202,
+      "under_neutralization": true
+    },
+    {
+      "driver": "SAR",
+      "lap": 17,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 24.437,
+      "under_neutralization": false
+    },
+    {
+      "driver": "SAR",
+      "lap": 44,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 24.187,
+      "under_neutralization": false
+    },
+    {
+      "driver": "STR",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 18.609,
+      "under_neutralization": true
+    },
+    {
+      "driver": "STR",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1410.031,
+      "under_neutralization": true
+    },
+    {
+      "driver": "STR",
+      "lap": 22,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.687,
+      "under_neutralization": false
+    },
+    {
+      "driver": "STR",
+      "lap": 52,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 25.421,
+      "under_neutralization": false
+    },
+    {
+      "driver": "TSU",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 21.047,
+      "under_neutralization": true
+    },
+    {
+      "driver": "TSU",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1415.405,
+      "under_neutralization": true
+    },
+    {
+      "driver": "TSU",
+      "lap": 26,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 27.172,
+      "under_neutralization": false
+    },
+    {
+      "driver": "TSU",
+      "lap": 55,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.624,
+      "under_neutralization": false
+    },
+    {
+      "driver": "VER",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 18.64,
+      "under_neutralization": true
+    },
+    {
+      "driver": "VER",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1402.64,
+      "under_neutralization": true
+    },
+    {
+      "driver": "VER",
+      "lap": 27,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 23.078,
+      "under_neutralization": false
+    },
+    {
+      "driver": "VER",
+      "lap": 56,
+      "from_compound": "MEDIUM",
+      "to_compound": "SOFT",
+      "stop_duration_s": 23.469,
+      "under_neutralization": false
+    },
+    {
+      "driver": "ZHO",
+      "lap": 1,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 21.328,
+      "under_neutralization": true
+    },
+    {
+      "driver": "ZHO",
+      "lap": 2,
+      "from_compound": "SOFT",
+      "to_compound": "SOFT",
+      "stop_duration_s": 1419.952,
+      "under_neutralization": true
+    },
+    {
+      "driver": "ZHO",
+      "lap": 15,
+      "from_compound": "SOFT",
+      "to_compound": "MEDIUM",
+      "stop_duration_s": 24.016,
+      "under_neutralization": false
+    }
+  ],
+  "pit_battles": [
+    {
+      "kind": "overcut",
+      "attacker": "RUS",
+      "defender": "HAM",
+      "attacker_pit_lap": 19,
+      "defender_pit_lap": 18,
+      "gap_before_s": -2.307,
+      "gap_after_s": -1.284,
+      "gained_s": 1.023,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "OCO",
+      "defender": "BOT",
+      "attacker_pit_lap": 14,
+      "defender_pit_lap": 18,
+      "gap_before_s": 0.725,
+      "gap_after_s": 5.534,
+      "gained_s": 4.809,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "OCO",
+      "defender": "SAR",
+      "attacker_pit_lap": 14,
+      "defender_pit_lap": 17,
+      "gap_before_s": 3.585,
+      "gap_after_s": 8.578,
+      "gained_s": 4.993,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "OCO",
+      "defender": "ZHO",
+      "attacker_pit_lap": 14,
+      "defender_pit_lap": 15,
+      "gap_before_s": 2.383,
+      "gap_after_s": 5.205,
+      "gained_s": 2.822,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "PER",
+      "defender": "STR",
+      "attacker_pit_lap": 20,
+      "defender_pit_lap": 22,
+      "gap_before_s": 2.849,
+      "gap_after_s": 4.44,
+      "gained_s": 1.591,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "PIA",
+      "defender": "RIC",
+      "attacker_pit_lap": 24,
+      "defender_pit_lap": 26,
+      "gap_before_s": -4.676,
+      "gap_after_s": -1.632,
+      "gained_s": 3.044,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "RUS",
+      "defender": "STR",
+      "attacker_pit_lap": 19,
+      "defender_pit_lap": 22,
+      "gap_before_s": 0.556,
+      "gap_after_s": 1.111,
+      "gained_s": 0.555,
+      "position_swap": false
+    },
+    {
+      "kind": "overcut",
+      "attacker": "GAS",
+      "defender": "RUS",
+      "attacker_pit_lap": 46,
+      "defender_pit_lap": 45,
+      "gap_before_s": 1.383,
+      "gap_after_s": 3.868,
+      "gained_s": 2.485,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "SAI",
+      "defender": "STR",
+      "attacker_pit_lap": 51,
+      "defender_pit_lap": 52,
+      "gap_before_s": -4.896,
+      "gap_after_s": -2.278,
+      "gained_s": 2.618,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "SAR",
+      "defender": "BOT",
+      "attacker_pit_lap": 17,
+      "defender_pit_lap": 18,
+      "gap_before_s": -3.297,
+      "gap_after_s": -2.199,
+      "gained_s": 1.098,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "SAR",
+      "defender": "HUL",
+      "attacker_pit_lap": 17,
+      "defender_pit_lap": 21,
+      "gap_before_s": 4.44,
+      "gap_after_s": 13.287,
+      "gained_s": 8.847,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "STR",
+      "defender": "GAS",
+      "attacker_pit_lap": 22,
+      "defender_pit_lap": 26,
+      "gap_before_s": 1.498,
+      "gap_after_s": 12.001,
+      "gained_s": 10.503,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "STR",
+      "defender": "SAI",
+      "attacker_pit_lap": 22,
+      "defender_pit_lap": 26,
+      "gap_before_s": 0.643,
+      "gap_after_s": 6.477,
+      "gained_s": 5.834,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "ZHO",
+      "defender": "BOT",
+      "attacker_pit_lap": 15,
+      "defender_pit_lap": 18,
+      "gap_before_s": -1.765,
+      "gap_after_s": -0.032,
+      "gained_s": 1.733,
+      "position_swap": false
+    },
+    {
+      "kind": "undercut",
+      "attacker": "ZHO",
+      "defender": "SAR",
+      "attacker_pit_lap": 15,
+      "defender_pit_lap": 17,
+      "gap_before_s": 1.305,
+      "gap_after_s": 3.338,
+      "gained_s": 2.033,
+      "position_swap": false
+    }
+  ],
+  "defenses": [
+    {
+      "defender": "ALO",
+      "pursuer": "PER",
+      "start_lap": 52,
+      "end_lap": 69,
+      "n_laps": 18,
+      "pursuer_pace_s": 75.845,
+      "defender_pace_s": 75.947,
+      "pace_delta_s": 0.102,
+      "teammate_protected": false
+    },
+    {
+      "defender": "ZHO",
+      "pursuer": "SAR",
+      "start_lap": 2,
+      "end_lap": 14,
+      "n_laps": 13,
+      "pursuer_pace_s": 76.658,
+      "defender_pace_s": 77.075,
+      "pace_delta_s": 0.416,
+      "teammate_protected": false
+    },
+    {
+      "defender": "OCO",
+      "pursuer": "TSU",
+      "start_lap": 3,
+      "end_lap": 12,
+      "n_laps": 10,
+      "pursuer_pace_s": 76.142,
+      "defender_pace_s": 76.252,
+      "pace_delta_s": 0.11,
+      "teammate_protected": true
+    },
+    {
+      "defender": "PIA",
+      "pursuer": "RIC",
+      "start_lap": 3,
+      "end_lap": 8,
+      "n_laps": 6,
+      "pursuer_pace_s": 76.139,
+      "defender_pace_s": 76.362,
+      "pace_delta_s": 0.223,
+      "teammate_protected": true
+    },
+    {
+      "defender": "RUS",
+      "pursuer": "STR",
+      "start_lap": 14,
+      "end_lap": 18,
+      "n_laps": 5,
+      "pursuer_pace_s": 75.967,
+      "defender_pace_s": 76.659,
+      "pace_delta_s": 0.692,
+      "teammate_protected": false
+    }
+  ],
+  "track_status_periods": [
+    {
+      "time_s": 0.0,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 3600.637,
+      "status": "yellow",
+      "code": "2"
+    },
+    {
+      "time_s": 3613.856,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 3614.2,
+      "status": "yellow",
+      "code": "2"
+    },
+    {
+      "time_s": 3646.199,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 3660.34,
+      "status": "yellow",
+      "code": "2"
+    },
+    {
+      "time_s": 3675.23,
+      "status": "clear",
+      "code": "1"
+    },
+    {
+      "time_s": 3752.198,
+      "status": "yellow",
+      "code": "2"
+    },
+    {
+      "time_s": 3770.182,
+      "status": "safety_car",
+      "code": "4"
+    },
+    {
+      "time_s": 3935.568,
+      "status": "red_flag",
+      "code": "5"
+    },
+    {
+      "time_s": 5211.553,
+      "status": "clear",
+      "code": "1"
+    }
+  ],
+  "classification": [
+    {
+      "driver": "VER",
+      "team": "Red Bull Racing",
+      "position": 1,
+      "grid": 1,
+      "status": "Finished",
+      "points": 25.0
+    },
+    {
+      "driver": "NOR",
+      "team": "McLaren",
+      "position": 2,
+      "grid": 6,
+      "status": "Finished",
+      "points": 19.0
+    },
+    {
+      "driver": "ALO",
+      "team": "Aston Martin",
+      "position": 3,
+      "grid": 4,
+      "status": "Finished",
+      "points": 15.0
+    },
+    {
+      "driver": "PER",
+      "team": "Red Bull Racing",
+      "position": 4,
+      "grid": 9,
+      "status": "Finished",
+      "points": 12.0
+    },
+    {
+      "driver": "STR",
+      "team": "Aston Martin",
+      "position": 5,
+      "grid": 3,
+      "status": "Finished",
+      "points": 10.0
+    },
+    {
+      "driver": "SAI",
+      "team": "Ferrari",
+      "position": 6,
+      "grid": 7,
+      "status": "Finished",
+      "points": 8.0
+    },
+    {
+      "driver": "GAS",
+      "team": "Alpine",
+      "position": 7,
+      "grid": 15,
+      "status": "Finished",
+      "points": 6.0
+    },
+    {
+      "driver": "HAM",
+      "team": "Mercedes",
+      "position": 8,
+      "grid": 5,
+      "status": "Finished",
+      "points": 4.0
+    },
+    {
+      "driver": "TSU",
+      "team": "AlphaTauri",
+      "position": 9,
+      "grid": 16,
+      "status": "Finished",
+      "points": 2.0
+    },
+    {
+      "driver": "OCO",
+      "team": "Alpine",
+      "position": 10,
+      "grid": 14,
+      "status": "Lapped",
+      "points": 1.0
+    },
+    {
+      "driver": "SAR",
+      "team": "Williams",
+      "position": 11,
+      "grid": 19,
+      "status": "Lapped",
+      "points": 0.0
+    },
+    {
+      "driver": "HUL",
+      "team": "Haas F1 Team",
+      "position": 12,
+      "grid": 11,
+      "status": "Lapped",
+      "points": 0.0
+    },
+    {
+      "driver": "RIC",
+      "team": "AlphaTauri",
+      "position": 13,
+      "grid": 17,
+      "status": "Lapped",
+      "points": 0.0
+    },
+    {
+      "driver": "PIA",
+      "team": "McLaren",
+      "position": 14,
+      "grid": 10,
+      "status": "Lapped",
+      "points": 0.0
+    },
+    {
+      "driver": "RUS",
+      "team": "Mercedes",
+      "position": 15,
+      "grid": 8,
+      "status": "Retired",
+      "points": 0.0
+    },
+    {
+      "driver": "BOT",
+      "team": "Alfa Romeo",
+      "position": 16,
+      "grid": 18,
+      "status": "Retired",
+      "points": 0.0
+    },
+    {
+      "driver": "ZHO",
+      "team": "Alfa Romeo",
+      "position": 17,
+      "grid": 20,
+      "status": "Retired",
+      "points": 0.0
+    },
+    {
+      "driver": "MAG",
+      "team": "Haas F1 Team",
+      "position": 18,
+      "grid": 12,
+      "status": "Retired",
+      "points": 0.0
+    },
+    {
+      "driver": "ALB",
+      "team": "Williams",
+      "position": 19,
+      "grid": 13,
+      "status": "Retired",
+      "points": 0.0
+    },
+    {
+      "driver": "LEC",
+      "team": "Ferrari",
+      "position": 20,
+      "grid": 2,
+      "status": "Did not start",
+      "points": 0.0
+    }
+  ]
+}

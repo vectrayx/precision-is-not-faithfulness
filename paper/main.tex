@@ -1,0 +1,339 @@
+% Faithful Strategy Explanations Grounded in F1 Telemetry
+% Official ACL template (acl.sty). Use [review] for anonymous submission;
+% kept non-review here to show the author as requested.
+\documentclass[11pt]{article}
+\usepackage[]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+\input{dataset_stats.tex}
+\IfFileExists{result_macros.tex}{\input{result_macros.tex}}{}
+
+\title{Precision Is Not Faithfulness: Coverage-Aware Evaluation of\\
+Grounded Generation with a Complete Oracle}
+\author{Juan S. Santillana\thanks{The author is a DevOps Engineer at Globant;
+  academic affiliation pending.} \\
+  \texttt{juan.salas@globant.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Reference-free faithfulness metrics verify each atomic claim a model makes against
+ground truth, and are increasingly used to evaluate grounded generation. We show they
+share a blind spot: they measure only \emph{precision} -- are the stated claims
+supported? -- and therefore \emph{reward abstention}, since a model can score
+near-perfect faithfulness by saying almost nothing. We make this measurable using
+Formula~1 telemetry, a domain where strategic ground truth is derived deterministically
+and, crucially, \emph{completely}: for each decision we know the full set of facts that
+mattered. This completeness -- absent in open-domain faithfulness benchmarks -- lets us
+measure \emph{recall} (coverage of the relevant facts) alongside precision. On a
+multilingual (EN/ES/PT) benchmark of \FOneNumInstances{} decision instances spanning
+\FOneNumRaces{} races, the most ``faithful'' frontier model attains precision
+\CovGeminiPrec{} yet covers only \CovGeminiRecall{} of the relevant facts, and requiring
+coverage \emph{inverts the model ranking}, moving it from first to last; the same
+abstention behavior reappears in a second complete-oracle domain (weather forecasts). We
+pair faithfulness with coverage into a single score, validate the metric (controlled
+perturbation; agreement across a model-free regex extractor and a cross-family LLM
+extractor, system-level Spearman \XfamSpearman{}), and give a verifier-guided generation
+method that improves precision and recall without references. We release the benchmark,
+structured annotations, metric, baselines, and an interactive demo.
+\end{abstract}
+
+\section{Introduction}
+Reference-free faithfulness metrics -- which decompose a generation into atomic claims
+and verify each against ground truth
+\citep{min2023factscore,fabbri2022qafacteval} -- have become a standard way to evaluate
+grounded generation without gold reference texts. They report a \emph{precision}: of the
+claims the model made, how many are supported? We argue this is only half of what
+``faithful'' should mean. A model can maximize precision by being maximally cautious --
+stating one safe fact and omitting everything else. A precision-only metric scores such
+output as near-perfect, even though it is uninformative. Faithfulness, measured as
+precision alone, \emph{rewards abstention}.
+
+The missing half is \emph{recall}: of the facts that mattered, how many did the model
+correctly state? Open-domain faithfulness benchmarks cannot measure this, because there
+is no complete, enumerable set of relevant facts to recall against -- the ground truth
+is whatever a retriever or annotator happened to surface. We therefore turn to a domain
+with a \emph{complete} oracle. Formula~1 produces rich, public timing and telemetry data
+from which strategic ground truth (pit laps, compounds, undercuts, defenses, outcomes)
+can be derived \emph{deterministically and exhaustively}: for each decision we know the
+full set of checkable facts. This lets us measure recall, and pair it with precision,
+in a way open-domain settings structurally cannot.
+
+Using this oracle we show the abstention problem is not hypothetical: on a multilingual
+benchmark, the frontier model with the highest faithfulness (precision) covers only
+\CovGeminiRecall{} of the relevant facts, and once coverage is required the model ranking
+\emph{inverts} (Section~\ref{sec:exp}). We frame F1 strategy explanation as faithful,
+data-grounded NLG -- not race-outcome prediction, which is saturated and outside language
+research -- because it gives the cleanest available testbed for this measurement question.
+
+\noindent Our contributions:
+\begin{enumerate}
+  \item We show that reference-free faithfulness metrics reward abstention, and that with
+        a \emph{complete} oracle the model ranking inverts when coverage is required --
+        replicated across two unrelated domains, F1 and weather
+        (Section~\ref{sec:exp}, \ref{sec:weather}).
+  \item A complete-oracle, multilingual (EN/ES/PT) benchmark of \FOneNumInstances{}
+        grounded F1 decision instances, and a precision+recall faithfulness metric,
+        validated by controlled perturbation and by agreement across a model-free and a
+        cross-family extractor (Section~\ref{sec:data}, \ref{sec:metric}).
+  \item A verifier-guided generation method that improves both precision and recall using
+        only the structured verifier as signal (Section~\ref{sec:method}).
+\end{enumerate}
+\noindent The benchmark, metric, baselines, and an interactive demo are
+public.\footnote{Demo: \url{https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1}}
+
+\section{Related Work}
+Data-to-text generation has a long line of sports work, e.g. RotoWire
+\citep{wiseman2017challenges} and SportSett:Basketball
+\citep{thomson2020sportsett}, and controlled table-to-text such as ToTTo
+\citep{parikh2020totto}. Faithfulness/hallucination evaluation includes FActScore
+\citep{min2023factscore}, QA-based consistency \citep{fabbri2022qafacteval}, and
+NLI-based inconsistency detection \citep{laban2022summac,kryscinski2020factcc};
+see \citet{ji2023survey} for a survey. These reference-free metrics are
+precision-oriented: they score the claims a model makes, not the ones it omits, and so
+do not penalize an uninformative output -- the abstention blind spot we study. The
+complementary, recall side has been recognized in table-to-text via PARENT
+\citep{dhingra2019parent}, which credits coverage of the source table, but it requires a
+reference text and a (possibly incomplete) table; our oracle is reference-free and
+complete, letting us measure recall directly against the full fact set. Our
+verifier-guided generation relates to self-refinement with feedback
+\citep{madaan2023selfrefine}, but the feedback signal here is a deterministic check
+against structured data rather than the model's own critique. Unlike reference-based
+sports NLG, we evaluate both faithfulness and coverage directly against structured data
+(reference-free) and add a multilingual axis. Our use of a compact, domain-specialized
+model follows recent work on small efficient models with native tool use for Spanish
+technical domains \citep{vectrayxnano2026}.
+
+\section{Task}\label{sec:task}
+Each instance provides a structured context (driver stints, tyre compound and
+age, pit stops, gaps, safety-car/VSC status) and a decision prompt in EN/ES/PT.
+The model must explain a strategic decision such that every factual claim is
+verifiable against the context. The benchmark spans five decision types: tyre
+strategy, undercut, overcut, \emph{on-track defense} (a faster pursuer kept behind
+for several laps -- the ``rear gunner'' move), and \emph{race summary} (a grounded
+recap of result and key moments).
+
+\section{Dataset}\label{sec:data}
+We extract timing and telemetry with FastF1 \citep{fastf1} (the official live-timing
+API; no broadcast access required) and derive strategic events with deterministic
+rules. Stints are segmented per driver with a within-stint degradation slope fit on
+\emph{green-flag} laps only (excluding in/out laps and laps under yellow, safety car
+(SC), or virtual safety car (VSC)) so that pace estimates are not contaminated by
+neutralizations. Pit stops are recovered from stint transitions and flagged when made
+under SC/VSC. Undercuts and overcuts are detected pairwise but kept only for drivers
+genuinely racing each other -- within a small on-track gap so the pit sequence, not
+accumulated pace difference, dominates the gap swing -- which yields high-precision
+events (spot-checked against known race narratives, e.g.\ the winning one-stop at the
+2024 Italian GP). On-track defenses are detected as runs of $\geq 5$ consecutive laps
+in which a pace-faster pursuer is held within $1.5$s, flagged when a teammate is
+protected ahead; this recovers canonical cases (e.g.\ Alonso holding Hamilton for
+$11$ laps, Hungary 2021). Season standings (race plus sprint points) support grounded
+championship summaries.
+
+Each instance pairs a serialized structured context with a decision prompt in EN/ES/PT
+and the structured ground truth used for verification. From \FOneNumRaces{} races
+across \FOneNumSeasons{} seasons (\FOneFirstSeason{}--\FOneLastSeason{}) we obtain
+\FOneNumStints{} stints, \FOneNumPits{} pit stops, and \FOneNumBattles{} pit battles,
+yielding \FOneNumInstances{} instances (\FOneNumStint{} tyre-strategy,
+\FOneNumUndercut{} undercut, \FOneNumOvercut{} overcut, \FOneNumDefense{} defense,
+\FOneNumRaceSummary{} race-summary). To avoid leakage we split by
+season: \FOneNumTrain{} train instances (\FOneFirstSeason{}--2024) and \FOneNumTest{}
+held-out test instances (\FOneLastSeason{}); the model comparisons below use a
+stratified test sample of \FOneNumTestSample{} instances. We do not redistribute raw
+FOM data; we release the derived structured ground truth, annotations, and code
+(Section~\ref{sec:ethics}).
+
+\paragraph{A complete oracle.} The key property we exploit is that this ground truth is
+not just deterministic but \emph{complete}: for each decision instance we can enumerate
+the full set of checkable facts that a good explanation should cover -- for a stint, the
+driver's stop count, pit laps, compound changes, and finishing position; for an
+undercut/overcut, the two pit laps, the move and its outcome, and the time gained. This
+enumerable fact set is the denominator for recall (Section~\ref{sec:metric}), and is
+exactly what open-domain faithfulness settings lack.
+
+\section{Metric: Precision and Recall}\label{sec:metric}
+We decompose an explanation into typed atomic claims (pit lap, compound change,
+stop count, stint compound, final position, undercut/overcut, outcome, time
+gained) and verify each against the structured ground truth, labeling it
+\emph{supported}, \emph{contradicted} (the context contains the relevant fact and it
+differs), or \emph{unverifiable} (the context lacks the fact). The metric is
+reference-free: it never compares to a gold text, only to the structured data the model
+was given.
+
+\paragraph{Precision (faithfulness).} The supported fraction of the claims a model makes
+is its faithfulness, or \emph{precision}; we report the hard-hallucination (contradicted)
+rate alongside. This is the standard reference-free faithfulness quantity -- and, on its
+own, it rewards abstention: a model that states a single safe fact scores $1.0$.
+
+\paragraph{Recall (coverage).} Because the oracle is complete (Section~\ref{sec:data}),
+we also measure \emph{recall}: of the enumerable facts that mattered for an instance, the
+fraction the model correctly stated (i.e.\ produced a supported claim for). A terse model
+that omits most facts is now penalized. We summarize the two with their harmonic mean
+($F_1$). A faithful explanation should be both \emph{accurate} (high precision) and
+\emph{informative} (high recall); reporting precision without recall is the blind spot we
+quantify in Section~\ref{sec:exp}.
+
+\paragraph{Two extraction backends.} Claim extraction has two interchangeable
+backends that share the schema. A dependency-free \emph{regex} extractor (with light
+coreference) targets English and is fast and transparent; we use it for the offline
+validation. An \emph{LLM} extractor reads free-form output in any language and emits
+the same typed claims, which we use to score Spanish and Portuguese fairly and to keep
+a single extractor across languages in the cross-lingual comparison. Verification is
+identical in both cases. We validate the metric itself two ways. First, by controlled perturbation: a template
+that emits only true statements scores a perfect supported fraction (no false
+contradictions from the verifier), while injected errors are penalized in proportion
+(Table~\ref{tab:pilot}). Second, by correlation with an independent LLM judge
+(\JudgeModel{}, distinct from the extractor) over a mixed sample of $\JudgeN{}$
+explanations spanning a range of faithfulness: the automatic score correlates
+positively with the judge (Pearson $\JudgePearson{}$, Spearman $\JudgeSpearman{}$),
+with our metric being the stricter of the two. Human-judge correlation is future
+work.
+
+\IfFileExists{example.tex}{\input{example.tex}}{}
+
+\section{Method: Verifier-Guided Generation}\label{sec:method}
+We generate an explanation, run the verifier, and feed back both contradicted claims
+(fix these) and \emph{uncovered} ground-truth facts (add these) as targeted edit
+instructions, iterating a few rounds. Because the signal includes the facts the model
+omitted -- available only because the oracle is complete -- the loop targets precision and
+recall jointly, not just precision. It uses only the structured verifier (no reference
+text) and is applicable to any LLM backend.
+
+\section{Experiments}\label{sec:exp}
+\paragraph{Metric validation (offline).} We validate the metric with a
+controlled-perturbation study: a deterministic template that emits only true
+statements vs.\ one with injected factual errors. Table~\ref{tab:pilot} shows the
+metric assigns perfect faithfulness to grounded text (no false contradictions)
+and sharply penalizes perturbations.
+
+\input{results_table.tex}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{fig_results.pdf}
+\caption{(a) Precision (faithfulness) on the held-out 2025 test: a fine-tuned 3B model
+(\,*\,) surpasses the frontier on precision while staying informative (cf.\
+Table~\ref{tab:coverage}). (b) Precision across languages.}
+\label{fig:results}
+\end{figure*}
+
+We study: \textbf{RQ1} -- does precision-only faithfulness reward abstention, and does
+requiring coverage change which models look best?; \textbf{RQ2} -- does faithfulness vary
+across languages?; \textbf{RQ3} -- can a fine-tuned small model match or exceed the
+frontier? We evaluate the latest frontier models from four families zero-shot: OpenAI
+gpt-5.5 and gpt-5.4-mini (Azure), xAI grok-4.3, Google gemini-2.5-pro (Vertex AI), and
+DeepSeek-V3.2, each scored with the language-agnostic LLM claim extractor. Even these
+models leave a non-trivial fraction of claims ungrounded and produce hard contradictions
+(Table~\ref{tab:coverage}): fluent, expert-sounding narratives are not automatically
+faithful.
+
+\paragraph{Precision rewards abstention; coverage inverts the ranking (RQ1).}
+Table~\ref{tab:coverage} reports precision (faithfulness), recall (coverage), and $F_1$
+against the complete oracle. The most precise model, gemini-2.5-pro (precision
+$\CovGeminiPrec{}$ in English), covers only $\CovGeminiRecall{}$ of the facts that
+mattered -- it is the most faithful and the least informative, averaging under two claims
+per instance. Conversely, more verbose models are slightly less precise but far more
+complete. The consequence is decisive: ranking models by precision puts gemini-2.5-pro
+\emph{first}, but ranking by $F_1$ puts it \emph{last} ($F_1=\CovGeminiFone{}$), with
+\CovTopFoneModel{} -- mid-pack on precision -- now on top ($F_1=\CovTopFone{}$). A
+precision-only faithfulness metric therefore does not just mis-score an output, it
+\emph{reverses} the comparison between systems. This is the paper's central finding, and
+it is measurable only because the oracle is complete.
+
+\paragraph{Multilingual (RQ2).} Faithfulness is largely stable across EN/ES/PT for four of
+the five models (Table~\ref{tab:coverage}); the apparent cross-lingual ``gap'' is
+concentrated in gemini-2.5-pro, and it tracks the same terseness -- under one claim per
+instance in ES/PT -- that drives its low coverage, rather than a general failure of
+grounding to transfer. The drop persists under a cross-family extractor
+(below), so it is not an extractor artifact. The practical reading is the opposite of the
+naive one: across these models, \emph{how much} a model says (coverage) varies more, and
+matters more, than the language it says it in.
+
+\paragraph{Small fine-tuned model and verifier-guided method (RQ3).}
+Table~\ref{tab:models} compares an open small model (Qwen2.5-3B
+\citep{qwen2025}) zero-shot and after LoRA fine-tuning on grounded explanations, on a
+common subset under the same LLM extractor. Read through the precision/coverage lens of
+RQ1, the fine-tuned 3B model is the encouraging case: it attains the highest precision in
+the table while \emph{also} staying substantive -- more claims per instance than
+gemini-2.5-pro -- so, unlike gemini, its high faithfulness is not bought by abstention.
+We read this as domain specialization on grounded supervision buying precision that scale
+alone does not, without the terseness that would empty it out, echoing evidence that
+small, specialized models are competitive in focused domains \citep{vectrayxnano2026}; the
+silver template supervision is a caveat we discuss in Limitations. Separately,
+verifier-guided self-correction (Section~\ref{sec:method}) applied to \MethodModel{}
+raises precision from $\MethodFirst{}$ to $\MethodFinal{}$ (English regex verifier),
+suggesting the structured verifier is a usable training-free signal.
+
+\paragraph{Extractor robustness.} A concern with an LLM-scored metric is that the
+extractor (gpt-5.x) shares a family with one evaluated system (gpt-5.5), which could
+inflate its score. We re-score the \emph{same} generations with two independent
+extractors. (i) A model-free, deterministic \emph{regex} extractor (English): it agrees
+with the LLM extractor on the system ranking (Spearman $\ExtractorEnSpearman{}$) and at
+the instance level (Pearson $\ExtractorEnPearson{}$, $N=\ExtractorEnN{}$). (ii) A
+\emph{cross-family} LLM extractor (\XfamModel{}, no shared lineage with gpt-5.x), across
+all three languages: agreement is near-perfect at the system level (Spearman
+$\XfamSpearman{}$) and strong per instance (Pearson $\XfamPearson{}$, $N=\XfamN{}$),
+higher than the metric's correlation with the independent LLM judge. The same-family
+system, gpt-5.5, is not ranked top by its own family's extractor under either check. The
+gemini-2.5-pro cross-lingual drop reproduces under the cross-family extractor, confirming
+it is a property of the generations, not the extractor.
+
+\IfFileExists{coverage_table.tex}{\input{coverage_table.tex}}{}
+\IfFileExists{weather_table.tex}{\input{weather_table.tex}}{}
+\IfFileExists{models_table.tex}{\input{models_table.tex}}{}
+\IfFileExists{extractor_agreement.tex}{\input{extractor_agreement.tex}}{}
+
+\section{Generalization: A Second Oracle}\label{sec:weather}
+The abstention problem is a claim about reference-free precision metrics in general, not
+about F1. We replicate it in a second domain with a complete oracle: public-domain NOAA
+weather forecasts, where each record (temperature, wind, precipitation chance, sky) is the
+enumerable fact set a forecast should cover. We generate forecasts grounded in $150$
+records per language with the same five models and score them with the same
+precision/recall machinery (Table~\ref{tab:weather}). The effect reappears: the model that
+abstains on F1, gemini-2.5-pro, again states the fewest facts ($\WxGeminiClaims{}$ claims
+per instance) and has by far the lowest recall ($\WxGeminiRecall{}$ vs.\ $\WxOthersRecall{}$
+for the others), so ranking by precision and by $F_1$ disagree ($F_1$ inversion present in
+English). The effect is milder than in F1 -- a weather record has only a handful of facts,
+so there is less to omit -- which is itself informative: the abstention penalty scales with
+how much a faithful answer \emph{should} contain. That the same model abstains in two
+unrelated domains suggests this is a property of the model and the precision-only metric,
+not of any one dataset.
+
+\section{Ethics and Licensing}\label{sec:ethics}
+F1/FOM timing data carries usage restrictions; we release only code, derived
+structured data, and annotations, not raw broadcast/telemetry feeds. The
+benchmark concerns strategy explanation, not betting or outcome prediction.
+
+\section{Limitations}
+Our recall metric measures coverage of the facts our deterministic extractor derives;
+these are high-precision but not exhaustive (event detection uses heuristics), so recall
+is defined relative to this enumerable fact set rather than to every conceivable salient
+detail -- the completeness we rely on is completeness \emph{of the derived oracle}. The
+abstention finding is a property of reference-free precision metrics in general; we
+demonstrate it in one domain, and replicating the precision/recall inversion in a second
+complete-oracle domain (e.g.\ finance or weather data-to-text) is the natural next step.
+The claim extractor can miss or over-segment claims, so absolute scores should be read
+alongside the controlled-perturbation validation; we mitigate the concern that the
+gpt-5.x extractor shares a family with gpt-5.5 with a model-free regex extractor and a
+cross-family LLM extractor that agree closely with it (Section~\ref{sec:exp}), but a
+human extractor/judge remains future work. Fine-tuning supervision is silver
+(deterministic faithful templates), which risks rewarding template mimicry; stronger
+supervision and out-of-template evaluation are future work. The model comparison uses a
+stratified test sample for cost, covers EN/ES/PT, and the held-out split is a single
+season (2022 omitted: timing data unavailable). Our quantitative comparison focuses on
+the three core decision types (strategy, undercut, overcut); the defense and
+race-summary types are released and exercised in the demo, with full model evaluation
+left to future work.
+
+\bibliography{refs}
+
+\end{document}

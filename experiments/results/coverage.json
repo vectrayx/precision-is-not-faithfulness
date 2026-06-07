@@ -1,0 +1,45 @@
+{
+  "extractor": "regex",
+  "rows": [
+    {
+      "model": "DeepSeek-V3.2",
+      "lang": "en",
+      "precision": 0.7346,
+      "recall": 0.2455,
+      "f1": 0.368,
+      "claims_per_inst": 2.14
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "lang": "en",
+      "precision": 0.9246,
+      "recall": 0.1802,
+      "f1": 0.3016,
+      "claims_per_inst": 1.07
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "lang": "en",
+      "precision": 0.7417,
+      "recall": 0.3863,
+      "f1": 0.508,
+      "claims_per_inst": 3.5
+    },
+    {
+      "model": "gpt-5.5",
+      "lang": "en",
+      "precision": 0.7526,
+      "recall": 0.4475,
+      "f1": 0.5613,
+      "claims_per_inst": 3.93
+    },
+    {
+      "model": "grok-4.3",
+      "lang": "en",
+      "precision": 0.7492,
+      "recall": 0.1793,
+      "f1": 0.2894,
+      "claims_per_inst": 1.61
+    }
+  ]
+}
