@@ -137,13 +137,15 @@ def run(instance_id, backend, lang, commentator=False):
         text = template_noisy(inst, lang, seed=3)
     elif backend == "Terse / abstain (demo)":
         text = _terse(inst, lang)
-    elif backend == "Frontier LLM (Azure)":
+    elif backend == "Frontier LLM (needs API key)":
         try:
             from src.models.generate import azure_openai
             text = azure_openai(inst, lang)
-        except Exception as e:
+        except Exception:
             text = template_faithful(inst, lang)
-            note = f"⚠ Azure not configured ({type(e).__name__}); showing grounded offline briefing."
+            note = ("ℹ️ Live frontier generation is not enabled on this hosted demo — showing "
+                    "the **grounded offline** briefing instead. (Fork the Space and set the "
+                    "`AZURE_OPENAI_*` secrets to call a live model.)")
     else:
         text = template_faithful(inst, lang)
     if commentator:
@@ -208,7 +210,7 @@ with gr.Blocks(title="Precision Is Not Faithfulness (F1)") as demo:
             with gr.Row():
                 backend = gr.Radio(
                     ["Grounded (offline)", "Terse / abstain (demo)",
-                     "Inject errors (demo)", "Frontier LLM (Azure)"],
+                     "Inject errors (demo)", "Frontier LLM (needs API key)"],
                     value="Grounded (offline)", label="Briefing source")
                 lang = gr.Radio(["en", "es", "pt"], value="en", label="Language / Idioma")
                 commentator = gr.Checkbox(value=False, label="🎙️ Commentator mode")
