@@ -74,6 +74,59 @@ def _terse(inst, lang):
     return parts[0] if parts else full
 
 
+# Broadcast-style team colours (substring match on the FastF1 team name).
+TEAM_COLORS = {
+    "mercedes": "#00D2BE", "red bull": "#3671C6", "ferrari": "#DC0000",
+    "mclaren": "#FF8700", "alpine": "#2293D1", "renault": "#FFF500",
+    "alphatauri": "#4E7C9B", "toro rosso": "#469BFF", "aston martin": "#006F62",
+    "racing point": "#F596C8", "force india": "#F596C8", "williams": "#005AFF",
+    "alfa romeo": "#900000", "sauber": "#900000", "haas": "#B6BABD",
+}
+
+
+def _team_color(team: str) -> str:
+    t = (team or "").lower()
+    for k, c in TEAM_COLORS.items():
+        if k in t:
+            return c
+    return "#6b7280"
+
+
+def _race_summary_gt(year, gp):
+    for i in _INSTS:
+        if str(i["year"]) == str(year) and i["gp"] == gp and i["decision_type"] == "race_summary":
+            return i["ground_truth"]
+    return None
+
+
+def tower_html(year, gp, highlight=()):
+    """Broadcast-style results tower (the 'cajitas') for a Grand Prix."""
+    gt = _race_summary_gt(year, gp)
+    if not gt or not gt.get("classification"):
+        return ""
+    hl = set(highlight or [])
+    rows = []
+    for c in sorted(gt["classification"], key=lambda x: x.get("position") or 99):
+        pos, drv = c.get("position"), c["driver"]
+        col = _team_color(c.get("team"))
+        status = c.get("status", "") or ""
+        pts = c.get("points")
+        right = "DNF" if status and status != "Finished" else (f"{int(pts)}" if pts else "")
+        on = drv in hl
+        rows.append(
+            f"<div style='display:flex;align-items:center;gap:7px;border-left:4px solid {col};"
+            f"background:{'#243042' if on else '#0f172a'};border-radius:3px;padding:3px 8px;margin:2px 0;"
+            f"{'box-shadow:0 0 0 1px '+col if on else ''}'>"
+            f"<span style='width:18px;text-align:right;color:#9ca3af;font-weight:700'>{pos}</span>"
+            f"<span style='font-weight:700;letter-spacing:.5px;{'color:'+col if on else ''}'>{drv}</span>"
+            f"<span style='margin-left:auto;opacity:.75;font-variant-numeric:tabular-nums'>{right}</span>"
+            "</div>")
+    return ("<div style='font-size:.7em;letter-spacing:.1em;opacity:.6;margin-bottom:4px'>"
+            f"RESULT &middot; TOP 10 &middot; {gp} {year}</div>" + "".join(rows) +
+            "<div style='opacity:.5;font-size:.72em;margin-top:5px'>right: points (DNF if retired). "
+            "Drivers in the selected decision are highlighted when in the top 10.</div>")
+
+
 def run(instance_id, backend, lang, commentator=False):
     inst = _BY_ID[instance_id]
     note = ""
@@ -116,7 +169,8 @@ def run(instance_id, backend, lang, commentator=False):
                   "⚠ High precision, low coverage: faithful but uninformative &mdash; "
                   "precision alone rewards saying little.</div>")
     ctx = inst["context_text"]
-    return (note or ""), text, gauge, _audit_html(r), ctx
+    tower = tower_html(inst["year"], inst["gp"], highlight=inst.get("focus_drivers", []))
+    return (note or ""), text, gauge, _audit_html(r), ctx, tower
 
 
 def championship_view(year, lang):
@@ -158,18 +212,23 @@ with gr.Blocks(title="Precision Is Not Faithfulness (F1)") as demo:
             btn = gr.Button("Generate briefing", variant="primary")
             note = gr.Markdown()
             with gr.Row():
-                with gr.Column():
+                with gr.Column(scale=1, min_width=170):
+                    gr.Markdown("### Result")
+                    out_tower = gr.HTML()
+                with gr.Column(scale=2):
                     gr.Markdown("### Strategy briefing")
                     out_text = gr.Textbox(label="", lines=8)
                     out_gauge = gr.HTML()
-                with gr.Column():
+                with gr.Column(scale=2):
                     gr.Markdown("### Audit vs telemetry: precision + coverage")
                     out_audit = gr.HTML()
             with gr.Accordion("Telemetry context provided to the model", open=False):
                 out_ctx = gr.Textbox(label="", lines=10)
-            y.change(lambda yy: gr.update(choices=gps_for(yy), value=None), y, g)
-            g.change(lambda yy, gg: gr.update(choices=instances_for(yy, gg), value=None), [y, g], inst)
-            btn.click(run, [inst, backend, lang, commentator], [note, out_text, out_gauge, out_audit, out_ctx])
+            y.change(lambda yy: (gr.update(choices=gps_for(yy), value=None), ""), y, [g, out_tower])
+            g.change(lambda yy, gg: (gr.update(choices=instances_for(yy, gg), value=None),
+                                     tower_html(yy, gg)), [y, g], [inst, out_tower])
+            btn.click(run, [inst, backend, lang, commentator],
+                      [note, out_text, out_gauge, out_audit, out_ctx, out_tower])
 
         with gr.Tab("Championship"):
             with gr.Row():
