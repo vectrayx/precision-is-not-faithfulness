@@ -349,8 +349,15 @@ abstention finding is a property of reference-free precision metrics in general;
 demonstrate it in one domain, and replicating the precision/recall inversion in a second
 complete-oracle domain (e.g.\ finance or weather data-to-text) is the natural next step.
 The claim extractor can miss or over-segment claims, so absolute scores should be read
-alongside the controlled-perturbation validation; we mitigate the concern that the
-gpt-5.x extractor shares a family with gpt-5.5 with a model-free regex extractor and a
+alongside the controlled-perturbation validation. More fundamentally, the verifier only
+checks the fact \emph{types} our schema models: ungrounded \emph{entity} or \emph{causal}
+insertions outside the schema are never extracted, hence never penalised. For example,
+asked to explain a two-lap defensive hold whose context names only the two drivers and a
+\texttt{teammate\_protected} flag, one model named the protected teammate
+(``Verstappen'') and credited it with a title-fight swing -- neither present in the given
+context -- yet scored a perfect supported fraction. Faithfulness coverage is thus bounded
+by the claim ontology; broadening it is future work. We mitigate the separate concern that
+the gpt-5.x extractor shares a family with gpt-5.5 with a model-free regex extractor and a
 cross-family LLM extractor that agree closely with it (Section~\ref{sec:exp}), but a
 human extractor/judge remains future work. Fine-tuning supervision is silver
 (deterministic faithful templates), which risks rewarding template mimicry; stronger
