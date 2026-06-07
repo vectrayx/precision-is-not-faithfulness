@@ -128,6 +128,9 @@ def tower_html(year, gp, highlight=()):
 
 
 def run(instance_id, backend, lang, commentator=False):
+    if not instance_id or instance_id not in _BY_ID:
+        return ("⚠ Pick a **Strategic decision** (the third dropdown) before generating.",
+                gr.update(), gr.update(), gr.update(), gr.update(), gr.update())
     inst = _BY_ID[instance_id]
     note = ""
     if backend == "Inject errors (demo)":
