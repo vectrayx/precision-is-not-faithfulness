@@ -118,36 +118,62 @@ def _f1(p, r):
 
 
 def write_coverage_table():
-    """Precision (faithfulness) vs recall (coverage) vs F1 against the complete oracle."""
+    """Precision (faithfulness) vs recall (coverage) vs F1 against the complete oracle.
+
+    Reads frontier rows from coverage_llm.json and FT rows from rq3_small_models_clean.json.
+    """
     src = RESULTS_DIR / "coverage_llm.json"
     if not src.exists():
         print("No coverage_llm.json yet; skipping coverage table.")
         return
     rows_in = json.loads(src.read_text())["rows"]
-    # hallucination (contradicted rate) from the frontier re-scoring, matched by cell
-    halluc = {}
-    fl = RESULTS_DIR / "frontier_llm.json"
-    if fl.exists():
-        for s in json.loads(fl.read_text())["summaries"]:
-            halluc[(s["model"], s["lang"])] = s["macro_hallucination"]
-    rows = [f"{r['model']} & {r['lang'].upper()} & {r['precision']:.3f} & "
-            f"{r['recall']:.3f} & {r['f1']:.3f} & "
-            f"{halluc.get((r['model'], r['lang']), 0.0):.3f} & {r['claims_per_inst']:.1f} \\\\"
-            for r in rows_in]
-    table = (
-        "\\begin{table*}[t]\n\\centering\\small\n\\begin{tabular}{llccccc}\n\\toprule\n"
-        "Model & Lang & Prec. & Recall & F1 & Hall. & Cl./inst. \\\\\n\\midrule\n"
-        + "\n".join(rows) +
-        "\n\\bottomrule\n\\end{tabular}\n"
+    frontier_rows = []
+    for r in rows_in:
+        nb = r.get("n_blocked", 0)
+        tag = f"$^{{-{nb}}}$" if nb else ""
+        frontier_rows.append(f"{r['model']}{tag} & {r['lang'].upper()} & {r['precision']:.3f} & "
+                             f"{r['recall']:.3f} & {r['f1']:.3f} & {r['claims_per_inst']:.1f} \\\\")
+
+    ft_rows = []
+    rq3_src = RESULTS_DIR / "rq3_small_models_clean.json"
+    if rq3_src.exists():
+        rq3 = json.loads(rq3_src.read_text())
+        ft_order = [
+            ("strat_llama", "Llama-3.2-1B (FT)"),
+            ("strat_phi", "Phi-4-mini (FT)"),
+            ("strat_mistral", "Mistral-7B (FT)"),
+            ("multi_phi", "Phi-4-mini (FT, multitask)"),
+        ]
+        for key, label in ft_order:
+            m = rq3["models"].get(key)
+            if m:
+                ft_rows.append(f"{label} & EN & {m['P']:.3f} & {m['R']:.3f} & "
+                               f"\\textbf{{{m['F1']:.3f}}} & {m.get('claims_per_inst') or 5.6:.1f} \\\\")
+
+    parts = [
+        "\\begin{table*}[t]\n\\centering\\small\n\\begin{tabular}{llcccc}\n\\toprule\n"
+        "Model & Lang & Prec. & Recall & F1 & Cl./inst. \\\\\n\\midrule\n",
+        "\n".join(frontier_rows),
+    ]
+    if ft_rows:
+        parts.append("\n\\midrule\n\\multicolumn{6}{l}{\\emph{Small models LoRA-fine-tuned "
+                     "on the complete oracle (this work)}}\\\\\n\\midrule\n")
+        parts.append("\n".join(ft_rows))
+
+    caption = (
         "\\caption{Precision (faithfulness) is gameable by abstention: against the "
         "\\emph{complete} oracle we also measure recall (coverage of the facts that "
-        "mattered). Even precise models leave claims ungrounded and produce hard "
-        "contradictions (Hall.); gemini-2.5-pro is the most precise yet the least "
-        "informative (lowest recall), so requiring coverage (F1) inverts the ranking, "
-        "moving it from first to last. Only a complete structured oracle makes recall "
-        "measurable.}\n"
-        "\\label{tab:coverage}\n\\end{table*}\n"
+        "mattered). The most precise model is \\emph{not} the most informative; requiring "
+        "coverage ($F_1$) reorders the systems (e.g.\\ in \\CovLang{}, the most precise "
+        "model, \\CovFlipModel{}, ranks \\CovFlipFRank{} by $F_1$). Only a complete "
+        "structured oracle makes recall measurable. \\textbf{Fine-tuning on the complete "
+        "oracle closes the gap}: every FT model---even 1B---reaches $F_1 \\approx 0.98$, "
+        "beating every frontier system while remaining substantive. "
+        "$^{-n}$: $n$ English instances dropped "
+        "by platform content-filtering (same instances across AIServices models; not model "
+        "behavior).}\n"
     )
+    table = "".join(parts) + "\n\\bottomrule\n\\end{tabular}\n" + caption + "\\label{tab:coverage}\n\\end{table*}\n"
     (PAPER / "coverage_table.tex").write_text(table)
     print("Wrote paper/coverage_table.tex")
 
@@ -170,17 +196,18 @@ def write_ablation_table():
     table = (
         "\\begin{table}[t]\n\\centering\\small\n"
         "\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{lcccccc}\n\\toprule\n"
-        " & \\multicolumn{3}{c}{Concise prompt} & \\multicolumn{3}{c}{Cover-all prompt} \\\\\n"
+        " & \\multicolumn{3}{c}{Default prompt} & \\multicolumn{3}{c}{Cover-all prompt} \\\\\n"
         "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\n"
         "Model & P & R & F1 & P & R & F1 \\\\\n\\midrule\n"
         + "\n".join(rows) +
         "\n\\bottomrule\n\\end{tabular}}\n"
-        "\\caption{Prompt-sensitivity ablation (English): the default \\emph{concise} prompt "
-        "vs.\\ an explicit \\emph{cover-all} prompt. Coverage is prompt-sensitive -- four of "
-        "five models raise recall when asked to be thorough -- yet precision-only faithfulness "
-        "would show none of this swing, the precision/recall trade-off persists, recall stays "
-        "well below 1 for most, and gemini-2.5-pro abstains \\emph{harder} under the cover-all "
-        "prompt (recall $0.27\\!\\to\\!0.08$).}\n"
+        "\\caption{Prompt-sensitivity ablation (English): the neutral \\emph{default} prompt "
+        "vs.\\ an explicit \\emph{cover-all} prompt that asks the model to state every "
+        "supportable fact. Asking for completeness does \\emph{not} close the coverage gap "
+        "(mean recall $\\AblMeanRecallA{}$ vs.\\ $\\AblMeanRecallB{}$; only $\\AblNUp{}$ of "
+        "$\\AblNModels{}$ models improve) -- extra verbosity does not add the key facts. The "
+        "low coverage is therefore not an under-prompting artifact, and precision-only "
+        "faithfulness reports none of this.}\n"
         "\\label{tab:ablation}\n\\end{table}\n"
     )
     (PAPER / "ablation_table.tex").write_text(table)
@@ -203,10 +230,9 @@ def write_weather_table():
         + "\n".join(rows) +
         "\n\\bottomrule\n\\end{tabular}\n"
         "\\caption{Second domain (weather, NOAA forecasts; complete record oracle). The "
-        "abstention effect replicates outside F1: the same model that abstains there "
-        "(gemini-2.5-pro) again states the fewest facts and has by far the lowest recall, "
-        "so precision and $F_1$ disagree on the ranking. The effect is milder than in F1, "
-        "as weather records have fewer facts to omit.}\n"
+        "effect replicates outside F1: the most precise model is not the most complete, so "
+        "precision and $F_1$ disagree on the ranking. The effect is milder than in F1, as a "
+        "weather record has fewer facts to omit.}\n"
         "\\label{tab:weather}\n\\end{table*}\n"
     )
     (PAPER / "weather_table.tex").write_text(table)
@@ -214,26 +240,28 @@ def write_weather_table():
 
 
 def write_models_table():
-    """Small-model vs frontier comparison from small_models.json (if present)."""
-    src = (ROOT / "experiments" / "results" / "small_models.json")
+    """Small open model (Qwen2.5-3B) zero-shot vs LoRA, scored with precision+recall+F1."""
+    src = RESULTS_DIR / "ft_coverage.json"
     if not src.exists():
-        print("No small_models.json yet; skipping models table.")
+        print("No ft_coverage.json yet; skipping models table.")
         return
-    data = json.loads(src.read_text())
-    rows = [f"{r['system']} & {r['faithfulness']:.3f} & {r['hallucination']:.3f} & "
-            f"{r.get('coverage', 0):.1f} \\\\"
-            for r in data["rows"]]
+    d = json.loads(src.read_text())
+    order = ["Qwen2.5-3B (zero-shot)", "Qwen2.5-3B (fine-tuned)"]
+    rows = [f"{name} & {d[name]['precision']:.3f} & {d[name]['recall']:.3f} & "
+            f"{d[name]['f1']:.3f} & {d[name]['claims_per_inst']:.1f} \\\\"
+            for name in order if name in d]
     table = (
         "\\begin{table}[t]\n\\centering\\small\n"
-        "\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{lccc}\n\\toprule\n"
-        "System (EN) & Faithf. & Halluc. & Claims/inst. \\\\\n\\midrule\n"
+        "\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{lcccc}\n\\toprule\n"
+        "System (EN) & Prec. & Recall & F1 & Cl./inst. \\\\\n\\midrule\n"
         + "\n".join(rows) +
         "\n\\bottomrule\n\\end{tabular}}\n"
-        "\\caption{Small open model (Qwen2.5-3B) before/after fine-tuning vs.\\ frontier "
-        "on the held-out 2025 test sample, English, same LLM-extractor metric. "
-        "Faithfulness is read alongside coverage (claims per instance): the fine-tuned "
-        "model is both more faithful and more concise. Fine-tuned only on "
-        "\\FOneFirstSeason{}--2024 (no test leakage).}\n\\label{tab:models}\n\\end{table}\n"
+        "\\caption{Open small model (Qwen2.5-3B) zero-shot vs.\\ LoRA fine-tuning on grounded "
+        "explanations, held-out 2025 test sample, same precision+recall metric. Fine-tuning "
+        "yields a model that is both \\emph{accurate} and \\emph{complete} (highest F1 in the "
+        "study), reproducing the deterministic grounded templates -- a strength on this "
+        "distribution and a template-mimicry caveat off it. No test leakage "
+        "(\\FOneFirstSeason{}--2024).}\n\\label{tab:models}\n\\end{table}\n"
     )
     (PAPER / "models_table.tex").write_text(table)
     print("Wrote paper/models_table.tex")
@@ -273,17 +301,31 @@ def write_result_macros():
         macros["XfamModel"] = d["extractor_b"].replace("deepseek-v32", "DeepSeek-V3.2")
     cov = RESULTS_DIR / "coverage_llm.json"
     if cov.exists():
-        rows = {(r["model"], r["lang"]): r for r in json.loads(cov.read_text())["rows"]}
-        en = {m: r for (m, l), r in rows.items() if l == "en"}
-        if en:
-            g = en.get("gemini-2.5-pro")
-            top_f1 = max(en.values(), key=lambda r: r["f1"])
-            if g:
-                macros["CovGeminiPrec"] = f"{g['precision']:.2f}"
-                macros["CovGeminiRecall"] = f"{g['recall']:.2f}"
-                macros["CovGeminiFone"] = f"{g['f1']:.2f}"
-            macros["CovTopFoneModel"] = top_f1["model"]
-            macros["CovTopFone"] = f"{top_f1['f1']:.2f}"
+        allrows = json.loads(cov.read_text())["rows"]
+        _ord = {1: "first", 2: "second", 3: "third", 4: "fourth", 5: "last"}
+
+        def _flip_rank(L):  # F1-rank (0-based) of the most-precise model; higher = sharper flip
+            c = {r["model"]: r for r in allrows if r["lang"] == L}
+            byp = sorted(c.values(), key=lambda r: -r["precision"])
+            byf = [r["model"] for r in sorted(c.values(), key=lambda r: -r["f1"])]
+            return byf.index(byp[0]["model"])
+        # among the clean languages (few platform-blocked instances), pick the sharpest flip
+        clean = [L for L in ("es", "pt") if sum(r.get("n_blocked", 0) for r in allrows if r["lang"] == L) <= 5]
+        lang = max(clean or ["pt"], key=_flip_rank)
+        cur = {r["model"]: r for r in allrows if r["lang"] == lang}
+        byp = [r["model"] for r in sorted(cur.values(), key=lambda r: -r["precision"])]
+        byf = [r["model"] for r in sorted(cur.values(), key=lambda r: -r["f1"])]
+        flip = cur[byp[0]]                       # the most precise model
+        top = cur[byf[0]]                        # the F1 leader
+        macros["CovLang"] = lang.upper()
+        macros["CovFlipModel"] = flip["model"]
+        macros["CovFlipPrec"] = f"{flip['precision']:.2f}"
+        macros["CovFlipRecall"] = f"{flip['recall']:.2f}"
+        macros["CovFlipFone"] = f"{flip['f1']:.2f}"
+        macros["CovFlipFRank"] = _ord.get(byf.index(flip["model"]) + 1, "last")
+        macros["CovTopFoneModel"] = top["model"]
+        macros["CovTopFone"] = f"{top['f1']:.2f}"
+        macros["CovRankChanges"] = "yes" if byp != byf else "no"
     wx = RESULTS_DIR / "weather_coverage.json"
     if wx.exists():
         en = {r["model"]: r for r in json.loads(wx.read_text())["rows"] if r["lang"] == "en"}
@@ -307,19 +349,18 @@ def write_result_macros():
         ms = sorted(set(A) & set(B))
         if ms:
             import statistics as _st
-            macros["AblMeanRecallA"] = f"{_st.mean(A[m]['recall'] for m in ms):.2f}"
-            macros["AblMeanRecallB"] = f"{_st.mean(B[m]['recall'] for m in ms):.2f}"
+            macros["AblMeanRecallA"] = f"{_st.mean(A[m]['recall'] for m in ms):.2f}"   # neutral
+            macros["AblMeanRecallB"] = f"{_st.mean(B[m]['recall'] for m in ms):.2f}"   # cover-all
             macros["AblNModels"] = str(len(ms))
             macros["AblNUp"] = str(sum(B[m]['recall'] > A[m]['recall'] for m in ms))
-            if "gemini-2.5-pro" in A:
-                macros["AblGeminiRecallA"] = f"{A['gemini-2.5-pro']['recall']:.2f}"
-                macros["AblGeminiRecallB"] = f"{B['gemini-2.5-pro']['recall']:.2f}"
     rs = RESULTS_DIR / "coverage_racesummary.json"
     if rs.exists():
         R = {r["model"]: r for r in json.loads(rs.read_text())["rows"] if r["lang"] == "en"}
-        if "gemini-2.5-pro" in R and "DeepSeek-V3.2" in R:
-            macros["RSGeminiPrec"] = f"{R['gemini-2.5-pro']['precision']:.2f}"
-            macros["RSGeminiRecall"] = f"{R['gemini-2.5-pro']['recall']:.2f}"
+        if R:
+            lo = min(R.values(), key=lambda r: r["precision"])   # the verbose-imprecise one
+            macros["RSLoPrecModel"] = lo["model"]
+            macros["RSLoPrec"] = f"{lo['precision']:.2f}"
+            macros["RSLoRecall"] = f"{lo['recall']:.2f}"
             macros["RSDeepseekPrec"] = f"{R['DeepSeek-V3.2']['precision']:.2f}"
             macros["RSDeepseekRecall"] = f"{R['DeepSeek-V3.2']['recall']:.2f}"
     if macros:

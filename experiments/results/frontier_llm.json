@@ -4,7 +4,8 @@
     "gemini-2.5-pro",
     "gpt-5.4-mini",
     "gpt-5.5",
-    "grok-4.3"
+    "grok-4.3",
+    "claude-sonnet-4-6"
   ],
   "langs": [
     "en",
@@ -147,6 +148,33 @@
       "macro_hallucination": 0.0521,
       "micro_faithfulness": 0.8502,
       "total_claims": 928
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "lang": "en",
+      "n_instances": 207,
+      "macro_faithfulness": 0.897,
+      "macro_hallucination": 0.0,
+      "micro_faithfulness": 0.897,
+      "total_claims": 1693
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "lang": "es",
+      "n_instances": 207,
+      "macro_faithfulness": 0.8015,
+      "macro_hallucination": 0.0,
+      "micro_faithfulness": 0.8015,
+      "total_claims": 2200
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "lang": "pt",
+      "n_instances": 207,
+      "macro_faithfulness": 0.8149,
+      "macro_hallucination": 0.0,
+      "micro_faithfulness": 0.8149,
+      "total_claims": 2420
     }
   ],
   "runs": {
@@ -2102,7 +2130,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.7,
         "hallucination_rate": 0.1,
@@ -2112,7 +2140,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -2122,7 +2150,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -2132,7 +2160,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.9,
         "hallucination_rate": 0.1,
@@ -2142,7 +2170,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.7777777777777778,
         "hallucination_rate": 0.0,
@@ -2152,7 +2180,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.8461538461538461,
         "hallucination_rate": 0.0,
@@ -2162,7 +2190,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.8333333333333334,
         "hallucination_rate": 0.0,
@@ -4175,7 +4203,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -4185,7 +4213,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -4195,7 +4223,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -4205,7 +4233,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.5,
         "hallucination_rate": 0.3333333333333333,
@@ -4215,7 +4243,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8181818181818182,
         "hallucination_rate": 0.0,
@@ -4225,7 +4253,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -4235,7 +4263,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -6247,7 +6275,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.6666666666666666,
         "hallucination_rate": 0.1111111111111111,
@@ -6257,7 +6285,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -6267,7 +6295,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -6277,7 +6305,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.875,
         "hallucination_rate": 0.125,
@@ -6287,7 +6315,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -6297,7 +6325,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -6307,7 +6335,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.6666666666666666,
         "hallucination_rate": 0.1111111111111111,
@@ -8319,7 +8347,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -8329,7 +8357,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -8339,7 +8367,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -8349,7 +8377,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -8359,7 +8387,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8181818181818182,
         "hallucination_rate": 0.0,
@@ -8369,7 +8397,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -8379,7 +8407,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.6666666666666666,
         "hallucination_rate": 0.1111111111111111,
@@ -10391,7 +10419,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.875,
         "hallucination_rate": 0.125,
@@ -10401,7 +10429,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -10411,7 +10439,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -10421,7 +10449,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8,
         "hallucination_rate": 0.0,
@@ -10431,7 +10459,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -10441,7 +10469,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -10451,7 +10479,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.6,
         "hallucination_rate": 0.2,
@@ -12463,7 +12491,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.75,
         "hallucination_rate": 0.0,
@@ -12473,7 +12501,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -12483,7 +12511,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -12493,7 +12521,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
         "n_claims": 0,
         "supported": 0,
@@ -12503,7 +12531,7 @@
         "hallucination_rate": 0.0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -12513,7 +12541,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.7777777777777778,
         "hallucination_rate": 0.0,
@@ -12523,7 +12551,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.8333333333333334,
         "hallucination_rate": 0.0,
@@ -14535,7 +14563,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.7777777777777778,
         "hallucination_rate": 0.0,
@@ -14545,7 +14573,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -14555,7 +14583,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.8,
         "hallucination_rate": 0.0,
@@ -14565,7 +14593,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -14575,7 +14603,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8181818181818182,
         "hallucination_rate": 0.0,
@@ -14585,7 +14613,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.8,
         "hallucination_rate": 0.0,
@@ -14595,7 +14623,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "error": "Error code: 400 - {'id': 'chatcmpl-9b22cf218b9744c0aebd7a347ebe5', 'model': '', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': ''}, 'finish_reason': 'content_filter', 'content_filter_results': {'error': {'code': 'content_filter', 'message': 'ResponsibleAI result indicated block action.'}}}], 'usage': {'prompt_tokens': 264, 'total_tokens': 264}, 'created': 1780789531, 'object': 'chat.completion', 'prompt_filter_results': None}",
         "n_claims": 0,
         "supported": 0,
@@ -16607,7 +16635,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.7777777777777778,
         "hallucination_rate": 0.0,
@@ -16617,7 +16645,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -16627,7 +16655,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -16637,7 +16665,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -16647,7 +16675,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -16657,7 +16685,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -16667,7 +16695,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.8181818181818182,
         "hallucination_rate": 0.0,
@@ -18679,7 +18707,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.6666666666666666,
         "hallucination_rate": 0.1111111111111111,
@@ -18689,7 +18717,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -18699,7 +18727,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -18709,7 +18737,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8333333333333334,
         "hallucination_rate": 0.16666666666666666,
@@ -18719,7 +18747,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8,
         "hallucination_rate": 0.0,
@@ -18729,7 +18757,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -18739,7 +18767,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -20751,7 +20779,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -20761,7 +20789,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -20771,7 +20799,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -20781,7 +20809,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -20791,7 +20819,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -20801,7 +20829,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -20811,7 +20839,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -22823,7 +22851,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.5,
         "hallucination_rate": 0.5,
@@ -22833,7 +22861,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -22843,7 +22871,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -22853,7 +22881,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -22863,7 +22891,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -22873,7 +22901,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -22883,7 +22911,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -24895,7 +24923,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.5,
         "hallucination_rate": 0.5,
@@ -24905,7 +24933,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -24915,7 +24943,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -24925,7 +24953,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.3333333333333333,
         "hallucination_rate": 0.6666666666666666,
@@ -24935,7 +24963,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -24945,7 +24973,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -24955,7 +24983,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -26967,7 +26995,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -26977,7 +27005,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -26987,7 +27015,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -26997,7 +27025,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Your requests to DeepSeek-V3.2 for deepseek-v32 in eastus2 have exceeded rate limit.', 'details': 'Your requests to DeepSeek-V3.2 for deepseek-v32 in eastus2 have exceeded rate limit.'}}",
         "n_claims": 0,
         "supported": 0,
@@ -27007,7 +27035,7 @@
         "hallucination_rate": 0.0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.75,
         "hallucination_rate": 0.0,
@@ -27017,7 +27045,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.8333333333333334,
         "hallucination_rate": 0.0,
@@ -27027,7 +27055,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "error": "Error code: 400 - {'id': 'chatcmpl-fad5189f57134b07b3e2dfb2906bd', 'model': '', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': ''}, 'finish_reason': 'content_filter', 'content_filter_results': {'error': {'code': 'content_filter', 'message': 'ResponsibleAI result indicated block action.'}}}], 'usage': {'prompt_tokens': 265, 'total_tokens': 265}, 'created': 1780796048, 'object': 'chat.completion', 'prompt_filter_results': None}",
         "n_claims": 0,
         "supported": 0,
@@ -29039,7 +29067,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -29049,7 +29077,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -29059,7 +29087,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -29069,7 +29097,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -29079,7 +29107,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.8888888888888888,
         "hallucination_rate": 0.1111111111111111,
@@ -29089,7 +29117,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -29099,7 +29127,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -31111,7 +31139,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::overcut::SAI_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::overcut::SAI_HAD",
         "decision_type": "overcut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -31121,7 +31149,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::HAD",
         "decision_type": "stint_strategy",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -31131,7 +31159,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::stint::PIA",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::stint::PIA",
         "decision_type": "stint_strategy",
         "faithfulness": 1.0,
         "hallucination_rate": 0.0,
@@ -31141,7 +31169,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::ALB_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::ALB_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -31151,7 +31179,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::BEA_HAD",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::BEA_HAD",
         "decision_type": "undercut",
         "faithfulness": 0.7777777777777778,
         "hallucination_rate": 0.0,
@@ -31161,7 +31189,7 @@
         "unverifiable": 2
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::HAD_GAS",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::HAD_GAS",
         "decision_type": "undercut",
         "faithfulness": 0.0,
         "hallucination_rate": 0.0,
@@ -31171,7 +31199,7 @@
         "unverifiable": 0
       },
       {
-        "id": "2025_São_Paulo_Grand_Prix::undercut::SAI_LAW",
+        "id": "2025_S\u00e3o_Paulo_Grand_Prix::undercut::SAI_LAW",
         "decision_type": "undercut",
         "faithfulness": 0.7857142857142857,
         "hallucination_rate": 0.07142857142857142,
