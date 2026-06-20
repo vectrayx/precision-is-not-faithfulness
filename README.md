@@ -1,5 +1,12 @@
 # Precision Is Not Faithfulness
 
+[![arXiv](https://img.shields.io/badge/arXiv-2606.09376-b31b1b.svg)](https://arxiv.org/abs/2606.09376)
+[![HF Paper](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2606.09376)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset-blue)](https://huggingface.co/datasets/jsantillana/precision-is-not-faithfulness-benchmark)
+[![Demo](https://img.shields.io/badge/🤗-Demo-green)](https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1)
+[![Models](https://img.shields.io/badge/🤗-Models-orange)](https://huggingface.co/jsantillana)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **Precision Is Not Faithfulness: Coverage-Aware Evaluation of Grounded Generation with a
 Complete Oracle** — NLP project for EMNLP/Findings.
 
@@ -54,6 +61,7 @@ bash scripts/gcp_gpu_vm.sh                  # GPU VM for serving + fine-tuning
 python src/models/build_sft.py && python src/models/finetune.py
 ```
 
+See [PLAN.md](PLAN.md) for the full experimental plan and [CLAUDE.md](CLAUDE.md) for project rules.
 
 ## Data & licensing
 Raw F1/FOM data is **not redistributed**. We release only code, derived structured data,
