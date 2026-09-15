@@ -8,7 +8,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 **Precision Is Not Faithfulness: Coverage-Aware Evaluation of Grounded Generation with a
-Complete Oracle** — NLP project for EMNLP/Findings.
+Complete Oracle** 
 
 Reference-free faithfulness metrics measure only **precision** and reward *abstention*
 (a model scores high by saying little). With a **complete** structured oracle we also
@@ -61,7 +61,6 @@ bash scripts/gcp_gpu_vm.sh                  # GPU VM for serving + fine-tuning
 python src/models/build_sft.py && python src/models/finetune.py
 ```
 
-See [PLAN.md](PLAN.md) for the full experimental plan and [CLAUDE.md](CLAUDE.md) for project rules.
 
 ## Data & licensing
 Raw F1/FOM data is **not redistributed**. We release only code, derived structured data,
