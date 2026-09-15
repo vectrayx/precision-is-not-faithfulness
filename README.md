@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.09376-b31b1b.svg)](https://arxiv.org/abs/2606.09376)
 [![HF Paper](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2606.09376)
-[![Dataset](https://img.shields.io/badge/🤗-Dataset-blue)](https://huggingface.co/datasets/jsantillana/precision-is-not-faithfulness-benchmark)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset-blue)](https://huggingface.co/datasets/jsantillana/f1-strategy-faithfulness)
 [![Demo](https://img.shields.io/badge/🤗-Demo-green)](https://huggingface.co/spaces/jsantillana/faithful-strategy-engineer-f1)
 [![Models](https://img.shields.io/badge/🤗-Models-orange)](https://huggingface.co/jsantillana)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
